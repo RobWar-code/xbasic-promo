@@ -1,0 +1,4 @@
+ProjectNotes.txt
+
+gitpod template
+	https://github.com/Code-Institute-Org/gitpod-full-template
