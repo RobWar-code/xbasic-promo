@@ -6,11 +6,68 @@ Contents
 	Desirable Features
 
 ## Project Aims
+
 	To provide an introduction and support system for potential and
 	existing users of the XBasic programming language.
 
 	To meet the requirements of the CI Full Stack Development Diploma
 	Project 4. See: project-requirements.txt
+
+## Users and Requirements
+
+	It is anticpated that the site would be visited by the following
+	types of user:
+
+		People with Windows or Linux systems that are new to 
+		programming who are looking for a programming
+		language that is fully-featured but easy to learn.
+
+		Existing programmers who are looking for a rapid development
+		system for interactive and command-line utilities that can 
+		run on Linux and Windows with easy debugging features.
+
+		Existing programmers who are looking for a straight-forward
+		way to build standalone GUI applications for Linux and/or
+		Windows.
+
+		Existing XBasic users who need additional look-up facilities
+		and a forum for discussing problems and reporting errors.
+
+		Some users may be using a mobile phone or tablet to quickly
+		reference programming languages
+
+### User Stories and Requirements
+
+	New Programmers:
+	"I need to know how easy it is to learn to use this system"
+
+		The opening page should have a brief description of the XBasic
+		system.
+
+		There should be screenshots of the PDE, toolbox in operation
+
+		A screenshot example of some code which has been run
+
+		A screenshot example of an error message
+
+	"I need documentation/training material"
+
+		Link to the XBasic manual
+
+	"I need some code examples"
+
+		Reference to the code examples provided with the download
+
+	"I need to know how to obtain and set-up this system"
+
+		Links to the sourceforge and github sites
+
+	"I need to talk to users"
+
+		Links to the groups.io and sourceforge sites
+
+	Utility Programmers:
+
 
 ## Budgetary Constraints
 
