@@ -107,6 +107,20 @@ Contents
 		be easily legible, so compensate in the texts.
 
 ### Summary of Features to meet Requirements
+	General Description
+	Introduction to PDE
+	Introduction to GUI toolkit
+	Introduction to Language Features
+	Introduction to Debugging Features
+	Introduction to Functions
+	Provide Links to other XBasic sites, including link to documentation at xbwlteam/xb-manual
+	Allow general user to create account to open problem chat
+	User Registration
+	Allow admin user to modify helpfile entries
+	Allow admin supervisors (owners) to appoint admin staff as well as modify
+		problem file entries
+	Entry of user problems
+	Entry of user responses
 
 ## Budgetary Constraints
 
