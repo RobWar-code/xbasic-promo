@@ -67,7 +67,46 @@ Contents
 		Links to the groups.io and sourceforge sites
 
 	Utility Programmers:
+	The needs are as for new programmers but add:
 
+	"I need file processing capabilities"
+
+		File handling capabilities description
+
+		Database handling capabilities description
+
+	"I sometimes need a GUI interface"
+
+		GUI toolkit description and screenshots 
+
+	"I need to be able to discuss problems and issues sometimes"
+
+		Error and problem discussion page/Database
+
+	Standalone program GUI Developer:
+	As above but add:
+
+	"I need an efficient way to develop GUI applications"
+
+		As above, but quite detailed discussion of GUI features
+
+	Existing Users:
+
+	"I may need access to the documentation"
+
+		Link to manual
+
+	"I would like easy access to problem solving"
+
+		Problem reporting page
+
+
+	Mobile Phone User:
+
+		As above but allow for the fact that screenshot images may not
+		be easily legible, so compensate in the texts.
+
+### Summary of Features to meet Requirements
 
 ## Budgetary Constraints
 
