@@ -225,6 +225,8 @@ Contents
 	Project Component				Man Days
 	Planning and Analysis				8
 	Set-up of XB Doc Pages				1
+	Favicon								0.5
+	Logo 								0.5
 	Menues								1
 	Footer Links						0.5
 	Introduction to Site				0.1
@@ -241,14 +243,15 @@ Contents
 	Submit Problem						2.5
 	Submit Answers						2.5
 	Edit Problems/Answers				2
-	Totals								31.5
+	Totals								32.5
 
 	The available time is 42 man days.
-	We need the problems and answers sections to meet the CI requirements.
+	We need the problems and answers sections to meet the CI requirements. So
+	this and the associated user registration should be worked on first.
 
-	We could suspend the Introduction to Language Features and Introduction to Functions
-	pages as these topics are covered in the linked XBasic Manual.
-	This leaves 39 Man Days
+	if necessary we could suspend the Introduction to Language Features and 
+	Introduction to Functions pages as these topics are covered in the linked 
+	XBasic Manual. So this could be done last.
 
 	Systems testing and reporting would be about 8 Man Days (1/4)
 
