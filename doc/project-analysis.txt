@@ -107,6 +107,7 @@ Contents
 		be easily legible, so compensate in the texts.
 
 ### Summary of Features to meet Requirements
+
 	General Description
 	Introduction to PDE
 	Introduction to GUI toolkit
@@ -125,31 +126,34 @@ Contents
 ## Budgetary Constraints
 
 	Because of the course-work associated with the module of which this project 
-	is a part, we can allocate 5 man weeks to this project and this sets a limit
+	is a part, we can allocate 6 man weeks to this project and this sets a limit
 	on the work which can be done in practice.
 
 	The project plan should be reviewed after 1 month of study, ie: About 5th Jan 2023
 
 ## Desirable Features
 
-	General Description
+	Introduction to Site
+	General Introduction
 	Introduction to PDE
+	Introduction to GUI toolkit
 	Introduction to Language Features
+	Introduction to Debugging Features
 	Introduction to Functions
-	Provide Links to other XBasic sites, including link to documentation at narayana-art.co.uk
-	Incorporate Helpfiles From XBasic
-	Provide search helpfile features
+	Provide Links to other XBasic sites, including link to documentation at xbwlteam/xb-manual
 	Allow general user to create account to open problem chat
+	User Registration
 	Allow admin user to modify helpfile entries
 	Allow admin supervisors (owners) to appoint admin staff as well as modify
-		helpfile entries
+		problem file entries
 	Entry of user problems
 	Entry of user responses
 
-### Introduction to Site
-	This appears on the main page one or two paragraphs of text
 
-	0.2 Man Days
+### Introduction to Site
+	This appears on the main page, one paragraph
+
+	0.1 Man Days
 
 ### General Description
 	This appears on the main page, one or two paragraphs of text
@@ -168,12 +172,21 @@ Contents
 ### Introduction to Language Features
 	This appears on a separate page with menu link
 
-	3 Man Days
+	2 Man Days
 
 ### Introduction to Functions
 	This appears on a separate page with menu link
 
 	2 Man Days
+
+### Introduction to Debugging Features
+
+	2 Man Days
+
+### Introduction to GUI toolkit
+	This appears on a separate page linked via the menu
+
+	3 Man Days
 
 ### General User Sign-In/Up
 	This appears in a modal pop-up when the menu link or button is
@@ -193,34 +206,19 @@ Contents
 	Frontend: 1 Man Days
 	Backend: 0.5 Man Days
 
-### Incorporate Help Files from XBasic
-	Data processing - 3 Man Days
-
-### Administer Help Files
-	3 Man Days
-
-### Search Help Files
-	This is a separate page accessible from the menu
-
-	Frontend: 2 Man Days
-	Backend: 2 Man Days
-
 ### Search Problems and Answers
-	This is a separate page accessible from the menu
+	The problems & and answers page is separate and has a menu link
 
-	Frontend: 4 Man Days
-	Backend: 3 Man Days
+	Frontend: 0.2 Man Days
+	Backend: 2 Man Days
 
 ### Submit Problem
-	This is a separate page accessible from the menu
-
-	Frontend: 4 Man Days
-	Backend: 2 Man Days
+	Frontend: 2 Man Days
+	Backend: 0.5 Man Days
 
 ### Submit Answers
-	This a separate page accessible from the menu
-	Frontend: 5 Man Days
-	Backend: 4 Man Days
+	Frontend: 2 Man Days
+	Backend: 0.5 Man Days
 
 ## Scope Calculations
 
@@ -229,35 +227,30 @@ Contents
 	Set-up of XB Doc Pages				1
 	Menues								1
 	Footer Links						0.5
-	Introduction to Site				0.2
+	Introduction to Site				0.1
 	XBasic General Description			0.2
 	Introduction to PDE					1
 
-	Introduction to Language Features	3
+	Introduction to Language Features	2
 	Introduction to Functions			2
+	Introduction to Debugging Features	2
 
-	General User sign-in/registration   5
+	General User sign-in/registration   4.5
 
-	Incorporate Help Files				3
-	Administer Help Files				3
-	Search Help Files					4
+	Search Problems and Answers			2.2
+	Submit Problem						2.5
+	Submit Answers						2.5
+	Edit Problems/Answers				2
+	Totals								31.5
 
-	Search Problems and Answers			7
-	Submit Problem						6
-	Submit Answers						9
-	Edit Problems/Answers				5
-	Totals								59
-
-	For the moment this exceeds the available time 35 Man Days.
+	The available time is 42 man days.
 	We need the problems and answers sections to meet the CI requirements.
-	If we delay the introduction of the helpfiles, we have 49 Man Days.
 
 	We could suspend the Introduction to Language Features and Introduction to Functions
 	pages as these topics are covered in the linked XBasic Manual.
 	This leaves 39 Man Days
 
-
-	Systems testing and reporting would be about 14 days (1/4)
+	Systems testing and reporting would be about 8 Man Days (1/4)
 
 	Allowing one week for other matters the latest the project could begin is 60 man days
 	before the CI deadline, that is March 15 2023.
