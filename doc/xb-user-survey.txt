@@ -1,0 +1,23 @@
+The following is the text of the survey to be sent to XBasic users
+to gather information on their relationship with the programming
+language and PDE.
+
+Dear XBasic Users
+
+Hope you all had good Christmas and are looking forward to the
+new year.
+
+I am in the process of launching a new XBasic website to help 
+to publicise the language.
+
+Please can you spare a few moments to reply to the following
+survey, please do not feel constrained in your replies:
+
+1. Roughly speaking why did you want to write computer programs in the first instance?
+
+2. What reasons did you have for choosing XBasic?
+
+3. What reasons do you think there are for recommending XBasic now?
+
+Regards
+Robin Warner
