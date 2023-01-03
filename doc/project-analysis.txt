@@ -1,9 +1,14 @@
-Proposed XBASIC Problem Logging and Forum
+Proposed XBASIC Introduction and Problem Logging Website
 
 Contents
 	Project Aims
+	Gathering Requirements and Solutions
+	Users and Requirements
+		User Stories and Requirements
+		Summary of Features to Meet Requirements
 	Budgetary Constraints
 	Desirable Features
+	Scope Calculations
 
 ## Project Aims
 
@@ -12,6 +17,20 @@ Contents
 
 	To meet the requirements of the CI Full Stack Development Diploma
 	Project 4. See: project-requirements.txt
+
+## Gathering Requirements and Solutions
+
+	Although this document currently includes assumed requirements
+	based on the author's experience, it would be beneficial to
+	perform an Agile UCD type of approach to provide an additional/
+	alternative set.
+
+	To this end a survey has been sent to the XBasic User's group 
+	to gather information on additional requirements.
+
+	The ideation session could conceivably be carried-out with
+	members of this group or possibly on slack to get a slightly
+	wider perspective.
 
 ## Users and Requirements
 
