@@ -1,0 +1,15 @@
+Use the project tools on the github repository to manage this project
+
+?Reference user stories in the github repository
+
+Aim for template approach where applicable
+
+MoSCoW prioritisation of features/requirements -
+    Must haves, Should haves, Could haves, Won't haves
+
+CRUD - Create, Retrieve, Update, Delete
+
+Orlov user registration template
+
+Cloudinary - image hosting
+
