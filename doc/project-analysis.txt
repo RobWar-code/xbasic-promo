@@ -57,46 +57,76 @@ Contents
 
 ### User Stories and Requirements
 
-	New Programmers:
-	"I need to know how easy it is to learn to use this system"
+	The envisioned user roles are:
+		User
+			New Programmer
+			Existing Programmer
+				Utility Programmer
+				Application Programmer
 
-		The opening page should have a brief description of the XBasic
-		system.
+	Epic: Introductory Material
 
-		There should be screenshots of the PDE, toolbox in operation
+	As a user I can see a clearly defined brand in order to recognize this site and product
 
-		A screenshot example of some code which has been run
+		Acceptance Criteria
 
-		A screenshot example of an error message
+			The XBasic brand and a logo should appear at the top of each page
 
-	"I need documentation/training material"
+	As a user I should be able to easily navigate between pages
 
-		Link to the XBasic manual
+		Acceptance Criteria
 
-	"I need some code examples"
+			A set of page links should be presented toward the top of the page
 
-		Reference to the code examples provided with the download
+	As a new or existing programmer I can read a brief desciption of the 
+	XBasic PDE and Language in order to get an overview.
 
-	"I need to know how to obtain and set-up this system"
+		Acceptance Criteria
 
-		Links to the sourceforge and github sites
+			The opening page has a brief description of the XBasic system.
 
-	"I need to talk to users"
+			There is a screenshot of the PDE and console on the opening page
+
+			There is a screenshot example of some code which has been run
+
+	As a user I can have access to a detailed description of the language in order to gain a detailed insight
+
+		Acceptance Criteria
+
+			There is a link in the footer to the XBasic manual
+
+	As a user I can find some code examples in order to learn the language
+
+		Acceptance Criteria
+
+			In the footer reference to the code examples provided with the download
+
+
+	As a user I can download XBasic in order to use it
+
+		Acceptance Criteria
+		
+			Links to the sourceforge and github sites in the footer with text
+
+	As a user I can connect to other users in order to discuss issues
 
 		Links to the groups.io and sourceforge sites
 
-	Utility Programmers:
-	The needs are as for new programmers but add:
+	As a utility programmer I need to know what file processing and database handling features/facilities there are
+	in order to establish that XBasic is suitable for my needs
 
-	"I need file processing capabilities"
+		Acceptance Criteria
+			
+			There is a description of file handling capabilities
 
-		File handling capabilities description
+			There is a description of database handling capabilities
 
-		Database handling capabilities description
+	As an existing programmer I can refer to a description of the GUI toolkit in order to determine
+	whether XBasic is suitable for my requirements
 
-	"I sometimes need a GUI interface"
+		Acceptance Criteria
 
-		GUI toolkit description and screenshots 
+			GUI toolkit description and screenshots on own page
 
 	"I need to be able to discuss problems and issues sometimes"
 
