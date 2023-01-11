@@ -63,6 +63,8 @@ Contents
 			Existing Programmer
 				Utility Programmer
 				Application Programmer
+			Owner
+			Administrator
 
 ### Epic: Introductory Material
 
@@ -148,7 +150,7 @@ Contents
 
 			On the problems page there is an add issue button
 
-			When the user clicks on the add issue button a text area is presented, ready to enter text into 
+			When the user clicks on the add issue button a form area is presented, ready to enter text into 
 
 	As a user I can enter a title for an issue in order for myself and others to find it
 
@@ -173,7 +175,38 @@ Contents
 
 			Images are recorded along with the issue description
 
-### Epic: As a user I can search for issues previously raised in order to find something like my own
+	As a user I can search for issues previously raised in order to find something like my own
+
+		Acceptance Criteria
+
+			By default, the problem page presents the most recent issue
+
+			Issues can be scrolled through in date order
+
+			The problem page has a search input field at the top
+
+			The search is conducted by username, title or keywords
+
+			Where there is more than one match, the issues can be scrolled through in date order
+
+			After a search the number of matches is displayed
+
+	As a user I can scroll through the replies to an issue in date order in order to 
+	find an appropriate response.
+
+		Acceptance Criteria
+
+			There are scroll-up and scroll down buttons on the reply area
+
+### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
+
+		Acceptance Criteria
+
+			There is a reply button on the issues area, which raises a reply entry form
+			on the issues page
+
+			The layout of the reply form is very similar to the issue form
+
 
 ### Epic: As a new user I can register myself in order to be known to the XBasic community
 
@@ -201,8 +234,51 @@ Contents
 
 			Password is entered twice to allow for checking
 
+### Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
 
-	As a user I can use my username in order to refer back to previous issues
+		Acceptance Criteria
+
+			An owner has reserved access to a page for entering administrator/admin details
+
+		As an owner, I should be able to see a list of existing owner/administrators for editing
+
+			Acceptance Criteria
+
+				The owner/administrator page has a scrollable list of entries
+
+				Clicking on an entry enables the delete option
+
+		As an owner I can enter a name for an owner/administrator in order to 
+		identify the administrator
+
+			Acceptance Criteria
+			
+				The user admin page has an Add New Admin button that brings-up an editable
+				form
+
+				The user admin page has a name field for entering an owner/administrator's name
+
+				The name should be validated as all alphabetic
+
+		As an owner I can enter an email address for the owner/administrator in order to be able to
+		send appropriate login details
+
+			Acceptance Criteria
+
+				The email address should be validated in the same way as for user registration
+
+		As an owner I can indicate whether a user is admin or owner in order to
+		give them appropriate permissions 
+
+			Acceptance Criteria
+
+				There are radio buttons for the owner/administrator being updated
+
+		As an owner I can delete an entry for an owner/administrator in order to 
+		suspend/remove an owner/admin
+
+
+
 
 
 
