@@ -1,0 +1,14 @@
+Contents
+    Work Due 
+    Work Done
+
+Work Due 
+
+    Plan-out features by priority
+
+    Continue CI course studies
+
+    Add tasks to initial user stories
+
+    Add initial user stories to the Issues section on github
+
