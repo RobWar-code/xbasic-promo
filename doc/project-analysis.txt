@@ -80,6 +80,16 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
+	Feature: General Description
+
+	As user I can read briefly about the intentions of the site in order to understand the site
+
+		Acceptance Criteria
+
+			There is an introductory panel describing the site
+			
+	Feature: Introduction to PDE
+
 	As a new or existing programmer I can read a brief desciption of the 
 	XBasic PDE and Language in order to get an overview.
 
@@ -90,6 +100,34 @@ Contents
 			There is a screenshot of the PDE and console on the opening page
 
 			There is a screenshot example of some code which has been run
+
+	Feature: Language Features
+
+	As a user I can read a summary description of language features in order to gain more insight
+
+		Acceptance Criteria
+
+			On a separate page there is a summary description of key language features
+
+			The description has associated screenshots
+
+	Feature: Built-in Functions
+
+	As I user I can read about built-in functions in order to gain more insight into language features
+
+		Acceptance Criteria
+
+			On a separate page there is a summary description of built-in functions
+
+	Feature: Debugging Features
+
+	As a user I can read a description of debugging features in order to know about ease of coding
+
+		Acceptance Criteria
+
+			On a separate page there is a summary description of debugging features
+
+			Debugging description is supported by screenshots
 
 	As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
@@ -123,6 +161,8 @@ Contents
 
 			There is a description of database handling capabilities
 
+	Feature: GUI Toolkit
+
 	As an existing programmer I can refer to a description of the GUI toolkit in order to determine
 	whether XBasic is suitable for my requirements
 
@@ -143,6 +183,7 @@ Contents
 ### Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
 
 		Error and problem discussion page/database
+
 
 	As a user I can enter a description of my issue in order to receive advice/answers
 
@@ -197,6 +238,24 @@ Contents
 		Acceptance Criteria
 
 			There are scroll-up and scroll down buttons on the reply area
+
+	As an Owner/Administrator I can edit issues so that they conform to standards
+
+		Acceptance Criteria
+
+			If the user is an owner/administrator an edit button appears on an issue
+
+			Clicking the edit button enables editing of the current issue
+
+			When the edit button is clicked a submit button appears in the issue area
+
+	As an Owner/Administrator I can edit replies so that they conform to standards
+
+			If the user is an owner/administrator an edit button appears on a reply
+
+			Clicking the edit button enables editing of the current reply
+
+			When the edit button is clicked a submit button appears in the reply area
 
 ### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
@@ -277,30 +336,21 @@ Contents
 		As an owner I can delete an entry for an owner/administrator in order to 
 		suspend/remove an owner/admin
 
-
-
-
-
-
-	
-
-
-
 ### Summary of Features to meet Requirements
 
 	General Description
 	Introduction to PDE
 	Introduction to GUI toolkit
 	Introduction to Language Features
+	Introduction to Built-in Functions
 	Introduction to Debugging Features
-	Introduction to Functions
 	Provide Links to other XBasic sites, including link to documentation at xbwlteam/xb-manual
 	Allow general user to create account to open problem chat
 	User Registration
-	Allow admin user to modify helpfile entries
+	Allow admin user to modify problem texts
 	Allow admin supervisors (owners) to appoint admin staff as well as modify
 		problem file entries
-	Entry of user problems
+	Entry of user problems/issues
 	Entry of user responses
 
 ## Budgetary Constraints
@@ -354,7 +404,7 @@ Contents
 
 	2 Man Days
 
-### Introduction to Functions
+### Introduction to Built-in Functions
 	This appears on a separate page with menu link
 
 	2 Man Days
@@ -400,7 +450,7 @@ Contents
 	Frontend: 2 Man Days
 	Backend: 0.5 Man Days
 
-## Scope Calculations
+## Initial Scope Calculations/Feasibility
 
 	Project Component				Man Days
 	Planning and Analysis				8
