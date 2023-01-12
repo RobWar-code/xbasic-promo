@@ -10,6 +10,11 @@ Work Due
 
     Add initial user stories to the Issues section on github
 
+    Consider how to do Epic entries in Issues/Product Backlog
+        Possibly link all user stories to an Epic entry
+
+    Setup issues in Product Backlog (milestones) on github
+
 Work Done
 
     12/01/23
