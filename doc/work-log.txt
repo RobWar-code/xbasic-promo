@@ -4,11 +4,14 @@ Contents
 
 Work Due 
 
-    Plan-out features by priority
-
     Continue CI course studies
 
     Add tasks to initial user stories
 
     Add initial user stories to the Issues section on github
 
+Work Done
+
+    12/01/23
+
+    *Plan-out features by priority
