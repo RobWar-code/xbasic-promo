@@ -13,6 +13,8 @@ Work Due
     Consider how to do Epic entries in Issues/Product Backlog
         Possibly link all user stories to an Epic entry
 
+    Determine the length of iterations
+
     Setup issues in Product Backlog (milestones) on github
 
 Work Done
