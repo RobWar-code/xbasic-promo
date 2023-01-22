@@ -3,6 +3,7 @@ Proposed XBASIC Introduction and Problem Logging Website
 Contents
 	Project Aims
 	Gathering Requirements and Solutions
+	Course Tool Requirements
 	Users and Requirements
 		User Stories and Requirements
 		Summary of Features to Meet Requirements
@@ -31,6 +32,20 @@ Contents
 	The ideation session could conceivably be carried-out with
 	members of this group or possibly on slack to get a slightly
 	wider perspective.
+
+## Course Tool Requirements
+
+	Project Management and recording should be set-up and
+	followed in Agile-type style (staging) on GitHub Issues/Projects
+	with requirements/user stories drawn from initial analysis 
+	in this document.
+
+	Wireframe layouts will be hand-drawn roughs scanned in as
+	.jpg for reference.
+
+	The initial page layouts should be done with HTML Bootstrap 4.6
+
+
 
 ## Users and Requirements
 
