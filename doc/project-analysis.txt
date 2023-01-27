@@ -8,6 +8,7 @@ Contents
 		User Stories and Requirements
 		Summary of Features to Meet Requirements
 	Budgetary Constraints
+	Feasibility and Initial Design Layouts
 	Desirable Features
 	Scope Calculations
 
@@ -375,6 +376,28 @@ Contents
 	on the work which can be done in practice.
 
 	The project plan should be reviewed after 1 month of study, ie: About 5th Jan 2023
+
+## Feasibility and Initial Design Layouts
+
+	See also: Design Layouts in doc/wireframes (rendered in INKSCAPE svg format)
+
+	Since the primary aim is publicise XBasic, the initial design layout should
+	be for the title-bar, menu, site introduction and general introduction to PDE
+	which items appear on the main page.
+
+	Of primary importance is to see whether the XBasic PDE image is satisfactory for
+	mobiles. see: test-code/test-mobile-image-01.html. Initial trial seems reasonably
+	satisfactory.
+
+	Check-out the use of iframes - can they use nested code or do they have to use
+	separate web pages? Instead Iframes use scrollable divs, this can be established
+	by setting the style properties overflow-y: auto and overflow-x: auto. This allows
+	the scrollable area to contain the page code.
+
+	Check-out text areas - can the entered text exceed the size of the visible area?
+	A scroll bar appears when the text is longer than the displayed area height.
+	Use styles white-space: nowrap and white-space: pre to obtain wrap-free text with
+	a horizontal scrollbar. This would be better for code listings.
 
 ## Desirable Features
 

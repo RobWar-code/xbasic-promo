@@ -4,7 +4,17 @@ Contents
 
 Work Due 
 
-    Continue CI course studies
+    Tidy-up analysis
+
+    Do initial design/feasibility studies
+
+        Check-out PDE images on mobiles
+
+        Check-out introductory image
+
+        Check-out iframe coding
+
+        Check-out variable length textarea input
 
     Add tasks to initial user stories
 
@@ -18,6 +28,9 @@ Work Due
     Setup issues in Product Backlog (milestones) on github
 
 Work Done
+    27/01/23
+
+    * Continue CI course studies to end of agile/bootstrap
 
     12/01/23
 
