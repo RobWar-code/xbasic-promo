@@ -1,0 +1,19 @@
+/* ------------------------------Header Section */
+.logo {
+    height: 200px;
+    background: url("../images/logo.webp");
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: cyan;
+}
+.site-heading-bar {
+    height: 100px;
+    background: blue;
+    color: azure;
+}
+.menu-bar {
+    height: 100px;
+    background: darkblue;
+    color:azure;
+}
