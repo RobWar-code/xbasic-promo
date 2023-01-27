@@ -496,7 +496,7 @@ Contents
 	Planning and Analysis				8			1
 	Set-up of XB Doc Pages				1			2
 	Favicon								0.5			2
-	Logo 								0.5			1
+	Logo / Title						0.5			1
 	Menues								1			1
 	Footer Links						0.5			2
 	Introduction to Site				0.1			1
