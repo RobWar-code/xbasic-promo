@@ -8,13 +8,8 @@ Work Due
 
     Do initial design/feasibility studies
 
-        Check-out PDE images on mobiles
 
-        Check-out introductory image
-
-        Check-out iframe coding
-
-        Check-out variable length textarea input
+        Check-out uploading an image file
 
     Add tasks to initial user stories
 
@@ -28,6 +23,17 @@ Work Due
     Setup issues in Product Backlog (milestones) on github
 
 Work Done
+    27/01/23
+    Initial Studies:
+    
+        * Check-out PDE images on mobiles
+
+        * Check-out introductory image
+
+        * Check-out iframe coding - replace by scrollable div
+
+        * Check-out variable length textarea input
+
     27/01/23
 
     * Continue CI course studies to end of agile/bootstrap

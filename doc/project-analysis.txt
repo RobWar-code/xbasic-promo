@@ -399,6 +399,8 @@ Contents
 	Use styles white-space: nowrap and white-space: pre to obtain wrap-free text with
 	a horizontal scrollbar. This would be better for code listings.
 
+	Check-out uploading an image file for immediate display see: jquery/django.
+
 ## Desirable Features
 
 	Introduction to Site
