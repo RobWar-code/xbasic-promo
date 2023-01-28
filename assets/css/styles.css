@@ -1,3 +1,8 @@
+/* ------------------------------General Section */
+.bg-color-menu {
+    background-color: darkblue;
+}
+
 /* ------------------------------Header Section */
 .logo {
     height: 200px;
@@ -12,8 +17,27 @@
     background: blue;
     color: azure;
 }
+
+/* ------------------------------Menu */
 .menu-bar {
     height: 100px;
-    background: darkblue;
-    color:azure;
+    align-items: center;
+}
+.menu-item a {
+    font-size: 20px;
+    color: azure !important;
+}
+.menu-item a:hover {
+    background-color: darkgrey;
+}
+.navbar-toggler {
+    background-color: azure !important;
+}
+.menu-block {
+    float: right;
+}
+@media(min-width:992px) {
+    .navbar-toggler {
+        background-color: darkblue !important;
+    }
 }

@@ -145,6 +145,8 @@ Contents
 
 			Debugging description is supported by screenshots
 
+### Epic: Footer
+
 	As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
 		Acceptance Criteria
@@ -368,6 +370,17 @@ Contents
 		problem file entries
 	Entry of user problems/issues
 	Entry of user responses
+
+### Pages / Menu
+
+	Main Page - index.html
+	GUI Toolkit - gui-design.html
+	Language Features - features.html
+	Built-in Functions - functions.html
+	Debugging Features - debugging.html
+	Problems/Issues - issues.html
+	Sign-In/Sign-Up - pop-up?
+	Home
 
 ## Budgetary Constraints
 
