@@ -82,7 +82,7 @@ Contents
 			Owner
 			Administrator
 
-### Epic: Introductory Material
+###Epic: Introductory Material
 
 	As a user I can see a clearly defined brand in order to recognize this site and product
 
@@ -96,7 +96,7 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
-	Feature: General Description
+###Epic: General Description
 
 	As user I can read briefly about the intentions of the site in order to understand the site
 
@@ -123,6 +123,17 @@ Contents
 
 			In the language summary reference to the code examples provided with the download
 
+	As a utility programmer I need to know what file processing and database handling features/facilities there are
+	in order to establish that XBasic is suitable for my needs
+
+		Acceptance Criteria
+			
+			There is a description of file handling capabilities
+
+			There is a description of database handling capabilities
+
+###Epic: Language Features
+
 	As a user I can read a summary description of language features in order to gain more insight
 
 		Acceptance Criteria
@@ -130,6 +141,8 @@ Contents
 			On a separate page there is a summary description of key language features
 
 			The description has associated screenshots
+
+###Epic: Built-in Functions
 
 	Feature: Built-in Functions
 
@@ -167,14 +180,6 @@ Contents
 
 		Links to the groups.io and sourceforge sites
 
-	As a utility programmer I need to know what file processing and database handling features/facilities there are
-	in order to establish that XBasic is suitable for my needs
-
-		Acceptance Criteria
-			
-			There is a description of file handling capabilities
-
-			There is a description of database handling capabilities
 
 ###Epic: GUI Toolkit
 
