@@ -36,6 +36,31 @@
 .menu-block {
     float: right;
 }
+
+/* ------------------------------Footer */
+.footer-bar {
+    height: 90px;
+    align-items: center;
+    text-justify: center;
+    background: blue;
+    font-weight: bold;
+}
+
+.footer-link-block {
+    display: inline-block;
+    width: 85px;
+}
+
+.footer-bar a {
+    color: azure;
+}
+
+.footer-bar i {
+    font-size: 32px;
+    color: azure;
+}
+
+/* ------------------------------Media */
 @media(min-width:992px) {
     .navbar-toggler {
         background-color: darkblue !important;
