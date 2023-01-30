@@ -117,7 +117,11 @@ Contents
 
 			There is a screenshot example of some code which has been run
 
-	Feature: Language Features
+	As a user I can find some code examples in order to learn the language
+
+		Acceptance Criteria
+
+			In the language summary reference to the code examples provided with the download
 
 	As a user I can read a summary description of language features in order to gain more insight
 
@@ -145,20 +149,13 @@ Contents
 
 			Debugging description is supported by screenshots
 
-### Epic: Footer
+###Epic: Footer
 
 	As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
 		Acceptance Criteria
 
 			There is a link in the footer to the XBasic manual
-
-	As a user I can find some code examples in order to learn the language
-
-		Acceptance Criteria
-
-			In the footer reference to the code examples provided with the download
-
 
 	As a user I can download XBasic in order to use it
 
@@ -179,7 +176,7 @@ Contents
 
 			There is a description of database handling capabilities
 
-	Feature: GUI Toolkit
+###Epic: GUI Toolkit
 
 	As an existing programmer I can refer to a description of the GUI toolkit in order to determine
 	whether XBasic is suitable for my requirements
@@ -188,17 +185,8 @@ Contents
 
 			GUI toolkit description and screenshots on own page
 
-	Mobile Phone User:
-		As a mobile phone user I can read the material supported by screenshots in order to compensate for
-		small screenshots
 
-	
-		Acceptance Criteria
-		
-			The texts are sufficiently detailed to explain the screenshots
-
-
-### Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
+###Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
 
 		Error and problem discussion page/database
 
@@ -275,7 +263,7 @@ Contents
 
 			When the edit button is clicked a submit button appears in the reply area
 
-### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
+###Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
 		Acceptance Criteria
 
@@ -285,7 +273,7 @@ Contents
 			The layout of the reply form is very similar to the issue form
 
 
-### Epic: As a new user I can register myself in order to be known to the XBasic community
+###Epic: As a new user I can register myself in order to be known to the XBasic community
 
 	As a new user I can register my email address in order to receive XBasic mailings
 
@@ -311,7 +299,7 @@ Contents
 
 			Password is entered twice to allow for checking
 
-### Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
+###Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
 
 		Acceptance Criteria
 
@@ -353,6 +341,16 @@ Contents
 
 		As an owner I can delete an entry for an owner/administrator in order to 
 		suspend/remove an owner/admin
+
+###Other Considerations
+	Mobile Phone User:
+		As a mobile phone user I can read the material supported by screenshots in order to compensate for
+		small screenshots
+
+		Acceptance Criteria
+		
+			The texts are sufficiently detailed to explain the screenshots
+
 
 ### Summary of Features to meet Requirements
 
