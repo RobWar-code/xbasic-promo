@@ -41,6 +41,23 @@
     float: right;
 }
 
+/* ------------------------------Site Intro */
+.site-intro-section {
+    height: 390px;
+    background: url("../images/laptop-01-crop.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+.transparent-text-block {
+    margin-top: 20px;
+    background-color: rgba(50, 50, 150, 0.8);
+    color: azure;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 /* ------------------------------Footer */
 .footer-bar {
     height: 90px;
