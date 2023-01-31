@@ -523,8 +523,8 @@ Contents
 	Logo / Title						0.5			1			0.5
 	Menues								1			1			1.5
 	Footer Links						0.5			2			1
-	Introduction to Site				0.5			1
-	Introduction to XBasic & PDE		1			3
+	Introduction to Site				0.5			1			0.5
+	Introduction to XBasic & PDE		1			1			0.5
 	Introduction to GUI Design			2			2
 	Introduction to Language Features	2			3
 	Introduction to Functions			2			4
