@@ -530,13 +530,13 @@ Contents
 	Introduction to Functions			2			4
 	Introduction to Debugging Features	2			3
 
-	General User sign-in/registration   4.5			1
+	General User sign-in/registration   6			1
 
 	Search Problems and Answers			2.2			1
-	Submit Problem						2.5			1
+	Submit Problem						4.5			1
 	Submit Answers						2.5			1
 	Edit Problems/Answers				2			2
-	Totals								33.6
+	Totals								38.1
 
 	The available time is 42 man days.
 	We need the problems and answers sections to meet the CI requirements. So
