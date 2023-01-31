@@ -519,7 +519,7 @@ Contents
 	Project Component				Man Days	Priority	Actual
 	Planning and Analysis				8			1			10
 	Set-up of XB Doc Pages				1			2			0.2
-	Favicon								0.5			2
+	Favicon								0.5			2			0.2
 	Logo / Title						0.5			1			0.5
 	Menues								1			1			1.5
 	Footer Links						0.5			2			1
