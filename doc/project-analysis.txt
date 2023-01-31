@@ -117,6 +117,13 @@ Contents
 
 			There is a screenshot example of some code which has been run
 
+	As a user I can read about the operational platforms for XBasic in order
+	to assess its suitability
+
+		Acceptance Criteria
+
+			It should be clear what environments the language will operate in
+
 	As a user I can find some code examples in order to learn the language
 
 		Acceptance Criteria
@@ -131,6 +138,13 @@ Contents
 			There is a description of file handling capabilities
 
 			There is a description of database handling capabilities
+
+	As an application programmer I need to know briefly about GUI capabilities in order to assess the
+	suitability of the program
+
+		Acceptance Criteria
+
+			There is a brief description of the GUI toolkit
 
 ### Epic: Language Features
 

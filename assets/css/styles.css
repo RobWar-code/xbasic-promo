@@ -6,6 +6,23 @@
     background-color: darkblue;
 }
 
+/* ------------------------------General Parts */
+.section-heading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.xb-image {
+    width: 100%;
+}
+
+.article-col {
+    padding-top: 5px;
+    background: #a0a0ff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
 /* ------------------------------Header Section */
 .logo {
     height: 200px;
@@ -58,11 +75,13 @@
     font-weight: 400;
 }
 
+/* ------------------------------XB Intro */
+
 /* ------------------------------Footer */
 .footer-bar {
     height: 90px;
     align-items: center;
-    text-justify: center;
+    justify-content: center;
     background: blue;
     font-weight: bold;
 }
