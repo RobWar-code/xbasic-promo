@@ -7,6 +7,10 @@
 }
 
 /* ------------------------------General Parts */
+.section-head-col {
+    background-color: #00a0ff;
+}
+
 .section-heading {
     margin-top: 15px;
     margin-bottom: 10px;
