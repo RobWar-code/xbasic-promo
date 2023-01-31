@@ -82,7 +82,7 @@ Contents
 			Owner
 			Administrator
 
-###Epic: Introductory Material
+### Epic: Header
 
 	As a user I can see a clearly defined brand in order to recognize this site and product
 
@@ -96,7 +96,7 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
-###Epic: General Description
+### Epic: Site Introduction
 
 	As user I can read briefly about the intentions of the site in order to understand the site
 
@@ -104,7 +104,7 @@ Contents
 
 			There is an introductory panel describing the site
 
-	Feature: Introduction to PDE
+### Epic: Introduction to PDE and XBasic
 
 	As a new or existing programmer I can read a brief desciption of the 
 	XBasic PDE and Language in order to get an overview.
@@ -132,7 +132,7 @@ Contents
 
 			There is a description of database handling capabilities
 
-###Epic: Language Features
+### Epic: Language Features
 
 	As a user I can read a summary description of language features in order to gain more insight
 
@@ -142,7 +142,7 @@ Contents
 
 			The description has associated screenshots
 
-###Epic: Built-in Functions
+### Epic: Built-in Functions
 
 	Feature: Built-in Functions
 
@@ -162,7 +162,7 @@ Contents
 
 			Debugging description is supported by screenshots
 
-###Epic: Footer
+### Epic: Footer
 
 	As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
@@ -181,7 +181,7 @@ Contents
 		Links to the groups.io and sourceforge sites
 
 
-###Epic: GUI Toolkit
+### Epic: GUI Toolkit
 
 	As an existing programmer I can refer to a description of the GUI toolkit in order to determine
 	whether XBasic is suitable for my requirements
@@ -191,7 +191,7 @@ Contents
 			GUI toolkit description and screenshots on own page
 
 
-###Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
+### Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
 
 		Error and problem discussion page/database
 
@@ -268,7 +268,7 @@ Contents
 
 			When the edit button is clicked a submit button appears in the reply area
 
-###Epic: As a user I can enter a reply to an issue in order to inform/assist another user
+### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
 		Acceptance Criteria
 
@@ -278,7 +278,7 @@ Contents
 			The layout of the reply form is very similar to the issue form
 
 
-###Epic: As a new user I can register myself in order to be known to the XBasic community
+### Epic: As a new user I can register myself in order to be known to the XBasic community
 
 	As a new user I can register my email address in order to receive XBasic mailings
 
@@ -304,7 +304,7 @@ Contents
 
 			Password is entered twice to allow for checking
 
-###Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
+### Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
 
 		Acceptance Criteria
 
@@ -347,7 +347,7 @@ Contents
 		As an owner I can delete an entry for an owner/administrator in order to 
 		suspend/remove an owner/admin
 
-###Other Considerations
+### Other Considerations
 	Mobile Phone User:
 		As a mobile phone user I can read the material supported by screenshots in order to compensate for
 		small screenshots
@@ -359,8 +359,8 @@ Contents
 
 ### Summary of Features to meet Requirements
 
-	General Description
-	Introduction to PDE
+	Site Introduction
+	Introduction to XBasic and PDE
 	Introduction to GUI toolkit
 	Introduction to Language Features
 	Introduction to Built-in Functions
@@ -420,8 +420,7 @@ Contents
 ## Desirable Features
 
 	Introduction to Site
-	General Introduction
-	Introduction to PDE
+	Introduction to XBasic and PDE
 	Introduction to GUI toolkit
 	Introduction to Language Features
 	Introduction to Debugging Features
@@ -441,12 +440,7 @@ Contents
 
 	0.1 Man Days
 
-### General Description
-	This appears on the main page, one or two paragraphs of text
-
-	0.2 Man Days
-
-### Introduction to PDE
+### Introduction to XBasic and PDE
 	This appears on the main page, two or three paragraphs + picture
 
 	0.5 Man Days
