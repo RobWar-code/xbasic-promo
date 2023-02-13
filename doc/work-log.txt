@@ -6,14 +6,17 @@ Work Due
 
     Tidy-up analysis
 
-    Do initial design/feasibility studies
-
+    Do secondary design/feasibility studies
 
         Check-out uploading an image file
+
+        Plan javascript code
 
     Add tasks to initial user stories
 
     Add initial user stories to the Issues section on github
+
+    Resolve how to add user stories to the projects section on github
 
     Consider how to do Epic entries in Issues/Product Backlog
         Possibly link all user stories to an Epic entry

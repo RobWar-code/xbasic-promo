@@ -41,10 +41,12 @@ Contents
 	with requirements/user stories drawn from initial analysis 
 	in this document.
 
-	Wireframe layouts will be hand-drawn roughs scanned in as
-	.jpg for reference.
+	Wireframe layouts should be drafted inkscape and saved as svg's.
 
 	The initial page layouts should be done with HTML Bootstrap 4.6
+
+	Javascript code should be written using TDD and the Jest test
+	framework as far as practical
 
 
 
