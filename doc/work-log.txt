@@ -4,26 +4,11 @@ Contents
 
 Work Due 
 
-    Tidy-up analysis
+    Rework Project Notes to allow for Django MVT following the guidelines
+    established for portfolio4 of the CI Course.
 
-    Do secondary design/feasibility studies
-
-        Check-out uploading an image file
-
-        Plan javascript code
-
-    Add tasks to initial user stories
-
-    Add initial user stories to the Issues section on github
-
-    Resolve how to add user stories to the projects section on github
-
-    Consider how to do Epic entries in Issues/Product Backlog
-        Possibly link all user stories to an Epic entry
-
-    Determine the length of iterations
-
-    Setup issues in Product Backlog (milestones) on github
+    Set-up the github project as a Django project - write the procedures to
+    README.md file.
 
 Work Done
     27/01/23

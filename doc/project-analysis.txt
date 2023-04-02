@@ -1,6 +1,7 @@
 Proposed XBASIC Introduction and Problem Logging Website
 
 Contents
+	Introduction
 	Project Aims
 	Gathering Requirements and Solutions
 	Course Tool Requirements
@@ -12,6 +13,11 @@ Contents
 	Desirable Features
 	Scope Calculations
 
+## Introduction
+	02/04/2023
+		Project re-drafted to allow for Django MVT development to meet course requirements.
+
+		 
 ## Project Aims
 
 	To provide an introduction and support system for potential and
@@ -43,16 +49,21 @@ Contents
 
 	Wireframe layouts should be drafted inkscape and saved as svg's.
 
-	The initial page layouts should be done with HTML Bootstrap 4.6
+	The page layouts should be done with HTML Bootstrap 4.6
 
-	Javascript code should be written using TDD and the Jest test
-	framework as far as practical
+	The site will use the Django MVT framework for its templates, python views and data models.
+	Databasing will be handled by PostgreSQL.
 
+	Hosting for the application will be on Heroku and of the database ElephantSQL.
+	Images will be hosted on Cloudinary.
+
+	The development gitpod site will be set-up to use the Heroku platform from the start
+	with the DEBUG status set to True.
 
 
 ## Users and Requirements
 
-	It is anticpated that the site would be visited by the following
+	It is anticipated that the site would be visited by the following
 	types of user:
 
 		People with Windows or Linux systems that are new to 
@@ -81,7 +92,6 @@ Contents
 			Existing Programmer
 				Utility Programmer
 				Application Programmer
-			Owner
 			Administrator
 
 ### Epic: Header
@@ -97,6 +107,49 @@ Contents
 		Acceptance Criteria
 
 			A set of page links should be presented toward the top of the page
+
+### Epic: As an administrator I can enter or edit or delete text for the xbasic promo pages in order to inform 
+	readers of XB features
+
+	As an administrator I can associate an image with the text for the feature page in order to provide readers 
+		with visual examples
+
+	As an adminstrator I can use text styling features in the text for the feature pages
+
+		We can use the Summernotes editor to provide these features
+
+#### Implementation Notes
+	These features are to be performed using the Django admin pages as exampled in the django-blog
+
+#### Data Models 
+	Each of the feature pages can have many feature sections, so the data models are as follows:
+
+	Feature Page
+
+	Field           Type             Other Aspects
+	page_name       Char(32)         unique
+	page_title		Char(80)
+	slug            SlugField(40)	 from page title
+	page_intro      TextField        Maybe null
+	intro_image		CloudinaryImage
+
+	Feature Page Section  
+
+	Field           Type             Other Aspects
+	title           Char(80)         unique
+	section_number	Integer			 unique - for ordering
+	slug            SlugField(40)    from title
+	feature_page	ForeignKey       from feature_page
+	body			TextField     
+	feature_image   CloudinaryImage  can be null
+
+#### Feature Page Layouts
+
+	The feature pages are built from data models above and the base template.
+
+	A page introduction may or may not be included. Where it is a background image is used.
+
+
 
 ### Epic: Site Introduction
 
@@ -518,26 +571,31 @@ Contents
 
 ## Initial Scope Calculations/Feasibility
 
+	Redrafted 02/04/2023
+
 	Project Component				Man Days	Priority	Actual
-	Planning and Analysis				8			1			10
+	Planning and Analysis				8			1
 	Set-up of XB Doc Pages				1			2			0.2
 	Favicon								0.5			2			0.2
 	Logo / Title						0.5			1			0.5
-	Menues								1			1			1.5
+	Menues								1			1			
 	Footer Links						0.5			2			1
 	Introduction to Site				0.5			1			0.5
-	Introduction to XBasic & PDE		1			1			0.5
+	Introduction to XBasic & PDE		1			1			
 	Introduction to GUI Design			2			2
-	Introduction to Language Features	2			3
-	Introduction to Functions			2			4
-	Introduction to Debugging Features	2			3
+	Introduction to Language Features	2			2
+	Introduction to Functions			2			2
+	Introduction to Debugging Features	2			2
 
-	General User sign-in/registration   6			1
+	General User sign-in/registration   2			1
 
-	Search Problems and Answers			2.2			1
-	Submit Problem						4.5			1
-	Submit Answers						2.5			1
-	Edit Problems/Answers				2			2
+	                        Sub-Total   21
+
+	The following will only be executed if there is sufficient time once the features are done
+	Search Problems and Answers			3    		3
+	Submit Problem						4.5			3
+	Submit Answers						2.5			3
+	Edit Problems/Answers				4			3
 	Totals								38.1
 
 	The available time is 42 man days.
