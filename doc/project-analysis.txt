@@ -7,6 +7,8 @@ Contents
 	Course Tool Requirements
 	Users and Requirements
 		User Stories and Requirements
+			Header
+			Administration Editor
 		Summary of Features to Meet Requirements
 	Budgetary Constraints
 	Feasibility and Initial Design Layouts
@@ -108,7 +110,8 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
-### Epic: As an administrator I can enter or edit or delete text for the xbasic promo pages in order to inform 
+### Administration Editor
+	Epic: As an administrator I can enter or edit or delete text for the xbasic promo pages in order to inform 
 	readers of XB features
 
 	As an administrator I can associate an image with the text for the feature page in order to provide readers 
@@ -149,7 +152,9 @@ Contents
 
 	A page introduction may or may not be included. Where it is a background image is used.
 
-
+	Feature sections are layed-out in 5 column image 7 column text arrangement, with the 
+	text and image alternating sides, full width on small screens. Where the image is
+	absent, the text occupies the full width.
 
 ### Epic: Site Introduction
 
@@ -596,7 +601,8 @@ Contents
 	Submit Problem						4.5			3
 	Submit Answers						2.5			3
 	Edit Problems/Answers				4			3
-	Totals								38.1
+                             Sub Total  14
+	Totals								35
 
 	The available time is 42 man days.
 	We need the problems and answers sections to meet the CI requirements. So
