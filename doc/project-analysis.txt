@@ -134,6 +134,7 @@ Contents
 	page_title		Char(80)
 	slug            SlugField(40)	 from page title
 	page_intro      TextField        Maybe null
+	excerpt         Char(80)         Maybe null, excerpt from page intro
 	intro_image		CloudinaryImage
 
 	Feature Page Section  
@@ -143,7 +144,8 @@ Contents
 	section_number	Integer			 unique - for ordering
 	slug            SlugField(40)    from title
 	feature_page	ForeignKey       from feature_page
-	body			TextField     
+	body			TextField
+	excerpt			Char(80) 		 Text excerpt from body
 	feature_image   CloudinaryImage  can be null
 
 #### Feature Page Layouts
