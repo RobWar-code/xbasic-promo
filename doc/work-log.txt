@@ -7,8 +7,23 @@ Work Due
     Rework Project Notes to allow for Django MVT following the guidelines
     established for portfolio4 of the CI Course.
 
-    Set-up the github project as a Django project - write the procedures to
-    README.md file.
+    * Set-up the github project as a Django project
+
+        write the procedures to README.md file.
+
+    * Setup the feature page model 
+
+        Complete and test the home page as far as the introductory article
+
+        Modify the admin page to allow summernote editing of the intro text
+
+        Review the introductory page
+
+    Setup the Feature Section model
+
+        Setup the admin page editing for the feature sections
+
+        Complete the articles for the home page
 
 Work Done
     27/01/23
