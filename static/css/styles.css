@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine:wght@500&family=Kanit&family=Lato:ital,wght@1,300&family=Montserrat&family=Oswald:wght@300&display=swap');
+
+
+/* ------------------------------General Section */
+.bg-color-menu {
+    background-color: darkblue;
+}
+
+/* ------------------------------General Parts */
+.section-head-col {
+    background-color: #00a0ff;
+}
+
+.section-heading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.xb-image {
+    width: 100%;
+}
+
+.article-col {
+    padding-top: 5px;
+    background: #a0a0ff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ------------------------------Header Section */
+.logo {
+    height: 200px;
+    background: url("../images/logo.webp");
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: cyan;
+}
+.site-heading-bar {
+    height: 100px;
+    background: blue;
+    font-family: "Kanit", sans-serif;
+    color: azure;
+}
+
+/* ------------------------------Menu */
+.menu-bar {
+    height: 100px;
+    align-items: center;
+}
+.menu-item a {
+    font-size: 20px;
+    color: azure !important;
+}
+.menu-item a:hover {
+    background-color: darkgrey;
+}
+.navbar-toggler {
+    background-color: azure !important;
+}
+.menu-block {
+    float: right;
+}
+
+/* ------------------------------Site Intro */
+.site-intro-section {
+    height: 420px;
+    background: url("../images/laptop-01-crop.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+.transparent-text-block {
+    margin-top: 20px;
+    background-color: rgba(50, 50, 150, 0.8);
+    color: azure;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ------------------------------XB Intro */
+
+/* ------------------------------Footer */
+.footer-bar {
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    font-weight: bold;
+}
+
+.footer-link-block {
+    display: inline-block;
+    width: 85px;
+}
+
+.footer-bar a {
+    color: azure;
+}
+
+.footer-bar i {
+    font-size: 32px;
+    color: azure;
+}
+
+/* ------------------------------Media */
+@media(min-width:992px) {
+    .navbar-toggler {
+        background-color: darkblue !important;
+    }
+}
