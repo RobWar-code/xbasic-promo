@@ -63,14 +63,6 @@
 }
 
 /* ------------------------------Site Intro */
-.site-intro-section {
-    height: 420px;
-    background: url("../images/laptop-01-crop.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-}
-
 .transparent-text-block {
     margin-top: 20px;
     background-color: rgba(50, 50, 150, 0.8);
