@@ -137,14 +137,13 @@ Contents
 	excerpt         Char(80)         Maybe null, excerpt from page intro
 	intro_image		CloudinaryImage
 
-	Feature Page Section  
+	Feature Section  
 
 	Field           Type             Other Aspects
 	title           Char(80)         unique
 	section_number	Integer			 unique - for ordering
-	slug            SlugField(40)    from title
 	feature_page	ForeignKey       from feature_page
-	body			TextField
+	article			TextField
 	excerpt			Char(80) 		 Text excerpt from body
 	feature_image   CloudinaryImage  can be null
 

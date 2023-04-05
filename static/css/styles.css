@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine:wght@500&family=Kanit&family=Lato:ital,wght@1,300&family=Montserrat&family=Oswald:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* ------------------------------General Section */
 .bg-color-menu {
@@ -72,6 +76,10 @@
 /* ------------------------------XB Feature Pages */
 .feature-page-heading {
     text-align: center;
+}
+
+.article-text {
+    font-size: 18px;
 }
 
 /* ------------------------------Template Footer */

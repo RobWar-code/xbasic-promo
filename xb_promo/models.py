@@ -15,3 +15,13 @@ class FeaturePage(models.Model):
 
     def __str__(self):
         return self.page_name
+
+
+class FeatureSection(models.Model):
+    title = models.CharField(max_length=80, unique=True)
+    section_number = models.IntegerField()
+    feature_page = models.ForeignKey(FeaturePage, on_delete=models.CASCADE,
+                                     related_name='section')
+    article = models.TextField()
+    excerpt = models.CharField(max_length=80, blank=True)
+    section_image = CloudinaryField('image', default='placeholder')

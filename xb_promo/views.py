@@ -11,10 +11,12 @@ class Feature(View):
 
         queryset = FeaturePage.objects.all()
         feature_page = get_object_or_404(queryset, slug=slug)
+        feature_sections = feature_page.section.order_by('section_number')
         return render(
             request,
             'index.html',
             {
-                'feature_page': feature_page
+                'feature_page': feature_page,
+                'feature_sections': feature_sections
             }
         )

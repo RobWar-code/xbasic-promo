@@ -28,4 +28,31 @@
 </section>
 {% endif %}
 
+{% for section in feature_sections %}
+<section class="container-fluid mt-2 mb-2">
+    <div class="row">
+        {% if forloop.counter|divisibleby:2 %}
+        <div class="col col-md-7">
+            <h3 class="text-center">{{ section.title }}</h3>
+            <p>{{ section.article | safe }}</p>
+        </div>
+        <div class="col col-md-5">
+            <img src="{{ section.section_image.url }}"  width="100%" alt="XBasic Screen">
+        </div>
+        {% else %}
+        <div class="col col-md-5">
+            <img src="{{ section.section_image.url }}" width="100%" alt="XBasic Screen">
+        </div>
+        <div class="col col-md-7">
+            <h3 class="text-center">{{ section.title }}</h3>
+            <p>{{ section.article | safe }}</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% if not forloop.last %}
+<hr>
+{% endif %}
+{% endfor %}
+
 {% endblock content %}

@@ -9,15 +9,10 @@ Work Due
 
     * Set-up the github project as a Django project
 
+        Review the README.md layout example on the CI Course
+
         write the procedures to README.md file.
 
-    * Setup the feature page model 
-
-        * Complete and test the home page as far as the introductory article
-
-        Modify the admin page to allow summernote editing of the intro text
-
-        Review the introductory page
 
     Setup the Feature Section model
 
@@ -26,6 +21,15 @@ Work Due
         Complete the articles for the home page
 
 Work Done
+    05/04/2023
+    * Setup the feature page model 
+
+        * Complete and test the home page as far as the introductory article
+
+        * Modify the admin page to allow summernote editing of the intro text
+
+        * Review the introductory page
+
     27/01/23
     Initial Studies:
     
