@@ -7,7 +7,7 @@ from .models import FeaturePage
 class Feature(View):
     def get(self, request, slug=None, *args, **kwargs):
         if slug is None:
-            slug = "XBasic-Introduction"
+            slug = "xbasic-intro"
 
         queryset = FeaturePage.objects.all()
         feature_page = get_object_or_404(queryset, slug=slug)

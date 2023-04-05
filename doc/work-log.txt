@@ -13,7 +13,7 @@ Work Due
 
     * Setup the feature page model 
 
-        Complete and test the home page as far as the introductory article
+        * Complete and test the home page as far as the introductory article
 
         Modify the admin page to allow summernote editing of the intro text
 

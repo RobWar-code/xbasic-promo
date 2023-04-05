@@ -12,7 +12,7 @@
     }
 </style>
 
-<div class="page-heading">
+<div class="feature-page-heading">
     <h2>{{ feature_page.page_title }}</h2>
 </div>
 {% if feature_page.page_intro is not None %}
@@ -22,7 +22,7 @@
             <!-- Positioning Column -->
         </div>
         <div class="col-11 col-sm-10 col-md-7 col-lg-5 text-center transparent-text-block">
-            <p>{{ feature_page.page_intro }}</p>
+            <p>{{ feature_page.page_intro | safe}}</p>
         </div>
     </div>
 </section>

@@ -28,14 +28,12 @@
 }
 
 /* ------------------------------Header Section */
-.logo {
-    height: 200px;
-    background: url("../images/logo.webp");
-    background-size: 160px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: cyan;
+.logo-link {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
 }
+
 .site-heading-bar {
     height: 100px;
     background: blue;
@@ -71,9 +69,12 @@
     font-weight: 400;
 }
 
-/* ------------------------------XB Intro */
+/* ------------------------------XB Feature Pages */
+.feature-page-heading {
+    text-align: center;
+}
 
-/* ------------------------------Footer */
+/* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;
     align-items: center;
