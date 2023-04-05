@@ -14,11 +14,12 @@ Work Due
         write the procedures to README.md file.
 
 
-    Setup the Feature Section model
+    * Setup the Feature Section model
 
-        Setup the admin page editing for the feature sections
+        * Setup the admin page editing for the feature sections
 
         Complete the articles for the home page
+            Add notes on loading source functions via the View menu.
 
 Work Done
     05/04/2023
