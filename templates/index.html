@@ -34,7 +34,7 @@
         {% if forloop.counter|divisibleby:2 %}
         <div class="col col-md-7">
             <h3 class="text-center">{{ section.title }}</h3>
-            <p>{{ section.article | safe }}</p>
+            <p class="article-text">{{ section.article | safe }}</p>
         </div>
         <div class="col col-md-5">
             <img src="{{ section.section_image.url }}"  width="100%" alt="XBasic Screen">
@@ -45,7 +45,7 @@
         </div>
         <div class="col col-md-7">
             <h3 class="text-center">{{ section.title }}</h3>
-            <p>{{ section.article | safe }}</p>
+            <p class="article-text">{{ section.article | safe }}</p>
         </div>
         {% endif %}
     </div>
