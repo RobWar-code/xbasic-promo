@@ -63,7 +63,12 @@
 .menu-block {
     float: right;
 }
-
+.navbar-nav {
+    float: none !important;
+    position: relative;
+    z-index: 9999;
+    background-color: #000050;
+}
 /* ------------------------------Site Intro */
 .transparent-text-block {
     margin-top: 20px;
