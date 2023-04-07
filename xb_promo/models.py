@@ -25,3 +25,6 @@ class FeatureSection(models.Model):
     article = models.TextField()
     excerpt = models.CharField(max_length=80, blank=True)
     section_image = CloudinaryField('image', default='placeholder')
+
+    class Meta:
+        ordering = ['feature_page', 'section_number']
