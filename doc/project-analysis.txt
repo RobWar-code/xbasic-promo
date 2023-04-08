@@ -362,7 +362,7 @@ Contents
 
 			Email address is confirmed as valid by use of a link from an email
 
-	As a new user I can register a unique username in order to be known to other users and to recognise my own texts
+	As a new user I can register a unique username in order to have texts attributed
 
 		Acceptance Criteria
 
