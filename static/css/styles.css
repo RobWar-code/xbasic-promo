@@ -87,7 +87,17 @@
 .article-text {
     font-size: 18px;
 }
-
+.section-img-right {
+    float: right;
+    margin-left: 2%;
+}
+.section-img-left {
+    float: left;
+    margin-right: 2%;
+}
+.section-img {
+    width: 48%;
+}
 /* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;
@@ -115,5 +125,12 @@
 @media(min-width:992px) {
     .navbar-toggler {
         background-color: darkblue !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-img {
+        float: none;
+        width: 100%;
     }
 }
