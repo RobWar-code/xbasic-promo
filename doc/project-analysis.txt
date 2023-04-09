@@ -342,6 +342,32 @@ Contents
 
 			When the edit button is clicked a submit button appears in the reply area
 
+#### Data Models
+
+	Issues 
+
+	Field                   Type                  Other Aspects 
+	title                   Char(80)              unique 
+	author                  ForeignKey(User)
+	date_submitted          DateTime()            auto
+	description             Char(240)       
+	keywords                Char(240)
+	content                 TextField
+	screenshot_img          CloudinaryImage
+
+	ordering: date_submitted
+
+	Issue Answers
+
+	Field                   Type                  Other Aspects
+	title                   Char(80)              unique
+	author                  ForeignKey(User) 
+	date_submitted          DateTime              auto
+	date_modified           DateTime
+	related_issue           ForeignKey(Issue)
+	content                 TextField 
+	screenshot_img          CloudinaryImage
+
 ### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
 		Acceptance Criteria
