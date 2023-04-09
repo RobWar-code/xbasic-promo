@@ -160,13 +160,13 @@ Contents
 
 ### Epic: Introduction to PDE and XBasic - XBasic Intro page
 
-	As user I can read briefly about the intentions of the site in order to understand the site
+	* As user I can read briefly about the intentions of the site in order to understand the site
 
 		Acceptance Criteria
 
 			There is an introductory panel describing the site
 
-	As a new or existing programmer I can read a brief desciption of the 
+	* As a new or existing programmer I can read a brief desciption of the 
 	XBasic PDE and Language in order to get an overview.
 
 		Acceptance Criteria
@@ -177,7 +177,7 @@ Contents
 
 			There is a screenshot example of some code which has been run
 
-	As a user I can read about the operational platforms for XBasic in order
+	* As a user I can read about the operational platforms for XBasic in order
 	to assess its suitability
 
 		Acceptance Criteria
@@ -193,16 +193,16 @@ Contents
 
 			There is a description of database handling capabilities
 
-	As an application programmer I need to know briefly about GUI capabilities in order to assess the
+	* As an application programmer I need to know briefly about GUI capabilities in order to assess the
 	suitability of the program
 
 		Acceptance Criteria
 
 			There is a brief description of the GUI toolkit
 
-### Epic: GUI Design
+### * Epic: GUI Design
 
-	As an existing programmer I can refer to a description of the GUI toolkit in order to determine
+	* As an existing programmer I can refer to a description of the GUI toolkit in order to determine
 	whether XBasic is suitable for my requirements
 
 		Acceptance Criteria
@@ -210,9 +210,9 @@ Contents
 			GUI toolkit description and screenshots on own page
 
 
-### Epic: Language Features - Language page
+### Epic: * Language Features - Language page
 
-	As a user I can read a summary description of language features in order to gain more insight
+	* As a user I can read a summary description of language features in order to gain more insight
 
 		Acceptance Criteria
 
@@ -226,19 +226,19 @@ Contents
 
 			In the language summary reference to the code examples provided with the download
 
-### Epic: Built-in Functions - Functions page
+### * Epic: Built-in Functions - Functions page
 
 	Feature: Built-in Functions
 
-	As a user I can read about built-in functions in order to gain more insight into language features
+	* As a user I can read about built-in functions in order to gain more insight into language features
 
 		Acceptance Criteria
 
 			On a separate page there is a summary description of built-in functions
 
-### Epic: Debugging Features - Debugging page
+### * Epic: Debugging Features - Debugging page
 
-	As a user I can read a description of debugging features in order to know about ease of coding
+	* As a user I can read a description of debugging features in order to know about ease of coding
 
 		Acceptance Criteria
 
@@ -246,21 +246,21 @@ Contents
 
 			Debugging description is supported by screenshots
 
-### Epic: Footer
+### * Epic: Footer
 
-	As a user I can have access to a detailed description of the language in order to gain a detailed insight
+	* As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
 		Acceptance Criteria
 
 			There is a link in the footer to the XBasic manual
 
-	As a user I can download XBasic in order to use it
+	* As a user I can download XBasic in order to use it
 
 		Acceptance Criteria
 		
 			Links to the sourceforge and github sites in the footer with text
 
-	As a user I can connect to other users in order to discuss issues
+	* As a user I can connect to other users in order to discuss issues
 
 		Links to the groups.io and sourceforge sites
 
@@ -352,9 +352,9 @@ Contents
 			The layout of the reply form is very similar to the issue form
 
 
-### Epic: As a new user I can register myself in order to be known to the XBasic community
+### * Epic: As a new user I can register myself in order to be known to the XBasic community
 
-	As a new user I can register my email address in order to receive XBasic mailings
+	* As a new user I can register my email address in order to receive XBasic mailings
 
 		Acceptance Criteria
 
@@ -362,7 +362,7 @@ Contents
 
 			Email address is confirmed as valid by use of a link from an email
 
-	As a new user I can register a unique username in order to have texts attributed
+	* As a new user I can register a unique username in order to have texts attributed
 
 		Acceptance Criteria
 
@@ -370,56 +370,13 @@ Contents
 
 			Username is checked as unique
 
-	As a new user I can securely identify myself by the use of a password in order to login 
+	* As a new user I can securely identify myself by the use of a password in order to login 
 
 		Acceptance Criteria
 
 			Registration allows for password
 
 			Password is entered twice to allow for checking
-
-### Epic: As an owner I can set-up admin details for administrators/owners to be able to edit issues and replies
-
-		Acceptance Criteria
-
-			An owner has reserved access to a page for entering administrator/admin details
-
-		As an owner, I should be able to see a list of existing owner/administrators for editing
-
-			Acceptance Criteria
-
-				The owner/administrator page has a scrollable list of entries
-
-				Clicking on an entry enables the delete option
-
-		As an owner I can enter a name for an owner/administrator in order to 
-		identify the administrator
-
-			Acceptance Criteria
-			
-				The user admin page has an Add New Admin button that brings-up an editable
-				form
-
-				The user admin page has a name field for entering an owner/administrator's name
-
-				The name should be validated as all alphabetic
-
-		As an owner I can enter an email address for the owner/administrator in order to be able to
-		send appropriate login details
-
-			Acceptance Criteria
-
-				The email address should be validated in the same way as for user registration
-
-		As an owner I can indicate whether a user is admin or owner in order to
-		give them appropriate permissions 
-
-			Acceptance Criteria
-
-				There are radio buttons for the owner/administrator being updated
-
-		As an owner I can delete an entry for an owner/administrator in order to 
-		suspend/remove an owner/admin
 
 ### Other Considerations
 	Mobile Phone User:
