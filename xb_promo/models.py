@@ -30,10 +30,11 @@ class FeatureSection(models.Model):
         ordering = ['feature_page', 'section_number']
 
 
-class Issues(model.Model):
+class Issue(models.Model):
     title = models.CharField(max_length=80, unique=True)
     slug = models.SlugField(max_length=80, unique=True)
-    author = models.ForeignKey(User, related_name='issue')
+    author = models.ForeignKey(User, on_delete=models.SET_NULL,
+                               related_name='user_issue', null=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
     priority = models.IntegerField()
     description = models.CharField(max_length=240)
@@ -48,13 +49,14 @@ class Issues(model.Model):
         return self.title
 
 
-class Answers(model.Model):
+class Answer(models.Model):
     title = models.CharField(max_length=80, unique=True)
-    author = models.ForeignKey(User, related_name='user_answer')
+    author = models.ForeignKey(User, on_delete=models.SET_NULL,
+                               related_name='user_answer', null=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
     priority = models.IntegerField()
-    related_issue = models.ForeignKey(Issues, on_delete=models.CASCADE,
+    related_issue = models.ForeignKey(Issue, on_delete=models.CASCADE,
                                       related_name='issue_answer')
     content = models.TextField()
     screenshot_img = CloudinaryField('image', default='placeholder')

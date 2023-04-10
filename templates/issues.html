@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center page-heading">
+                <h2>XBasic Issues, Problems and Answers</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="issue-header">Issue</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <form action="#" method="GET">
+                    <input class="issue-search" name="issue_search" type="text" placeholder="Title, Description or Keyword words">
+                    <button class="btn-submit" type="submit">
+                        <i class="fas fa-search search-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -98,6 +98,17 @@
 .section-img {
     width: 48%;
 }
+/* ------------------------------Issues Main Page */
+.issue-header {
+    font-weight: bold;
+}
+.issue-search {
+    width: 90%;
+    font-size: 18px;
+}
+.search-icon {
+    font-size: 24px;
+}
 /* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;

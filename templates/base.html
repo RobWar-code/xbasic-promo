@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>XBasic Promo</title>
 
     <script src="https://kit.fontawesome.com/8b758f6b51.js" crossorigin="anonymous"></script>
@@ -62,7 +62,7 @@
                                     <a class="nav-link" href="{% url 'feature_page' 'debugging' %}">Debugging</a>
                                 </li>
                                 <li class="nav-item active menu-item">
-                                    <a class="nav-link" href="#">Issues</a>
+                                    <a class="nav-link" href="{% url 'issue_display' %}">Issues</a>
                                 </li>
                                 <li class="nav-item active menu-item">
                                     <a class="nav-link" href="{% url 'account_login' %}">Sign-in/up</a>

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import FeaturePage, FeatureSection, Issues, Answers
+from .models import FeaturePage, FeatureSection, Issue, Answer
 
 
 # Register your models here.
@@ -16,13 +16,15 @@ class SectionAdmin(SummernoteModelAdmin):
     list_display = ('feature_page', 'title')
 
 
-@admin.register(Issues)
+@admin.register(Issue)
 class IssueAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
+    prepopulated_fields = {'slug': ('title', )}
     list_display = ('title', 'date_submitted')
 
 
-@admin.register(Answers)
+@admin.register(Answer)
 class AnswerAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
+    search_fields = ['related_issue']
     list_display = ('related_issue', "title", "date_submitted")
