@@ -348,14 +348,16 @@ Contents
 
 	Field                   Type                  Other Aspects 
 	title                   Char(80)              unique 
+	slug					SlugField(80)
 	author                  ForeignKey(User)
 	date_submitted          DateTime()            auto
+	priority                Integer               default 3
 	description             Char(240)       
 	keywords                Char(240)
 	content                 TextField
 	screenshot_img          CloudinaryImage
 
-	ordering: date_submitted
+	ordering: priority, date_submitted
 
 	Issue Answers
 
@@ -363,10 +365,17 @@ Contents
 	title                   Char(80)              unique
 	author                  ForeignKey(User) 
 	date_submitted          DateTime              auto
-	date_modified           DateTime
+	date_modified           DateTime			  auto
+	priority                Integer               default 3
 	related_issue           ForeignKey(Issue)
 	content                 TextField 
 	screenshot_img          CloudinaryImage
+
+	ordering: related_issue, priority, date_modified
+
+#### Related References
+Forms reference: https://docs.djangoproject.com/en/dev/topics/forms/
+Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/
 
 ### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
