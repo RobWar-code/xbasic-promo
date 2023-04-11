@@ -109,6 +109,13 @@
 .search-icon {
     font-size: 24px;
 }
+.btn-edit-submit {
+    background: #00c000;
+    width:100%;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: outset;
+}
 /* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;

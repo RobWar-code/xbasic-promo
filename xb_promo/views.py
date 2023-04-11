@@ -29,25 +29,29 @@ class IssueDisplay(View):
         else:
             issue_num = kwargs['issue_num']
         queryset = Issue.objects.all()
+        num_issues = len(queryset)
         if issue_num < 0:
             issue_num = 0
-        elif issue_num > len(queryset):
-            issue_num = len(queryset) - 1
+        elif issue_num > num_issues:
+            issue_num = num_issues - 1
         issue = queryset[issue_num]
         answer_set = issue.issue_answer.all()
+        num_answers = len(answer_set)
         if 'answer_num' not in kwargs:
             answer_num = 0
         else:
             answer_num = kwargs['answer_num']
         if answer_num < 0:
             answer_num = 0
-        elif answer_num > len(answer_set):
-            answer_num = len(answer_set) - 1
+        elif answer_num >= num_answers:
+            answer_num = num_answers - 1
         answer = answer_set[answer_num]
         return render(
             request,
             'issues.html',
             {
+                'num_issues': num_issues,
+                'num_answers': num_answers,
                 'issue_num': 0,
                 'issue': issue,
                 'answer_num': 0,

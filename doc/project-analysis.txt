@@ -293,7 +293,7 @@ Contents
 
 			The keywords field is supported by explanatory text
 
-	As a user I can more clearly explain my issue with a screenshot/s in order to communicate the issue
+	As a user I can more clearly explain my issue with a screenshot in order to communicate the issue
 
 		Acceptance Criteria
 

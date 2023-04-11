@@ -36,7 +36,7 @@ class Issue(models.Model):
     author = models.ForeignKey(User, on_delete=models.SET_NULL,
                                related_name='user_issue', null=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
-    priority = models.IntegerField()
+    priority = models.IntegerField(default=3)
     description = models.CharField(max_length=240)
     keywords = models.CharField(max_length=240)
     content = models.TextField()
@@ -55,7 +55,7 @@ class Answer(models.Model):
                                related_name='user_answer', null=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
-    priority = models.IntegerField()
+    priority = models.IntegerField(default=3)
     related_issue = models.ForeignKey(Issue, on_delete=models.CASCADE,
                                       related_name='issue_answer')
     content = models.TextField()
