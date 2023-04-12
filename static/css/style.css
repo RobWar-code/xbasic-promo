@@ -119,10 +119,15 @@
 
 /* ------------------------------Issue Panel */
 .issue_panel {
+    max-height: 500px;
     border: solid black 1px;
+    overflow-y: scroll;
 }
 .issue_panel p {
     margin-bottom: 0;
+}
+.screenshot-img {
+    width: 100%;
 }
 
 /* ------------------------------Template Footer */
