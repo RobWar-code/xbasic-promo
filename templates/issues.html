@@ -52,16 +52,14 @@
                 </a>
                 {% endwith %}
             </div>
-            {% if not user.is_authenticated %}
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="alert alert-warning">
-                        Please login/register in order to be able to add an issue
-                    </p>
-                </div>
-            </div>
-            {% endif %}
         </div>
-        {% include "issue_panel.html" with issue=issue %}
+        {% if not user.is_authenticated %}
+        <div class="row">
+            <div class="col-10 offset-1 alert-adjust alert alert-warning text-center" role="alert">
+                Please register/login in order to add an issue
+            </div>
+        </div>
+        {% endif %}
+    {% include "issue_panel.html" with issue=issue %}
     </div>
 {% endblock content %}
