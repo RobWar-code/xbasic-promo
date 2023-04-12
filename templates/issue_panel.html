@@ -25,10 +25,10 @@
             {{ issue.content|safe }}
         </div>
     </div>
-    {% if answer.screenshot_img %}
+    {% if 'placeholder' not in issue.screenshot_img.url %}
     <div class="row">
         <div class="col-12">
-            <img class="screenshot-img" src="{{ answer.screenshot_img.url }}" alt="Screenshot">
+            <img class="screenshot-img" src="{{ issue.screenshot_img.url }}" alt="Screenshot">
         </div>
     </div>
     {% endif %}
