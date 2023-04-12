@@ -52,6 +52,16 @@
                 </a>
                 {% endwith %}
             </div>
+            {% if not user.is_authenticated %}
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="alert alert-warning">
+                        Please login/register in order to be able to add an issue
+                    </p>
+                </div>
+            </div>
+            {% endif %}
         </div>
+        {% include "issue_panel.html" with issue=issue %}
     </div>
 {% endblock content %}

@@ -116,6 +116,14 @@
     font-weight: bold;
     border-style: outset;
 }
+
+/* ------------------------------Issue Panel */
+.issue_panel {
+    border: solid black 1px;
+}
+.issue_panel p {
+    margin-bottom: 0;
+}
 /* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;

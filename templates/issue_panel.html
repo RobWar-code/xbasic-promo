@@ -1,0 +1,35 @@
+<div class="container-fluid issue_panel mb-3">
+    <div class="row">
+        <div class="col-4">
+            <p>Title: {{ issue.title }}</p>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4 text-right">
+            <p>Author: {{ issue.author }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Description: {{ issue.description }}</p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 text-right">
+            <p>Date: {{ issue.date_submitted|date:"d/m/Y" }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Keywords: {{ issue.keywords }}</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-12 text-center">
+            <p><strong>CONTENT</strong></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ issue.content|safe }}
+        </div>
+    </div>
+</div>
