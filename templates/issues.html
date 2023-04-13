@@ -14,7 +14,7 @@
         </div>
         <div class="row mb-3">
             <div class="col-12 text-center">
-                <form action="#" method="GET">
+                <form action="{% url 'step_issue' issue_num=0 answer_num=0 %}" method="GET">
                     <input class="issue-search" name="issue_search" type="text" placeholder="Title, Description or Keyword words">
                     <button class="btn-submit" type="submit">
                         <i class="fas fa-search search-icon"></i>

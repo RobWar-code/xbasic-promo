@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.contrib.postgres.search import SearchQuery, SearchRank
 from .models import FeaturePage, Issue, Answer
 
 
@@ -24,11 +25,22 @@ class Feature(View):
 
 class IssueDisplay(View):
     def get(self, request, *args, **kwargs):
+        if request.GET.get('issue_search'):
+            search_field = request.GET.get('issue_search')
+            print("search_field:", search_field)
+            if search_field:
+                query = SearchQuery(search_field)
+                queryset = Issue.objects.annotate(
+                    rank=SearchRank('search_vector', query)).order_by('-rank')
+        else:
+            search_field = ""
+        if search_field == "":
+            queryset = Issue.objects.all()
+
         if 'issue_num' not in kwargs:
             issue_num = 0
         else:
             issue_num = kwargs['issue_num']
-        queryset = Issue.objects.all()
         num_issues = len(queryset)
         if issue_num < 0:
             issue_num = 0
@@ -50,6 +62,7 @@ class IssueDisplay(View):
             request,
             'issues.html',
             {
+                'search_field': search_field,
                 'num_issues': num_issues,
                 'num_answers': num_answers,
                 'issue_num': 0,

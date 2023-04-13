@@ -1,4 +1,8 @@
 from django.db import models
+from django.contrib.postgres.search import SearchVector, SearchVectorField
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.contrib.postgres.indexes import GinIndex
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
@@ -41,12 +45,24 @@ class Issue(models.Model):
     keywords = models.CharField(max_length=240)
     content = models.TextField()
     screenshot_img = CloudinaryField('image', default='placeholder')
+    search_vector = SearchVectorField(null=True, blank=True)
 
     class Meta:
         ordering = ['priority', 'date_submitted']
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        self.update_search_vector()
+        super().save(*args, **kwargs)
+
+    def update_search_vector(self):
+        self.search_vector = (
+            SearchVector("title", weight="A")
+            + SearchVector("keywords", weight="B")
+            + SearchVector("description", weight="C")
+        )
 
 
 class Answer(models.Model):
