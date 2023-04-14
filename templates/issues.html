@@ -14,8 +14,14 @@
         </div>
         <div class="row mb-3">
             <div class="col-12 text-center">
-                <form action="{% url 'step_issue' issue_num=0 answer_num=0 %}" method="GET">
-                    <input class="issue-search" name="issue_search" type="text" placeholder="Title, Description or Keyword words">
+                <form action="{% url 'issue_display' %}" method="GET">
+                    {% if search_field == "X" %}
+                    <input class="issue-search" name="issue_search" type="text" 
+                        placeholder="Title, Description or Keyword words">
+                    {% else %}
+                    <input class="issue-search" name="issue_search" type="text" 
+                        value="{{ search_field }}">
+                    {% endif %}
                     <button class="btn-submit" type="submit">
                         <i class="fas fa-search search-icon"></i>
                     </button>
@@ -27,12 +33,12 @@
         <div class="row mb-1">
             <div class="col-3">
                 {% if issue_num == 0 %}
-                <a href="{% url 'step_issue' issue_num=0 answer_num=0 %}">
+                <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field%}">
                     <button class="btn-edit-submit">Prev</button>
                 </a>
                 {% else %} 
                     {% with issue_num=issue_num|add:-1 %} 
-                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 %}">
+                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field%}">
                         <button class="btn-edit-submit">Prev</button>
                     </a>
                     {% endwith %}
@@ -47,7 +53,7 @@
             <div class="col-1"></div>
             <div class="col-3">
                 {% with issue_num=issue_num|add:1 %} 
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 %}">
+                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
                     <button class="btn-edit-submit">Next</button>
                 </a>
                 {% endwith %}
@@ -71,12 +77,12 @@
         <div class="row mb-1">
             <div class="col-3">
                 {% if issue_num == 0 %}
-                <a href="{% url 'step_issue' issue_num=0 answer_num=0 %}">
+                <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field %}">
                     <button class="btn-edit-submit">Prev</button>
                 </a>
                 {% else %} 
                     {% with issue_num=issue_num|add:-1 %} 
-                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 %}">
+                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field%}">
                         <button class="btn-edit-submit">Prev</button>
                     </a>
                     {% endwith %}
@@ -91,7 +97,7 @@
             <div class="col-1"></div>
             <div class="col-3">
                 {% with issue_num=issue_num|add:1 %} 
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 %}">
+                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
                     <button class="btn-edit-submit">Next</button>
                 </a>
                 {% endwith %}

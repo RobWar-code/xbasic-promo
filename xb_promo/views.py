@@ -25,16 +25,20 @@ class Feature(View):
 
 class IssueDisplay(View):
     def get(self, request, *args, **kwargs):
+        search_field = "X"
+        # Initial Entry to Page
+        if 'search_field' in kwargs:
+            search_field = kwargs['search_field']  # Indicates no search field
         if request.GET.get('issue_search'):
             search_field = request.GET.get('issue_search')
-            print("search_field:", search_field)
-            if search_field:
-                query = SearchQuery(search_field)
-                queryset = Issue.objects.annotate(
-                    rank=SearchRank('search_vector', query)).order_by('-rank')
+            if not search_field:
+                search_field = "X"
+
+        if search_field != "X":
+            query = SearchQuery(search_field)
+            queryset = Issue.objects.annotate(
+                rank=SearchRank('search_vector', query)).order_by('-rank')
         else:
-            search_field = ""
-        if search_field == "":
             queryset = Issue.objects.all()
 
         if 'issue_num' not in kwargs:
@@ -65,9 +69,9 @@ class IssueDisplay(View):
                 'search_field': search_field,
                 'num_issues': num_issues,
                 'num_answers': num_answers,
-                'issue_num': 0,
+                'issue_num': issue_num,
                 'issue': issue,
-                'answer_num': 0,
+                'answer_num': answer_num,
                 'answer': answer
             }
         )
