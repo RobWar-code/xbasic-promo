@@ -17,7 +17,7 @@ from pathlib import Path
 if os.path.isfile("env.py"):
     import env
 
-os.environ.setdefault('DEBUG', 'True')
+DEBUG = os.environ.get('DEBUG', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
