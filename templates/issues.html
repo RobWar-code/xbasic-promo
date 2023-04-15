@@ -27,7 +27,7 @@
                     </button>
                 </form>
                 <br>
-                <p>Number Found: {{ num_issues }} Current Item: {{ issue_num }}</p>
+                <p>Number Found: {{ num_issues }} Current Item: {{ issue_num|add:1 }}</p>
             </div>
         </div>
         <div class="row mb-1">
@@ -72,17 +72,18 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h3 class="issue-header">Answers</h3>
+                <p>Number Found: {{ num_answers }} Current Item: {{ answer_num|add:1 }}</p>
             </div>
         </div>
         <div class="row mb-1">
             <div class="col-3">
-                {% if issue_num == 0 %}
-                <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field %}">
+                {% if answer_num == 0 %}
+                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
                     <button class="btn-edit-submit">Prev</button>
                 </a>
                 {% else %} 
-                    {% with issue_num=issue_num|add:-1 %} 
-                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field%}">
+                    {% with answer_num=answer_num|add:-1 %} 
+                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=answer_num search_field=search_field %}">
                         <button class="btn-edit-submit">Prev</button>
                     </a>
                     {% endwith %}
@@ -96,8 +97,8 @@
             </div>
             <div class="col-1"></div>
             <div class="col-3">
-                {% with issue_num=issue_num|add:1 %} 
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
+                {% with answer_num=answer_num|add:1 %} 
+                <a href="{% url 'step_issue' issue_num=issue_num answer_num=answer_num search_field=search_field %}">
                     <button class="btn-edit-submit">Next</button>
                 </a>
                 {% endwith %}

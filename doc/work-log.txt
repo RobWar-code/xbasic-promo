@@ -3,7 +3,15 @@ Contents
     Work Done
 
 Work Due 
+    * Do the issues/answers page and models
 
+        Modify the current issue number to begin at 1 instead of 0
+
+        Include the current answer number and number of answers
+
+        Consider doing the current item/step and add buttons as a single template
+
+        
     Rework Project Notes to allow for Django MVT following the guidelines
     established for portfolio4 of the CI Course.
 
