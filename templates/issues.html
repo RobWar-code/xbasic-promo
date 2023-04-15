@@ -26,39 +26,11 @@
                         <i class="fas fa-search search-icon"></i>
                     </button>
                 </form>
-                <br>
-                <p>Number Found: {{ num_issues }} Current Item: {{ issue_num|add:1 }}</p>
             </div>
         </div>
-        <div class="row mb-1">
-            <div class="col-3">
-                {% if issue_num == 0 %}
-                <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field%}">
-                    <button class="btn-edit-submit">Prev</button>
-                </a>
-                {% else %} 
-                    {% with issue_num=issue_num|add:-1 %} 
-                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field%}">
-                        <button class="btn-edit-submit">Prev</button>
-                    </a>
-                    {% endwith %}
-                {% endif %}
-            </div>
-            <div class="col-1"></div>
-            <div class="col-4">
-                <a href="#">
-                    <button class="btn-edit-submit">Add New</button>
-                </a>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-3">
-                {% with issue_num=issue_num|add:1 %} 
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
-                    <button class="btn-edit-submit">Next</button>
-                </a>
-                {% endwith %}
-            </div>
-        </div>
+
+        {% include 'issue_control.html' with type="issue" record=issue num_items=num_issues item_num=issue_num %}
+
         {% if not user.is_authenticated %}
         <div class="row">
             <div class="col-10 offset-1 alert alert-warning text-center" role="alert">
@@ -69,41 +41,9 @@
         {% include "issue_panel.html" with issue=issue %}
 
         <!-- Answer Section -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3 class="issue-header">Answers</h3>
-                <p>Number Found: {{ num_answers }} Current Item: {{ answer_num|add:1 }}</p>
-            </div>
-        </div>
-        <div class="row mb-1">
-            <div class="col-sm-4 col-md-3">
-                {% if answer_num == 0 %}
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
-                    <button class="btn-edit-submit">Prev</button>
-                </a>
-                {% else %} 
-                    {% with answer_num=answer_num|add:-1 %} 
-                    <a href="{% url 'step_issue' issue_num=issue_num answer_num=answer_num search_field=search_field %}">
-                        <button class="btn-edit-submit">Prev</button>
-                    </a>
-                    {% endwith %}
-                {% endif %}
-            </div>
-            <div class="col-sm-0 col-md-1"></div>
-            <div class="col-sm-4 col-md-4">
-                <a href="#">
-                    <button class="btn-edit-submit">Add New</button>
-                </a>
-            </div>
-            <div class="col-sm-0 col-md-1"></div>
-            <div class="col-sm-4 col-md-3">
-                {% with answer_num=answer_num|add:1 %} 
-                <a href="{% url 'step_issue' issue_num=issue_num answer_num=answer_num search_field=search_field %}">
-                    <button class="btn-edit-submit">Next</button>
-                </a>
-                {% endwith %}
-            </div>
-        </div>
+        {% include 'issue_control.html' with type="answer" record=answer num_items=num_answers item_num=answer_num %}
+
         {% include 'answer_panel.html' with answer=answer %}
+        
     </div>
 {% endblock content %}

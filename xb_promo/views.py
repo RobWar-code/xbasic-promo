@@ -75,3 +75,4 @@ class IssueDisplay(View):
                 'answer': answer
             }
         )
+

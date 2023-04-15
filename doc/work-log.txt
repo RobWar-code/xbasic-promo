@@ -3,15 +3,27 @@ Contents
     Work Done
 
 Work Due 
+    On the main menu, only put log-out if the user is logged-in
+
+    On the main menu, only put sign-up/in if the user is not logged-in
+
+    Tidy-up the sign-out display
+
+
     * Do the issues/answers page and models
 
-        Modify the current issue number to begin at 1 instead of 0
+        * Modify the current issue number to begin at 1 instead of 0
 
-        Include the current answer number and number of answers
+        * Include the current answer number and number of answers
 
-        Consider doing the current item/step and add buttons as a single template
+        Consider doing the current item/step and edit buttons as a single template
 
-        
+        Check the issue menu when the author is logged-in
+                
+    Edit Issue (owner only)
+    Add Issue (owner or logged-in user)
+    Delete Issue (owner only)
+
     Rework Project Notes to allow for Django MVT following the guidelines
     established for portfolio4 of the CI Course.
 
