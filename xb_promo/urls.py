@@ -7,4 +7,6 @@ urlpatterns = [
     path('issues/', views.IssueDisplay.as_view(), name='issue_display'),
     path('issues/<int:issue_num>/<int:answer_num>/<str:search_field>/',
          views.IssueDisplay.as_view(), name='step_issue'),
+    path('edit_issue/<int:issue_id>/', views.IssueEdit.as_view(),
+         name='edit_issue'),
 ]

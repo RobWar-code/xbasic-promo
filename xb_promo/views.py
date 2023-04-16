@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.contrib.postgres.search import SearchQuery, SearchRank
 from .models import FeaturePage, Issue, Answer
+from .forms import IssueForm
 
 
 # Create your views here.
@@ -76,3 +77,21 @@ class IssueDisplay(View):
             }
         )
 
+
+class IssueEdit(View):
+    def get(self, request, *args, **kwargs):
+        # Keyword arguments are: issue_num, search_field
+        search_field = kwargs['search_field']
+        if search_field == "X":  # Empty search field
+            queryset = Issue.objects.all()
+        else:
+            query = SearchQuery(search_field)
+            queryset = Issue.objects.annotate(
+                rank=SearchRank('search_vector', query)).order_by('-rank')
+
+        issue_num = kwargs['issue_num']
+        issue = queryset[issue_num]
+        issue_id = issue.issue_id
+        form = IssueForm(issue)
+        return render(request, 'edit_issue.html',
+                      {'form': form, 'issue_id': issue_id})
