@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.http import HttpResponse
 from django.contrib.postgres.search import SearchQuery, SearchRank
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm
@@ -91,7 +92,8 @@ class IssueEdit(View):
 
         issue_num = kwargs['issue_num']
         issue = queryset[issue_num]
-        issue_id = issue.issue_id
-        form = IssueForm(issue)
+        issue_id = issue.id
+        issue = get_object_or_404(Issue, pk=issue_id)
+        form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
                       {'form': form, 'issue_id': issue_id})
