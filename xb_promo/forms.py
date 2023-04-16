@@ -7,8 +7,18 @@ class IssueForm(forms.ModelForm):
 
     class Meta:
         model = Issue
-        fields = ('title', 'content')
+        fields = (
+            'title',
+            'description',
+            'keywords',
+            'content',
+            'screenshot_img'
+        )
 
     widgets = {
-        'content': SummernoteWidget()
+        'content': SummernoteWidget(),
     }
+    description = forms.CharField(widget=forms.
+                                  TextInput(attrs={'style': 'width: 80%'}))
+    keywords = forms.CharField(widget=forms.
+                               TextInput(attrs={'style': 'width: 81%'}))
