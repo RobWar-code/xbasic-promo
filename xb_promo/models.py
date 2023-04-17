@@ -44,7 +44,8 @@ class Issue(models.Model):
     description = models.CharField(max_length=240)
     keywords = models.CharField(max_length=240)
     content = models.TextField()
-    screenshot_img = CloudinaryField('image', default='placeholder')
+    screenshot_img = CloudinaryField('image', default='placeholder',
+                                     blank=True)
     search_vector = SearchVectorField(null=True, blank=True)
 
     class Meta:

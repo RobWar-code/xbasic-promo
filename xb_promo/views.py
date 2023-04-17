@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from django.http import HttpResponse
 from django.contrib.postgres.search import SearchQuery, SearchRank
@@ -96,4 +96,27 @@ class IssueEdit(View):
         issue = get_object_or_404(Issue, pk=issue_id)
         form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
-                      {'form': form, 'issue_id': issue_id})
+                      {'form': form,
+                       'issue_num': issue_num,
+                       'search_field': search_field,
+                       'issue_id': issue_id})
+
+    def post(self, request, *args, **kwargs):
+        issue_num = kwargs['issue_num']
+        search_field = kwargs['search_field']
+        issue_id = kwargs['issue_id']
+        issue = get_object_or_404(Issue, pk=issue_id)
+        # Update record
+        issue_form = IssueForm(request.POST, instance=issue)
+        if issue_form.is_valid():
+            issue_form.save()
+            answer_num = 0
+            return redirect('step_issue', issue_num=issue_num,
+                            answer_num=answer_num, search_field=search_field)
+
+        form = IssueForm(instance=issue)
+        return render(request, 'edit_issue.html',
+                      {'form': form,
+                       'issue_num': issue_num,
+                       'search_field': search_field,
+                       'issue_id': issue_id})

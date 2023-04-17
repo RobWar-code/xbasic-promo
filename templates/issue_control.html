@@ -62,7 +62,7 @@
     <div class="col-xs-4 col-sm-2 col-md-2">
         {% with item_num=item_num|add:1 %}
             {% if type == 'issue' %}
-            <a href="{% url 'step_issue' issue_num=issue_num answer_num=0 search_field=search_field %}">
+            <a href="{% url 'step_issue' issue_num=item_num answer_num=0 search_field=search_field %}">
                 <button class="btn-edit-submit">Next</button>
             </a>
             {% else %}

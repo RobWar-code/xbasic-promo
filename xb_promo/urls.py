@@ -9,6 +9,6 @@ urlpatterns = [
          views.IssueDisplay.as_view(), name='step_issue'),
     path('edit_issue/<int:issue_num>/<str:search_field>/<int:issue_id>/',
          views.IssueEdit.as_view(), name='edit_issue'),
-    path('edit_issue/<int:issue_id>/',
-         views.IssueEdit.as_view(), name='edit_issue_present'),
+    # path('edit_issue/<int:issue_id>/',
+    #     views.IssueEdit.as_view(), name='edit_issue_present'),
 ]
