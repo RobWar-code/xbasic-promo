@@ -55,15 +55,21 @@ class Issue(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        self.update_search_vector()
+        if self.pk is not None:
+            self.set_search_vector()
         super().save(*args, **kwargs)
 
-    def update_search_vector(self):
+    def set_search_vector(self):
         self.search_vector = (
             SearchVector("title", weight="A")
             + SearchVector("keywords", weight="B")
             + SearchVector("description", weight="C")
         )
+
+#    def update_search_vector(self):
+#       if self.pk is not None:
+#            Issue.objects.filter(pk=self.pk).\
+#                update(search_vector=models.F('search_vector'))
 
 
 class Answer(models.Model):

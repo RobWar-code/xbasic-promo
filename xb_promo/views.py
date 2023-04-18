@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from django.http import HttpResponse
+from django.utils.text import slugify
 from django.contrib.postgres.search import SearchQuery, SearchRank
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm
@@ -59,11 +60,16 @@ class IssueDisplay(View):
             answer_num = 0
         else:
             answer_num = kwargs['answer_num']
-        if answer_num < 0:
+        if num_answers == 0:
             answer_num = 0
-        elif answer_num >= num_answers:
-            answer_num = num_answers - 1
-        answer = answer_set[answer_num]
+            answer = None
+        else:
+            if answer_num < 0:
+                answer_num = 0
+            elif answer_num >= num_answers:
+                answer_num = num_answers - 1
+            answer = answer_set[answer_num]
+
         return render(
             request,
             'issues.html',
@@ -97,6 +103,7 @@ class IssueEdit(View):
         form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
                       {'form': form,
+                       'edit': 1,
                        'issue_num': issue_num,
                        'search_field': search_field,
                        'issue_id': issue_id})
@@ -117,6 +124,30 @@ class IssueEdit(View):
         form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
                       {'form': form,
+                       'edit': 1,
                        'issue_num': issue_num,
                        'search_field': search_field,
                        'issue_id': issue_id})
+
+
+class IssueAdd(View):
+    def get(self, request, *args, **kwargs):
+        form = IssueForm()
+        return render(request, 'edit_issue.html', {'form': form, 'edit': 0})
+
+    def post(self, request, *args, **kwargs):
+        issue_form = IssueForm(request.POST)
+        if issue_form.is_valid():
+            instance = issue_form.save(commit=False)
+            instance.slug = slugify(instance.title)
+            instance.save()
+            # Fetch this record to be represented on the issue display
+            title = issue_form.cleaned_data['title']
+            search_field = title
+            issue_num = 0
+            answer_num = 0
+            return redirect('step_issue', issue_num=issue_num,
+                            answer_num=answer_num, search_field=search_field)
+
+        return render(request, 'edit_issue.html',
+                      {'form': issue_form, 'edit': 0})

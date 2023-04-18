@@ -9,6 +9,7 @@ Work Due
 
     Tidy-up the sign-out display
 
+    On the issue display, when there are no answers display on the New answer button - issue control html
 
     * Do the issues/answers page and models
 

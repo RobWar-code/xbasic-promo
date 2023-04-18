@@ -41,6 +41,11 @@
         {% include "issue_panel.html" with issue=issue %}
 
         <!-- Answer Section -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="issue-header">Answers</h3>
+            </div>
+        </div>
         {% include 'issue_control.html' with type="answer" record=answer num_items=num_answers item_num=answer_num %}
 
         {% include 'answer_panel.html' with answer=answer %}
