@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from django.http import HttpResponse
 from django.utils.text import slugify
-from django.contrib.postgres.search import SearchQuery, SearchRank
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.db.models import F
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm
 
@@ -51,7 +52,7 @@ class IssueDisplay(View):
         num_issues = len(queryset)
         if issue_num < 0:
             issue_num = 0
-        elif issue_num > num_issues:
+        elif issue_num >= num_issues:
             issue_num = num_issues - 1
         issue = queryset[issue_num]
         answer_set = issue.issue_answer.all()
@@ -141,6 +142,11 @@ class IssueAdd(View):
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
             instance.save()
+            # Get the saved record and resave so that we can update the search vector
+            title = instance.title
+            issue_record = get_object_or_404(Issue, title=title)
+            issue_record.save()
+
             # Fetch this record to be represented on the issue display
             title = issue_form.cleaned_data['title']
             search_field = title

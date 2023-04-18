@@ -9,7 +9,9 @@ Work Due
 
     Tidy-up the sign-out display
 
-    On the issue display, when there are no answers display on the New answer button - issue control html
+    Do the delete operation on the issues
+
+    On the issue display, when there are no answers, display only the New answer button - issue control html
 
     * Do the issues/answers page and models
 
@@ -17,7 +19,7 @@ Work Due
 
         * Include the current answer number and number of answers
 
-        Consider doing the current item/step and edit buttons as a single template
+        * Consider doing the current item/step and edit buttons as a single template
 
         Check the issue menu when the author is logged-in
                 

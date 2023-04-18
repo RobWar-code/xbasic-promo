@@ -65,11 +65,8 @@ class Issue(models.Model):
             + SearchVector("keywords", weight="B")
             + SearchVector("description", weight="C")
         )
-
-#    def update_search_vector(self):
-#       if self.pk is not None:
-#            Issue.objects.filter(pk=self.pk).\
-#                update(search_vector=models.F('search_vector'))
+        Issue.objects.filter(pk=self.pk).\
+            update(search_vector=models.F('search_vector'))
 
 
 class Answer(models.Model):
