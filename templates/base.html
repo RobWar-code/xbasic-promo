@@ -133,7 +133,31 @@
 
     <script>
         $(document).ready(function() {
-          $('#id_content').summernote();
+            $('#id_content').summernote();
+
+            $('#deleteIssueButton').click(function() {
+                $('#confirmationModal').data('url', deleteIssueUrl);
+                $('#confirmationModal').modal('show');
+            });
+
+            $('#confirmButton').click(function() {
+                $.ajax({
+                    url: deleteIssueUrl,
+                    method: 'POST',
+                    data: {
+                        'csrfmiddlewaretoken': '{{ csrf_token }}',
+                        'issue_id': issueId
+                    },
+                    success: function() {
+                        // Does not return to this, redirected
+                    },
+                    error: function() {
+                        // show an error message or handle the error
+                        console.log("Had a delete issue error")
+                    }
+                });
+                $('#confirmationModal').modal('hide');
+            });
         });
     </script>
       

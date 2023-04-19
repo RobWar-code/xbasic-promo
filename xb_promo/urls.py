@@ -11,4 +11,6 @@ urlpatterns = [
 <str:search_field>/<int:issue_id>/',
          views.IssueEdit.as_view(), name='edit_issue'),
     path('add_issue/', views.IssueAdd.as_view(), name='add_issue'),
+    path('delete_issue/<int:issue_id>', views.delete_issue,
+         name='delete_issue')
 ]

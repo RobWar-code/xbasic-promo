@@ -11,6 +11,8 @@ Work Due
 
     Do the delete operation on the issues
 
+    Check that author is added to the new issues
+
     On the issue display, when there are no answers, display only the New answer button - issue control html
 
     * Do the issues/answers page and models

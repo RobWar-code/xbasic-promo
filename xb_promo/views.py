@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
-from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse, JsonResponse
 from django.utils.text import slugify
-from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.contrib.postgres.search import SearchVector, SearchQuery,\
+    SearchRank
 from django.db.models import F
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm
@@ -142,7 +144,8 @@ class IssueAdd(View):
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
             instance.save()
-            # Get the saved record and resave so that we can update the search vector
+            # Get the saved record and resave so that we can update search
+            # vector
             title = instance.title
             issue_record = get_object_or_404(Issue, title=title)
             issue_record.save()
@@ -157,3 +160,14 @@ class IssueAdd(View):
 
         return render(request, 'edit_issue.html',
                       {'form': issue_form, 'edit': 0})
+
+
+@csrf_exempt
+def delete_issue(request, issue_id):
+    try:
+        Issue.objects.get(id=issue_id)
+        issue.delete()
+        return redirect('issue_display')
+    except Issue.DoesNotExist:
+        return JsonResponse({'success': False,
+                             'error': 'Record does not exist'})

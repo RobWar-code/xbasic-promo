@@ -38,9 +38,11 @@
         {% endif %}
     </div>
     <div class="col-xs-4 col-sm-2 col-md-2">
+        {% if type == "issue" %}
         <a href="#">
-            <button class="btn-edit-submit">Delete</button>
+            <button class="btn-edit-submit" id="deleteIssueButton">Delete</button>
         </a>
+        {% endif %}
     </div>
     <div class="col-1"></div>            
     {% elif user.is_authenticated and issue.author.username == user.username %}
@@ -73,3 +75,29 @@
         {% endwith %}
     </div>
 </div>
+
+<!-- Modal for delete operation -->
+<!-- for the corresponding script see base.html -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to proceed?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary" id="confirmButton">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<script>
+    let deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}"
+</script>
