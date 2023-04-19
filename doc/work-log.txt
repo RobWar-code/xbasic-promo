@@ -11,9 +11,9 @@ Work Due
 
     Tidy-up the sign-out display
 
-    Do the delete operation on the issues
+   * Do the delete operation on the issues
 
-        Check-out delete when in search list
+       * Check-out delete when in search list
 
     Write-up notes on django/ajax interaction
 
