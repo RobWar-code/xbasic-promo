@@ -19,7 +19,7 @@ Work Due
 
     Add the author to the new issues
 
-    On the issue display, when there are no answers, display only the New answer button - issue control html
+    On the issue display, when there are no answers, display only the New answer button - issue_control.html
 
     * Do the issues/answers page and models
 
