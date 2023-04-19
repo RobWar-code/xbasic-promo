@@ -80,7 +80,7 @@
 <!-- for the corresponding script see base.html -->
 <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content delete-modal">
             <div class="modal-header">
                 <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -99,5 +99,7 @@
 </div>
   
 <script>
-    let deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}"
+    var deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}"
+    var issueId = "{{ issue.id }}"
+    console.log("deleteIssueUrl:", deleteIssueUrl, "issueId:", issueId)
 </script>

@@ -1,4 +1,6 @@
+import time
 from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse
 from django.views import generic, View
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
@@ -40,15 +42,19 @@ class IssueDisplay(View):
             if not search_field:
                 search_field = "X"
 
+        print(f'search_field: {search_field}')
         if search_field != "X":
             query = SearchQuery(search_field)
             queryset = Issue.objects.annotate(
                 rank=SearchRank('search_vector', query)).order_by('-rank')
         else:
+            print("Got to get all")
             queryset = Issue.objects.all()
 
         if 'issue_num' not in kwargs:
             issue_num = 0
+            print("Got to set issue_num 0")
+            print(f"Title: {queryset[0].title}")
         else:
             issue_num = kwargs['issue_num']
         num_issues = len(queryset)
@@ -83,7 +89,8 @@ class IssueDisplay(View):
                 'issue_num': issue_num,
                 'issue': issue,
                 'answer_num': answer_num,
-                'answer': answer
+                'answer': answer,
+                'timestamp': int(time.time())
             }
         )
 
@@ -165,9 +172,14 @@ class IssueAdd(View):
 @csrf_exempt
 def delete_issue(request, issue_id):
     try:
-        Issue.objects.get(id=issue_id)
+        issue = Issue.objects.get(id=issue_id)
         issue.delete()
-        return redirect('issue_display')
+        # Add time stamp to overcome caching
+        redirect_url = reverse('issue_display') + f'?t={int(time.time())}'
+        return JsonResponse({
+            'success': True,
+            'redirect_url': f'{redirect_url}'
+        })
     except Issue.DoesNotExist:
         return JsonResponse({'success': False,
                              'error': 'Record does not exist'})
