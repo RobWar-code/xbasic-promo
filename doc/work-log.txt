@@ -5,6 +5,8 @@ Contents
 Work Due 
     Remove python debug prints
 
+    Implement messages with time-out function
+
     On the main menu, only put log-out if the user is logged-in
 
     On the main menu, only put sign-up/in if the user is not logged-in
@@ -14,6 +16,8 @@ Work Due
    * Do the delete operation on the issues
 
        * Check-out delete when in search list
+
+       Report an error message when delete fails
 
     Write-up notes on django/ajax interaction
 

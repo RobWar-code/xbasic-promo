@@ -7,6 +7,7 @@ from django.http import HttpResponse, JsonResponse
 from django.utils.text import slugify
 from django.contrib.postgres.search import SearchVector, SearchQuery,\
     SearchRank
+from django.contrib import messages
 from django.db.models import F
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm
@@ -42,19 +43,15 @@ class IssueDisplay(View):
             if not search_field:
                 search_field = "X"
 
-        print(f'search_field: {search_field}')
         if search_field != "X":
             query = SearchQuery(search_field)
             queryset = Issue.objects.annotate(
                 rank=SearchRank('search_vector', query)).order_by('-rank')
         else:
-            print("Got to get all")
             queryset = Issue.objects.all()
 
         if 'issue_num' not in kwargs:
             issue_num = 0
-            print("Got to set issue_num 0")
-            print(f"Title: {queryset[0].title}")
         else:
             issue_num = kwargs['issue_num']
         num_issues = len(queryset)
@@ -174,6 +171,8 @@ def delete_issue(request, issue_id):
     try:
         issue = Issue.objects.get(id=issue_id)
         issue.delete()
+        message_text = "Delete Issue Successful!"
+        messages.success(request, message_text)
         # Add time stamp to overcome caching
         redirect_url = reverse('issue_display') + f'?t={int(time.time())}'
         return JsonResponse({
@@ -181,5 +180,7 @@ def delete_issue(request, issue_id):
             'redirect_url': f'{redirect_url}'
         })
     except Issue.DoesNotExist:
+        message_text = "Delete Issue Failed!"
+        messages.error(request, message_text)
         return JsonResponse({'success': False,
                              'error': 'Record does not exist'})
