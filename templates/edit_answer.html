@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Issue Panel for reference -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Issue</h3>
+        </div>
+    </div>
+    {% include "issue_panel.html" %}
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Your Answer</h3>
+        </div>
+    </div>
+    {% if edit %}
+    <form method="post" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
+    {% else %}
+    <form method="post">
+    {% endif %}
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="row">
+            <div class="col-2">
+                <button type="submit" class="btn-edit-submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+{% endblock content %}

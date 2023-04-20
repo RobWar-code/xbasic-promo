@@ -342,6 +342,42 @@ Contents
 
 			When the edit button is clicked a submit button appears in the reply area
 
+	Epic: As a user I can enter a reply to an issue in order to inform/assist another user
+
+		Acceptance Criteria
+
+			There is a New button on the issues area, which raises a Answer entry form
+			on the issues page
+
+			The layout of the Answer form is very similar to the issue form
+
+#### Summary of Editing Options for users
+        Ensure the right edit options are presented:
+
+            If user is super-user
+
+                No Answers
+                    Options: New
+
+                Otherwise
+                    Options: New, Edit, Delete
+
+            Else If general user
+
+                No Answers:
+                    Options: New
+
+                If the user is the author:
+                    Options: New, Edit
+
+                If the user is NOT the author:
+                    Options: New
+
+            Else (NOT logged-in)
+
+                Options: None
+                Message to indicate how to add
+
 #### Data Models
 
 	Issues 
@@ -376,15 +412,6 @@ Contents
 #### Related References
 Forms reference: https://docs.djangoproject.com/en/dev/topics/forms/
 Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/
-
-### Epic: As a user I can enter a reply to an issue in order to inform/assist another user
-
-		Acceptance Criteria
-
-			There is a reply button on the issues area, which raises a reply entry form
-			on the issues page
-
-			The layout of the reply form is very similar to the issue form
 
 
 ### * Epic: As a new user I can register myself in order to be known to the XBasic community

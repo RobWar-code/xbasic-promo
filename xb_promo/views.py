@@ -10,10 +10,10 @@ from django.contrib.postgres.search import SearchVector, SearchQuery,\
 from django.contrib import messages
 from django.db.models import F
 from .models import FeaturePage, Issue, Answer
-from .forms import IssueForm
+from .forms import IssueForm, AnswerForm
 
 
-# Create your views here.
+# Features
 class Feature(View):
     def get(self, request, slug=None, *args, **kwargs):
         if slug is None:
@@ -32,6 +32,7 @@ class Feature(View):
         )
 
 
+# Issues
 class IssueDisplay(View):
     def get(self, request, *args, **kwargs):
         search_field = "X"
@@ -185,3 +186,20 @@ def delete_issue(request, issue_id):
         messages.error(request, message_text)
         return JsonResponse({'success': False,
                              'error': 'Record does not exist'})
+
+
+# Answers
+class AnswerAdd(View):
+    def get(self, request, *args, **kwargs):
+        issue_id = kwargs['issue_id']
+        issue = get_object_or_404(Issue, id=issue_id)
+        form = AnswerForm()
+        return render(
+            request,
+            "edit_answer.html",
+            {
+                'form': form,
+                'edit': 0,
+                'issue': issue
+            }
+        )

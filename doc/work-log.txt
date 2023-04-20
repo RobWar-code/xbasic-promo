@@ -2,7 +2,43 @@ Contents
     Work Due 
     Work Done
 
-Work Due 
+Work Due
+    Add/Edit/Delete Answers
+
+        Ensure the right edit options are presented:
+
+            If user is super-user
+
+                * No Answers
+                   * Options: New
+
+                * Otherwise
+                   * Options: New, Edit, Delete
+
+            Else If general user
+
+                *No Answers:
+                    * Options: New
+
+                If the user is the author:
+                    Options: New, Edit
+
+                * If the user is NOT the author:
+                    * Options: New
+
+            Else (NOT logged-in)
+
+                * Options: None
+                * Message to indicate how to add
+
+        New (Add)
+            * Get function
+            Post function
+
+        Edit
+
+        Delete
+        
     * Remove python debug prints
 
     * Implement messages with time-out function
@@ -15,7 +51,7 @@ Work Due
 
     Write-up notes on django/ajax interaction
 
-    Add the author to the new issues
+    * Add the author to the new issues
 
     On the issue display, when there are no answers, display only the New answer button - issue_control.html
 
@@ -27,7 +63,9 @@ Work Due
 
         * Consider doing the current item/step and edit buttons as a single template
 
-        Check the issue menu when the author is logged-in
+        * Check the issue menu when the author is logged-in
+
+        * On the edit/add issue page, standardise the submit button
                 
     * Edit Issue (owner / issue author only)
     * Add Issue (owner or logged-in user)

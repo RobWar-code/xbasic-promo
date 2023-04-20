@@ -18,7 +18,26 @@ class IssueForm(forms.ModelForm):
     widgets = {
         'content': SummernoteWidget(),
     }
+    title = forms.CharField(widget=forms.
+                            TextInput(attrs={'style': 'width: 40%'}))
     description = forms.CharField(widget=forms.
                                   TextInput(attrs={'style': 'width: 80%'}))
     keywords = forms.CharField(widget=forms.
                                TextInput(attrs={'style': 'width: 81%'}))
+
+
+class AnswerForm(forms.ModelForm):
+
+    class Meta:
+        model = Issue
+        fields = (
+            'title',
+            'content',
+            'screenshot_img'
+        )
+
+    widgets = {
+        'content': SummernoteWidget(),
+    }
+    title = forms.CharField(widget=forms.
+                            TextInput(attrs={'style': 'width: 40%'}))
