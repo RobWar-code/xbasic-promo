@@ -23,18 +23,21 @@
         {% endwith %}
         {% endif %}
     </div>
+
     {% if user.is_superuser %}
     <div class="col-1"></div>
     <div class="col-xs-4 col-sm-2 col-md-2">
+        {% if type == "issue" %}
         <a href="{% url 'add_issue' %}">
             <button class="btn-edit-submit">New</button>
         </a>
+        {% endif %}
     </div>
     <div class="col-xs-4 col-sm-2 col-md-2">
         {% if type == "issue" %}
-            <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}">
-                <button class="btn-edit-submit">Edit</button>
-            </a>
+        <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}">
+            <button class="btn-edit-submit">Edit</button>
+        </a>
         {% endif %}
     </div>
     <div class="col-xs-4 col-sm-2 col-md-2">
@@ -44,23 +47,41 @@
         </a>
         {% endif %}
     </div>
-    <div class="col-1"></div>            
+    <div class="col-1"></div>
+
     {% elif user.is_authenticated and issue.author.username == user.username %}
     <div class="col-1"></div>
     <div class="col-xs-4 col-sm-3">
-        <a href="#">
+        {% if type == "issue" %}
+        <a href="{% url 'add_issue' %}">
             <button class="btn-edit-submit">New</button>
         </a>
+        {% endif %}
     </div>
     <div class="col-xs-4 col-sm-3">
-        <a href="#">
+        {% if type == "issue" %}
+        <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}">
             <button class="btn-edit-submit">Edit</button>
         </a>
+        {% endif %}
     </div>
     <div class="col-1"></div>
+
+    {% elif user.is_authenticated %}
+    <div class="col-3"></div>
+    <div class="col-xs-4 col-sm-2">
+        {% if type == "issue" %}
+        <a href="{% url 'add_issue' %}">
+            <button class="btn-edit-submit">New</button>
+        </a>
+        {% endif %}
+    </div>
+    <div class="col-3"></div>
+
     {% else %}
     <div class="col-xs-0 col-sm-8"></div>
     {% endif %}
+
     <div class="col-xs-4 col-sm-2 col-md-2">
         {% with item_num=item_num|add:1 %}
             {% if type == 'issue' %}

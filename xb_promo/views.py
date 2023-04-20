@@ -147,6 +147,7 @@ class IssueAdd(View):
         if issue_form.is_valid():
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
+            instance.author = request.user
             instance.save()
             # Get the saved record and resave so that we can update search
             # vector

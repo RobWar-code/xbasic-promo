@@ -3,21 +3,15 @@ Contents
     Work Done
 
 Work Due 
-    Remove python debug prints
+    * Remove python debug prints
 
-    Implement messages with time-out function
+    * Implement messages with time-out function
 
     On the main menu, only put log-out if the user is logged-in
 
     On the main menu, only put sign-up/in if the user is not logged-in
 
     Tidy-up the sign-out display
-
-   * Do the delete operation on the issues
-
-       * Check-out delete when in search list
-
-       Report an error message when delete fails
 
     Write-up notes on django/ajax interaction
 
@@ -35,8 +29,8 @@ Work Due
 
         Check the issue menu when the author is logged-in
                 
-    * Edit Issue (owner only)
-    Add Issue (owner or logged-in user)
+    * Edit Issue (owner / issue author only)
+    * Add Issue (owner or logged-in user)
     * Delete Issue (owner only)
 
     Rework Project Notes to allow for Django MVT following the guidelines
@@ -50,6 +44,13 @@ Work Due
 
 
 Work Done
+    20/04/2023
+    * Do the delete operation on the issues
+
+       * Check-out delete when in search list
+
+       * Report an error message when delete fails
+
     06/04/2023
     * Setup the Feature Section model
 

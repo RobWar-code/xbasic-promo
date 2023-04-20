@@ -10,7 +10,11 @@
     {% endif %}
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <div class="row">
+            <div class="col-2">
+                <button type="submit" class="btn-edit-submit">Submit</button>
+            </div>
+        </div>
     </form>
  </div> 
 
