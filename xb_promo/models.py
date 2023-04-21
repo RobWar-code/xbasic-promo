@@ -49,7 +49,7 @@ class Issue(models.Model):
     search_vector = SearchVectorField(null=True, blank=True)
 
     class Meta:
-        ordering = ['priority', 'date_submitted']
+        ordering = ['priority', '-date_submitted']
 
     def __str__(self):
         return self.title
@@ -82,7 +82,7 @@ class Answer(models.Model):
     screenshot_img = CloudinaryField('image', default='placeholder')
 
     class Meta:
-        ordering = ['related_issue', 'priority', 'date_submitted']
+        ordering = ['related_issue', 'priority', '-date_submitted']
 
     def __str__(self):
         return self.title

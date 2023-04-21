@@ -5,7 +5,7 @@ Contents
 Work Due
     Add/Edit/Delete Answers
 
-        Ensure the right edit options are presented:
+        * Ensure the right edit options are presented:
 
             If user is super-user
 
@@ -17,11 +17,11 @@ Work Due
 
             Else If general user
 
-                *No Answers:
+                * No Answers:
                     * Options: New
 
-                If the user is the author:
-                    Options: New, Edit
+                * If the user is the author:
+                    * Options: New, Edit
 
                 * If the user is NOT the author:
                     * Options: New
@@ -31,9 +31,9 @@ Work Due
                 * Options: None
                 * Message to indicate how to add
 
-        New (Add)
+        * New (Add)
             * Get function
-            Post function
+            * Post function
 
         Edit
 
