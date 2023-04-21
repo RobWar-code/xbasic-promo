@@ -43,7 +43,7 @@
                 <button class="btn-edit-submit">New</button>
             </a>
             {% else %}
-            <a href="#">
+            <a href="{% url 'add_answer' issue_id=issue.id %}">
                 <button class="btn-edit-submit">New</button>
             </a>
             {% endif %}
@@ -92,7 +92,7 @@
                 <button class="btn-edit-submit">New</button>
             </a>
             {% else %}
-            <a href="#">
+            <a href="{% url 'add_answer' issue_id=issue.id %}">
                 <button class="btn-edit-submit">New</button>
             </a>
             {% endif %}
@@ -103,6 +103,10 @@
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
             <a href="{% url 'add_issue' %}">
+                <button class="btn-edit-submit">New</button>
+            </a>
+            {% else %}
+            <a href="{% url 'add_answer' issue_id=issue.id %}">
                 <button class="btn-edit-submit">New</button>
             </a>
             {% endif %}
@@ -123,7 +127,7 @@
                 <button class="btn-edit-submit">New</button>
             </a>
             {% else %}
-            <a href="#">
+            <a href="{% url 'add_answer' issue_id=issue.id %}">
                 <button class="btn-edit-submit">New</button>
             </a>
             {% endif %}
