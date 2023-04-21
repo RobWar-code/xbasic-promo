@@ -200,6 +200,25 @@ class AnswerAdd(View):
             {
                 'form': form,
                 'edit': 0,
-                'issue': issue
+                'issue': issue,
+                'issue_id': issue.id
             }
         )
+
+    def post(self, request, *args, **kwargs):
+        issue_id = kwargs["issue_id"]
+        issue = get_object_or_404(Issue, id=issue_id)
+        answer_form = AnswerForm(request.POST)
+        if answer_form.is_valid():
+            answer = answer_form.save(commit=False)
+            answer.author = request.user
+            answer.related_issue = issue
+            answer.save()
+            # Get the details for the issue display
+            search_field = issue.title
+            issue_num = 0
+            answer_num = 0
+            return redirect('step_issue', issue_num=issue_num,
+                            answer_num=answer_num, search_field=search_field)
+
+        return redirect('add_answer', issue_id=issue_id)
