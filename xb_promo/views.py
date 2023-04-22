@@ -49,7 +49,8 @@ class IssueDisplay(View):
             queryset = Issue.objects.annotate(
                 rank=SearchRank('search_vector', query)).order_by('-rank')
         else:
-            queryset = Issue.objects.all()
+            queryset = Issue.objects.all().order_by('priority',
+                                                    '-date_submitted')
 
         if 'issue_num' not in kwargs:
             issue_num = 0
@@ -61,7 +62,8 @@ class IssueDisplay(View):
         elif issue_num >= num_issues:
             issue_num = num_issues - 1
         issue = queryset[issue_num]
-        answer_set = issue.issue_answer.all()
+        answer_set = issue.issue_answer.all().order_by('priority',
+                                                       '-date_submitted')
         num_answers = len(answer_set)
         if 'answer_num' not in kwargs:
             answer_num = 0
@@ -248,17 +250,20 @@ class AnswerEdit(View):
         issue_id = kwargs["issue_id"]
         answer_id = kwargs["answer_id"]
         issue = get_object_or_404(Issue, id=issue_id)
-        answer_form = AnswerForm(request.POST)
+        answer = get_object_or_404(Answer, id=answer_id)
+        answer_form = AnswerForm(request.POST, instance=answer)
         if answer_form.is_valid():
             answer_form.save()
         else:
+            print("invalid form")
+            print(answer_form.errors)
             return redirect('edit_answer', issue_id=issue_id,
                             answer_id=answer_id)
 
         # Redirect to the step_issue issue display
         search_field = issue.title
         # Get the set of answers that applies to this issue
-        answer_set = Answer.objects.get(related_issue=issue)
+        answer_set = Answer.objects.filter(related_issue=issue)
         # Loop through the set and identify what position the
         # current answer is in
         for answer_num, answer in enumerate(answer_set):
