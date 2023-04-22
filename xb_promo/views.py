@@ -222,3 +222,48 @@ class AnswerAdd(View):
                             answer_num=answer_num, search_field=search_field)
 
         return redirect('add_answer', issue_id=issue_id)
+
+
+class AnswerEdit(View):
+    def get(self, request, *args, **kwargs):
+        issue_id = kwargs['issue_id']
+        answer_id = kwargs['answer_id']
+        issue = get_object_or_404(Issue, id=issue_id)
+        answer = get_object_or_404(Answer, id=answer_id)
+        form = AnswerForm(instance=answer)
+        return render(
+            request,
+            "edit_answer.html",
+            {
+                'form': form,
+                'edit': 1,
+                'issue': issue,
+                'issue_id': issue_id,
+                'answer_id': answer_id
+            }
+        )
+
+    def post(self, request, *args, **kwargs):
+        # Update the answer table
+        issue_id = kwargs["issue_id"]
+        answer_id = kwargs["answer_id"]
+        issue = get_object_or_404(Issue, id=issue_id)
+        answer_form = AnswerForm(request.POST)
+        if answer_form.is_valid():
+            answer_form.save()
+        else:
+            return redirect('edit_answer', issue_id=issue_id,
+                            answer_id=answer_id)
+
+        # Redirect to the step_issue issue display
+        search_field = issue.title
+        # Get the set of answers that applies to this issue
+        answer_set = Answer.objects.get(related_issue=issue)
+        # Loop through the set and identify what position the
+        # current answer is in
+        for answer_num, answer in enumerate(answer_set):
+            if answer.id == answer_id:
+                break
+        issue_num = 0
+        return redirect("step_issue", issue_num=issue_num,
+                        answer_num=answer_num, search_field=search_field)

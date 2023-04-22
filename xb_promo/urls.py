@@ -14,5 +14,7 @@ urlpatterns = [
      path('delete_issue/<int:issue_id>/', views.delete_issue,
           name='delete_issue'),
      path('add_answer/<int:issue_id>/', views.AnswerAdd.as_view(),
-          name="add_answer")
+          name="add_answer"),
+     path('edit_answer/<int:issue_id>/<int:answer_id>/',
+          views.AnswerEdit.as_view(), name="edit_answer")
 ]

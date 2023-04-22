@@ -54,7 +54,7 @@
                 <button class="btn-edit-submit">Edit</button>
             </a>
             {% else %}
-            <a href="#">
+            <a href="{% url 'edit_answer' issue_id=issue.id answer_id=answer.id %}">
                 <button class="btn-edit-submit">Edit</button>
             </a>
             {% endif %}
