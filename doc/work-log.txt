@@ -35,7 +35,7 @@ Work Due
             * Get function
             * Post function
 
-        Edit
+        * Edit
 
         Delete
         
