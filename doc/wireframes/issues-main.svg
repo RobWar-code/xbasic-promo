@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   sodipodi:docname="issues-main.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="1.1581089"
+     inkscape:cx="290.99163"
+     inkscape:cy="369.99975"
+     inkscape:window-width="1600"
+     inkscape:window-height="829"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="176.43594"
+       y="37.703559"
+       width="447.10036"
+       height="50.338967"
+       id="rect15915" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1.6880691,5.1040669 206.34592,4.9252954 l 0.44697,26.3695416 -205.4027802,-6e-6 z"
+       id="path1052"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text15913"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:16.0000002px;white-space:pre;shape-inside:url(#rect15915)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="87.10704"
+       y="18.691086"
+       id="text39923"><tspan
+         sodipodi:role="line"
+         id="tspan39921"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="87.10704"
+         y="18.691086">Logo/Menu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="41.368191"
+       y="42.870617"
+       id="text82263"><tspan
+         sodipodi:role="line"
+         id="tspan82261"
+         style="stroke-width:0.264583"
+         x="41.368191"
+         y="42.870617">XBasic Issues/Problems</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 10.428633,55.250892 179.32967,54.714564 179.77669,67.765255 10.27964,67.631183 Z"
+       id="path88684"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="184.99115"
+       y="61.508072"
+       id="text115335"><tspan
+         sodipodi:role="line"
+         id="tspan115333"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="184.99115"
+         y="61.508072">Search</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="12.663428"
+       y="61.3293"
+       id="text134603"><tspan
+         sodipodi:role="line"
+         id="tspan134601"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="12.663428"
+         y="61.3293">Keyword, Description and Title Search</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="84.575211"
+       y="52.215626"
+       id="text183265"><tspan
+         sodipodi:role="line"
+         id="tspan183263"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="84.575211"
+         y="52.215626">Issue</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71.095839,77.935942 37.223441,-0.22122 -0.2458,11.440475 -36.942541,-0.03161 z"
+       id="path218358"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="71.326363"
+       y="84.387695"
+       id="text231601"><tspan
+         sodipodi:role="line"
+         id="tspan231599"
+         style="stroke-width:0.264583"
+         x="71.326363"
+         y="84.387695">Add Issue Button</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.598811,89.738335 166.838309,0.695271 0.0702,63.902334 -166.662719,0.18961 z"
+       id="path233739"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.81153,90.970648 5.86445,0.252821 0.0702,60.015101 -6.1805,-0.15801 z"
+       id="path233949"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#acacad;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 170.06267,103.32783 3.86279,0.31604 -0.56185,31.60353 -3.54677,-0.34763 z"
+       id="path234197"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 170.12235,203.75017 5.86445,0.25282 0.0702,60.0151 -6.1805,-0.15801 z"
+       id="path233949-6"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#acacad;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.37349,216.10735 3.86279,0.31604 -0.56185,31.60353 -3.54677,-0.34763 z"
+       id="path234197-7"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="13.267654"
+       y="94.13121"
+       id="text276431"><tspan
+         sodipodi:role="line"
+         id="tspan276429"
+         style="stroke-width:0.264583"
+         x="13.267654"
+         y="94.13121">Title: My Issue</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="13.230984"
+       y="98.563148"
+       id="text293071"><tspan
+         sodipodi:role="line"
+         id="tspan293069"
+         style="stroke-width:0.264583"
+         x="13.230984"
+         y="98.563148">Description: XBasic crashes on run/start</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="13.373008"
+       y="103.70708"
+       id="text312197"><tspan
+         sodipodi:role="line"
+         id="tspan312195"
+         style="stroke-width:0.264583"
+         x="13.373008"
+         y="103.70708">Keywords: Windows 11, crash on run</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="76.582642"
+       y="109.14291"
+       id="text323559"><tspan
+         sodipodi:role="line"
+         id="tspan323557"
+         style="stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="76.582642"
+         y="109.14291">CONTENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="13.602788"
+       y="114.39606"
+       id="text333153"><tspan
+         sodipodi:role="line"
+         id="tspan333151"
+         style="stroke-width:0.264583"
+         x="13.602788"
+         y="114.39606">The XBasic PDE crashes when run/start is run on Windows 11</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="64.171013"
+       y="121.7112"
+       id="text346397"><tspan
+         sodipodi:role="line"
+         id="tspan346395"
+         style="stroke-width:0.264583;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="64.171013"
+         y="121.7112">Screensh<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan385191">o</tspan>t / Image</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="124.22762"
+       y="94.476562"
+       id="text6942"><tspan
+         sodipodi:role="line"
+         id="tspan6940"
+         style="stroke-width:0.264583"
+         x="124.22762"
+         y="94.476562">Author: Arthur_Dent</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="105.7849"
+       y="98.843231"
+       id="text22440"><tspan
+         sodipodi:role="line"
+         id="tspan22438"
+         style="stroke-width:0.264583"
+         x="105.7849"
+         y="98.843231">Date Submitted: 12/01/2023</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46666667px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="70.978943"
+       y="162.56198"
+       id="text31140"><tspan
+         sodipodi:role="line"
+         id="tspan31138"
+         style="stroke-width:0.264583;font-size:8.46666667px"
+         x="70.978943"
+         y="162.56198">Answers</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.277356,181.61407 c -0.9932443,-0.11173 167.634674,-0.40224 167.634674,-0.40224 l 0.0248,90.66206 -167.907805,2.65929 -0.1738181,-93.14257"
+       id="path41984"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="11.768682"
+       y="186.31981"
+       id="text58211"><tspan
+         sodipodi:role="line"
+         id="tspan58209"
+         style="stroke-width:0.264583"
+         x="11.768682"
+         y="186.31981">Title: Windows 11 Release</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="143.79919"
+       y="185.94792"
+       id="text64499"><tspan
+         sodipodi:role="line"
+         id="tspan64497"
+         style="stroke-width:0.264583"
+         x="143.79919"
+         y="185.94792">Author: warner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="114.64163"
+       y="190.49634"
+       id="text83581"><tspan
+         sodipodi:role="line"
+         id="tspan83579"
+         style="stroke-width:0.264583"
+         x="114.64163"
+         y="190.49634">Date Submitted: 13/01/2023:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583"
+       x="78.275879"
+       y="195.41173"
+       id="text91993"><tspan
+         sodipodi:role="line"
+         id="tspan91991"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583"
+         x="78.275879"
+         y="195.41173">CONTENT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="14.794105"
+       y="201.37996"
+       id="text97825"><tspan
+         sodipodi:role="line"
+         id="tspan97823"
+         style="stroke-width:0.264583"
+         x="14.794105"
+         y="201.37996">A version of 32-bit XBasic for Windows 11 will become available in </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="14.794105"
+         y="206.67162"
+         id="tspan101063">Winter 2023</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="68.536911"
+       y="231.64842"
+       id="text114181"><tspan
+         sodipodi:role="line"
+         id="tspan114179"
+         style="stroke-width:0.264583"
+         x="68.536911"
+         y="231.64842"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan123919">Screenshot</tspan>/<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan127417">Image</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.351849,172.9881 21.205745,-0.11173 0.49663,7.19576 -21.776868,0.20112 c 0.74493,-7.15106 0.07449,-7.28515 0.07449,-7.28515 z"
+       id="path130932"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.812156,173.11609 21.205744,-0.11173 0.49663,7.19576 -21.776867,0.20112 c 0.74493,-7.15106 0.07449,-7.28514 0.07449,-7.28514 z"
+       id="path130932-35"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.14021,172.60389 21.20574,-0.11173 0.49663,7.19576 -21.77686,0.20112 c 0.74493,-7.15106 0.0745,-7.28515 0.0745,-7.28515 z"
+       id="path130932-3"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="12.189343"
+       y="177.54678"
+       id="text138232"><tspan
+         sodipodi:role="line"
+         id="tspan138230"
+         style="stroke-width:0.264583"
+         x="12.189343"
+         y="177.54678">Previous</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.999916,80.414952 21.205745,-0.11173 0.49663,7.19576 -21.776868,0.20112 c 0.74493,-7.15106 0.07449,-7.28515 0.07449,-7.28515 z"
+       id="path130932-6"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="12.83741"
+       y="84.973763"
+       id="text138232-2"><tspan
+         sodipodi:role="line"
+         id="tspan138230-9"
+         style="stroke-width:0.264583"
+         x="12.83741"
+         y="84.973763">Previous</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="161.83965"
+       y="177.26834"
+       id="text147276"><tspan
+         sodipodi:role="line"
+         id="tspan147274"
+         style="stroke-width:0.264583"
+         x="161.83965"
+         y="177.26834">Next</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 155.64131,81.649824 21.20574,-0.11173 0.49663,7.19576 -21.77686,0.20112 c 0.74493,-7.15106 0.0745,-7.28515 0.0745,-7.28515 z"
+       id="path130932-3-1"
+       sodipodi:nodetypes="cccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="161.34074"
+       y="86.3144"
+       id="text147276-2"><tspan
+         sodipodi:role="line"
+         id="tspan147274-7"
+         style="stroke-width:0.264583"
+         x="161.34074"
+         y="86.3144">Next</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="80.255501"
+       y="177.78685"
+       id="text154419"><tspan
+         sodipodi:role="line"
+         id="tspan154417"
+         style="stroke-width:0.264583"
+         x="80.255501"
+         y="177.78685">Add New</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="69.811661"
+       y="72.719772"
+       id="text2545"><tspan
+         sodipodi:role="line"
+         id="tspan2543"
+         style="stroke-width:0.264583"
+         x="69.811661"
+         y="72.719772">Number Found: 10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="69.098663"
+       y="163.10236"
+       id="text12377"><tspan
+         sodipodi:role="line"
+         id="tspan12375"
+         style="stroke-width:0.264583"
+         x="69.098663"
+         y="163.10236"></tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         id="tspan12379"
+         x="69.098663"
+         y="168.39401">Number Present: 3</tspan></text>
+  </g>
+</svg>

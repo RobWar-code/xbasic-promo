@@ -16,5 +16,7 @@ urlpatterns = [
      path('add_answer/<int:issue_id>/', views.AnswerAdd.as_view(),
           name="add_answer"),
      path('edit_answer/<int:issue_id>/<int:answer_id>/',
-          views.AnswerEdit.as_view(), name="edit_answer")
+          views.AnswerEdit.as_view(), name="edit_answer"),
+     path('delete_answer/<int:issue_id>/<int:answer_id>/',
+          views.delete_answer, name='delete_answer')
 ]

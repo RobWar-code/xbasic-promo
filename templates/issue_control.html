@@ -183,7 +183,11 @@
 </div>
   
 <script>
-    var deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}"
-    var issueId = "{{ issue.id }}"
-    console.log("deleteIssueUrl:", deleteIssueUrl, "issueId:", issueId)
+    var deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}";
+    var issueId = "{{ issue.id }}";
+    {% if answer %}
+        var deleteAnswerUrl = "{% url 'delete_answer' issue_id=issue.id answer_id=answer.id %}";
+    {% endif %}
+    var deleteItemUrl = ""; // Global for alternative value
+    var answerId = "{{ answer.id }}";
 </script>

@@ -127,6 +127,10 @@ class IssueEdit(View):
         issue_form = IssueForm(request.POST, instance=issue)
         if issue_form.is_valid():
             issue_form.save()
+
+            message_text = "Issue Updated Successfully!"
+            messages.success(request, message_text)
+
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field)
@@ -157,6 +161,9 @@ class IssueAdd(View):
             title = instance.title
             issue_record = get_object_or_404(Issue, title=title)
             issue_record.save()
+
+            message_text = "Issue Added Successfully!"
+            messages.success(request, message_text)
 
             # Fetch this record to be represented on the issue display
             title = issue_form.cleaned_data['title']
@@ -216,6 +223,10 @@ class AnswerAdd(View):
             answer.author = request.user
             answer.related_issue = issue
             answer.save()
+
+            message_text = "Answer Added Successfully!"
+            messages.success(request, message_text)
+
             # Get the details for the issue display
             search_field = issue.title
             issue_num = 0
@@ -270,5 +281,36 @@ class AnswerEdit(View):
             if answer.id == answer_id:
                 break
         issue_num = 0
+
+        message_text = "Answer Updated Successfully!"
+        messages.success(request, message_text)
+
         return redirect("step_issue", issue_num=issue_num,
                         answer_num=answer_num, search_field=search_field)
+
+
+@csrf_exempt
+def delete_answer(request, issue_id, answer_id):
+    try:
+        answer = Answer.objects.get(id=answer_id)
+        answer.delete()
+        message_text = "Delete Answer Successful!"
+        messages.success(request, message_text)
+        # Get the issue to redisplay
+        print(f"issue id: {issue_id}")
+        issue = Issue.objects.get(id=issue_id)
+        search_field = issue.title
+        print(f"Title: {search_field}")
+        redirect_url = reverse('step_issue',
+                               kwargs={'issue_num': 0, 'answer_num': 0,
+                                       'search_field': search_field})
+        print(f"Url: {redirect_url}")
+        return JsonResponse({
+            'success': True,
+            'redirect_url': f'{redirect_url}'
+        })
+    except Answer.DoesNotExist:
+        message_text = "Delete Answer Failed!"
+        messages.error(request, message_text)
+        return JsonResponse({'success': False,
+                             'error': 'Answer record does not exist'})

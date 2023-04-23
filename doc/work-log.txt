@@ -3,7 +3,60 @@ Contents
     Work Done
 
 Work Due
-    Add/Edit/Delete Answers
+    
+
+
+
+    Write-up notes on django/ajax interaction
+
+    Put actual times for development in schedule
+
+ 
+    * Rework Project Notes to allow for Django MVT following the guidelines
+      established for portfolio4 of the CI Course.
+
+    * Set-up the github project as a Django project
+
+        Review the README.md layout example on the CI Course
+
+        write the procedures to README.md file.
+
+
+Work Done
+    23/04/2023
+    * On the main menu, only put log-out if the user is logged-in
+
+    * On the main menu, only put sign-up/in if the user is not logged-in
+    
+    * Remove the original schema html files or place in doc folder
+
+    * Upload the layout wireframe to doc
+
+    * Add the author to the new issues
+
+    * Tidy-up the sign-out display
+
+    * Remove python debug prints
+
+    * Implement messages with time-out function
+
+    * Do the issues/answers page and models
+
+        * Modify the current issue number to begin at 1 instead of 0
+
+        * Include the current answer number and number of answers
+
+        * Consider doing the current item/step and edit buttons as a single template
+
+        * Check the issue menu when the author is logged-in
+
+        * On the edit/add issue page, standardise the submit button
+
+    * Edit Issue (owner / issue author only)
+    * Add Issue (owner or logged-in user)
+    * Delete Issue (owner only)
+
+    * Add/Edit/Delete Answers
 
         * Ensure the right edit options are presented:
 
@@ -37,51 +90,10 @@ Work Due
 
         * Edit
 
-        Delete
-        
-    * Remove python debug prints
+       * Delete
 
-    * Implement messages with time-out function
+       * Add messages to completion of actions
 
-    On the main menu, only put log-out if the user is logged-in
-
-    On the main menu, only put sign-up/in if the user is not logged-in
-
-    Tidy-up the sign-out display
-
-    Write-up notes on django/ajax interaction
-
-    * Add the author to the new issues
-
-    On the issue display, when there are no answers, display only the New answer button - issue_control.html
-
-    * Do the issues/answers page and models
-
-        * Modify the current issue number to begin at 1 instead of 0
-
-        * Include the current answer number and number of answers
-
-        * Consider doing the current item/step and edit buttons as a single template
-
-        * Check the issue menu when the author is logged-in
-
-        * On the edit/add issue page, standardise the submit button
-                
-    * Edit Issue (owner / issue author only)
-    * Add Issue (owner or logged-in user)
-    * Delete Issue (owner only)
-
-    Rework Project Notes to allow for Django MVT following the guidelines
-    established for portfolio4 of the CI Course.
-
-    * Set-up the github project as a Django project
-
-        Review the README.md layout example on the CI Course
-
-        write the procedures to README.md file.
-
-
-Work Done
     20/04/2023
     * Do the delete operation on the issues
 

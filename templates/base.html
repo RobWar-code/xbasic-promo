@@ -67,12 +67,15 @@
                                 <li class="nav-item active menu-item">
                                     <a class="nav-link" href="{% url 'issue_display' %}?t={{ timestamp }}">Issues</a>
                                 </li>
-                                <li class="nav-item active menu-item">
-                                    <a class="nav-link" href="{% url 'account_login' %}">Sign-in/up</a>
-                                </li>
+                                {% if user.is_authenticated %}
                                 <li class="nav-item active menu-item">
                                     <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                                 </li>
+                                {% else %}
+                                <li class="nav-item active menu-item">
+                                    <a class="nav-link" href="{% url 'account_login' %}">Sign-in/up</a>
+                                </li>
+                                {% endif %}
                                 <li class="nav-item active menu-item">
                                   <a class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                                 </li>
@@ -152,14 +155,21 @@
             $('#id_content').summernote();
 
             $('#deleteIssueButton').click(function() {
-                $('#confirmationModal').data('url', deleteIssueUrl);
+                deleteItemUrl = deleteIssueUrl;
+                $('#confirmationModal').data('url', deleteItemUrl);
+                $('#confirmationModal').modal('show');
+            });
+
+            $('#deleteAnswerButton').click(function() {
+                deleteItemUrl = deleteAnswerUrl;
+                $('#confirmationModal').data('url', deleteItemUrl);
                 $('#confirmationModal').modal('show');
             });
 
             $('#confirmButton').click(function() {
-                console.log("Got to confirm delete", deleteIssueUrl)
+                console.log("Got to confirm delete", deleteItemUrl)
                 $.ajax({
-                    url: deleteIssueUrl,
+                    url: deleteItemUrl,
                     method: 'POST',
                     cache: false,
                     data: {
@@ -172,7 +182,7 @@
                     },
                     error: function() {
                         // show an error message or handle the error
-                        console.log("Had a delete issue error");
+                        console.log("Had a delete item error");
                     }
                 });
                 $('#confirmationModal').modal('hide');
