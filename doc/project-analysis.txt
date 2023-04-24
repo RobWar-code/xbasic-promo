@@ -110,9 +110,28 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
+### User authentication, Registration, General
+	Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
+
+
+		Acceptance Criteria:
+		There should be pages for Login, Sign-up and Logout
+
+
+	As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
+
+		Acceptance Criteria:
+		The menu item for Logout should only be visible if the the user is logged-in
+
+		The menu item for Login/Sign-up should only be visible if the user is NOT logged
+
+	As a new user, I can register a username, in order to have my texts attributed
+		Acceptance Criteria:
+		Registration details include a username
+
 ### Administration Editor
-	Epic: As an administrator I can enter or edit or delete text for the xbasic promo pages in order to inform 
-	readers of XB features
+	Epic: As an administrator I can edit, read or delete a feature page section in order to enable site 
+		readers to be informed about features
 
 	As an administrator I can associate an image with the text for the feature page in order to provide readers 
 		with visual examples
@@ -264,13 +283,13 @@ Contents
 
 		Links to the groups.io and sourceforge sites
 
-
-### Epic: As a user I can discuss XBasic Issues with others in order to fix my code or learn how to do something
+### Issue Pages
+	Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
+	my understanding or help to resolve a problem
 
 		Error and problem discussion page/database
 
-
-	As a user I can enter a description of my issue in order to receive advice/answers
+	As a user, I can raise an issue, in order to ask for help in resolving my problem/issue
 
 		Acceptance Criteria
 
@@ -322,7 +341,15 @@ Contents
 
 		Acceptance Criteria
 
-			There are scroll-up and scroll down buttons on the reply area
+			There are next and previous buttons on the reply area
+
+	As a Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
+
+		Acceptance Criteria
+
+			There should be a message after the delete
+
+			There should be a confirmation before the delete is executed
 
 	As an Owner/Administrator I can edit issues so that they conform to standards
 
@@ -334,15 +361,15 @@ Contents
 
 			When the edit button is clicked a submit button appears in the issue area
 
-	As an Owner/Administrator I can edit replies so that they conform to standards
 
-			If the user is an owner/administrator an edit button appears on a reply
+	As a user I can see when an edit or addition of an issue is effective in order to 
+		feel confident of my modification
 
-			Clicking the edit button enables editing of the current reply
+		Acceptance Criteria:
+		A success message appears toward the top of the page
 
-			When the edit button is clicked a submit button appears in the reply area
-
-	Epic: As a user I can enter a reply to an issue in order to inform/assist another user
+### Answers, Add/Edit/Delete Answers
+Epic: As a logged-in user I can add a reply to an issue in order to inform other users and participate
 
 		Acceptance Criteria
 
@@ -350,6 +377,16 @@ Contents
 			on the issues page
 
 			The layout of the Answer form is very similar to the issue form
+
+	As an Owner/Administrator I can edit replies so that they conform to standards
+
+		Acceptance Criteria:
+
+			If the user is an owner/administrator an edit button appears on a reply
+
+			Clicking the edit button enables editing of the current reply
+
+	
 
 #### Summary of Editing Options for users
         Ensure the right edit options are presented:
@@ -605,21 +642,21 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	Menues								1			1			
 	Footer Links						0.5			2			1
 	Introduction to Site				0.5			1			0.5
-	Introduction to XBasic & PDE		1			1			
-	Introduction to GUI Design			2			2
-	Introduction to Language Features	2			2
-	Introduction to Functions			2			2
-	Introduction to Debugging Features	2			2
+	Introduction to XBasic & PDE		1			1			1
+	Introduction to GUI Design			2			2			1
+	Introduction to Language Features	2			2			1
+	Introduction to Functions			2			2			1
+	Introduction to Debugging Features	2			2			1
 
 	General User sign-in/registration   2			1
 
 	                        Sub-Total   21
 
 	The following will only be executed if there is sufficient time once the features are done
-	Search Problems and Answers			3    		3
-	Submit Problem						4.5			3
-	Submit Answers						2.5			3
-	Edit Problems/Answers				4			3
+	Search Problems and Answers			3    		3			2
+	Submit Problem						4.5			3			2
+	Submit Answers						2.5			3			1
+	Edit Problems/Answers				4			3			4
                              Sub Total  14
 	Totals								35
 

@@ -5,13 +5,17 @@ Contents
 Work Due
     
 
+    Documentation:
+
+    Add the acceptance criteria to the issues in the project plan
+
+    Prepare the manual systems test plan
 
 
-    Write-up notes on django/ajax interaction
+    General:
 
-    Put actual times for development in schedule
+    * Put actual times for development in schedule
 
- 
     * Rework Project Notes to allow for Django MVT following the guidelines
       established for portfolio4 of the CI Course.
 
@@ -21,24 +25,39 @@ Work Due
 
         write the procedures to README.md file.
 
+    Write-up notes on django/ajax interaction
 
-Work Done
+Work Done (completed by date)
     23/04/2023
-    * On the main menu, only put log-out if the user is logged-in
+    Epic: Registration, General
+    User Story: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
 
-    * On the main menu, only put sign-up/in if the user is not logged-in
+        * Tidy-up the sign-out display
+
+    User Story: 	
+    As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
+
+        * On the main menu, only put log-out if the user is logged-in
+
+        * On the main menu, only put sign-up/in if the user is not logged-in
     
+    Issue Pages:
+	Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
+	my understanding or help to resolve a problem
+    
+
+
+    General:
     * Remove the original schema html files or place in doc folder
 
     * Upload the layout wireframe to doc
 
-    * Add the author to the new issues
-
-    * Tidy-up the sign-out display
-
     * Remove python debug prints
 
-    * Implement messages with time-out function
+
+    Add Issue/Edit Issue:
+	User Story: As a user I can see when an edit or addition of an issue is effective in order to 
+		feel confident of my modification
 
     * Do the issues/answers page and models
 
@@ -55,6 +74,9 @@ Work Done
     * Edit Issue (owner / issue author only)
     * Add Issue (owner or logged-in user)
     * Delete Issue (owner only)
+
+    Answers, Add/Edit/Delete Answers
+    Epic: As a user I can enter a reply to an issue in order to inform/assist another user
 
     * Add/Edit/Delete Answers
 
@@ -87,21 +109,32 @@ Work Done
         * New (Add)
             * Get function
             * Post function
+            * Add the author (user) to the new issues
 
         * Edit
 
-       * Delete
+        * Delete
 
-       * Add messages to completion of actions
+        * Add messages to completion of actions
+
+        * Implement messages with time-out function
 
     20/04/2023
+    Super User Delete Issue
+	User Story: As a super-user, I can delete an issue, in order to remove 
+        unnecessary or offensive issues
+
     * Do the delete operation on the issues
 
        * Check-out delete when in search list
 
        * Report an error message when delete fails
 
-    06/04/2023
+    10/04/2023
+    Administration Editor
+    Epic: As an administrator I can edit, read or delete a feature page section in order 
+        to enable site readers to be informed about features
+
     * Setup the Feature Section model
 
         * Setup the admin page editing for the feature sections
@@ -109,10 +142,21 @@ Work Done
         * Complete the articles for the home page
             * Add notes on loading source functions via the View menu.
 
+
     * Provide text, pictures and link for GUI-Design page
 
+    * Provide text, pictures and link for Language Features page
+
+    * Provide text, pictures and link for Built-In Functions page
+
+    * Provide text, pictures and link for Debugging page
+
     05/04/2023
-    * Setup the feature page model 
+    Administration Editor
+    Epic: As an administrator I can edit, read or delete a feature page section in order 
+        to enable site readers to be informed about features
+
+   * Setup the feature page model 
 
         * Complete and test the home page as far as the introductory article
 
