@@ -96,7 +96,12 @@ Contents
 				Application Programmer
 			Administrator
 
-### Epic: Header
+	The acceptance criteria are marked with an asterisk to indicate present (done).
+	With two asterisks when systems tested.
+
+### Header
+	Epic: As a user I can see the clearly recognisable brand and navigation on 
+		each page in order to identify with the product
 
 	As a user I can see a clearly defined brand in order to recognize this site and product
 
@@ -110,20 +115,41 @@ Contents
 
 			A set of page links should be presented toward the top of the page
 
+### * Footer
+	Epic: As a user I can easily find links to additional material in order to further my studies
+
+
+	* As a user I can have access to a detailed description of the language in order to gain a detailed insight
+
+		Acceptance Criteria
+
+			* There is a link in the footer to the XBasic manual
+
+	* As a user I can download XBasic in order to use it
+
+		Acceptance Criteria
+		
+			* Links to the sourceforge and github sites in the footer with text
+
+	* As a user I can connect to other users in order to discuss issues
+
+		* Links to the groups.io and sourceforge sites
+
+
 ### User authentication, Registration, General
-	Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
+	* Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
 
 
 		Acceptance Criteria:
-		There should be pages for Login, Sign-up and Logout
+		* There should be pages for Login, Sign-up and Logout
 
 
-	As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
+	* As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
 
 		Acceptance Criteria:
-		The menu item for Logout should only be visible if the the user is logged-in
+		* The menu item for Logout should only be visible if the the user is logged-in
 
-		The menu item for Login/Sign-up should only be visible if the user is NOT logged
+		* The menu item for Login/Sign-up should only be visible if the user is NOT logged
 
 	As a new user, I can register a username, in order to have my texts attributed
 		Acceptance Criteria:
@@ -265,24 +291,6 @@ Contents
 
 			Debugging description is supported by screenshots
 
-### * Epic: Footer
-
-	* As a user I can have access to a detailed description of the language in order to gain a detailed insight
-
-		Acceptance Criteria
-
-			There is a link in the footer to the XBasic manual
-
-	* As a user I can download XBasic in order to use it
-
-		Acceptance Criteria
-		
-			Links to the sourceforge and github sites in the footer with text
-
-	* As a user I can connect to other users in order to discuss issues
-
-		Links to the groups.io and sourceforge sites
-
 ### Issue Pages
 	Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
 	my understanding or help to resolve a problem
@@ -368,6 +376,20 @@ Contents
 		Acceptance Criteria:
 		A success message appears toward the top of the page
 
+#### Data Model
+
+	Field           Type             Other Aspects
+	title           Char(80)         unique
+	slug            Slug(80)         unique, auto-update
+    author          One To Many      Auto insert for the logged-in user
+	date_submitted  Date/Time        Auto insert at record creation
+	priority        Integer          default is 3 can be set to lower for display ordering
+	description     Char(240)
+	keywords        Char(240)        For searching
+    content         TextField
+	screenshot_img  Cloudinary Image default is 'placeholder', can be blank
+	search_vector   SearchVector     For keyword searches on title, description and keywords
+
 ### Answers, Add/Edit/Delete Answers
 Epic: As a logged-in user I can add a reply to an issue in order to inform other users and participate
 
@@ -378,7 +400,7 @@ Epic: As a logged-in user I can add a reply to an issue in order to inform other
 
 			The layout of the Answer form is very similar to the issue form
 
-	As an Owner/Administrator I can edit replies so that they conform to standards
+	As an Administrator or the author I can edit replies so that they conform to standards
 
 		Acceptance Criteria:
 
@@ -386,7 +408,29 @@ Epic: As a logged-in user I can add a reply to an issue in order to inform other
 
 			Clicking the edit button enables editing of the current reply
 
-	
+	As an Administrator I can delete answers in order to maintain standards
+
+		Acceptance Criteria:
+
+			Clicking the delete button on the answer form of the issues page causes
+			the confirm option to appear
+
+			Once the deletion has been confirmed the answer record is deleted
+
+			When an answer deletion is done a message appears at the top of the page
+
+			When an answer deletion is done the issue page displays the current issue
+
+#### Data Model 
+	Field           Type             Other Aspects
+	title           Char(80)         Unique
+    author          One to many      Auto set for logged-in user
+	date_submitted  Date/Time        Auto set when record created
+	date_modified   Date/Time        Auto set when record edited
+	priority        Integer          For ordering on display, default is 3, 1 is higher
+	related_issue   One to many
+	content         TextField
+	screenshot_img  Cloudinary Field Default is 'placeholder', can be blank
 
 #### Summary of Editing Options for users
         Ensure the right edit options are presented:

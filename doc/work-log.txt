@@ -11,9 +11,10 @@ Work Due
 
     Prepare the manual systems test plan
 
-
     General:
 
+    Include the meta author fields etc. in base.html
+    
     * Put actual times for development in schedule
 
     * Rework Project Notes to allow for Django MVT following the guidelines
