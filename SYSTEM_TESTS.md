@@ -113,3 +113,69 @@ GitHub Download
 Groups.io
 
 ![Groups.io Link](./doc/screenshots/groups-io-link.webp)
+
+## User Adminitration, Registration, General
+
+### Acceptance Criteria
+
+There should be pages for Login, Sign-up and Logout
+
+Registration details include a username
+
+Register
+
+![Register](./doc/screenshots/register.webp)
+
+Login
+
+![Login](./doc/screenshots/sign-in.webp)
+
+Logout
+
+![Logout](./doc/screenshots/logout.webp)
+
+A message should be displayed after logout/login and register
+
+The user should be returned to the home page after each action
+
+The menu item for Logout should only be visible if the the user is logged-in
+
+The menu item for Login/Sign-up should only be visible if the user is NOT logged-in
+
+Register
+
+![Register Details](./doc/screenshots/register-complete.webp)
+
+![Register Done](./doc/screenshots/register-done.webp)
+
+Login
+
+![Login Details](./doc/screenshots/sign-in-complete.webp)
+
+![Login Done](./doc/screenshots/sign-in-done.webp)
+
+Logout
+
+![Logout Done](./doc/screenshots/logout-done.webp)
+
+### Data Tests
+
+Registration:
+
+omit username
+
+omit password
+
+poor password
+
+valid
+
+Login:
+
+omit username
+
+invalid username
+
+omit password
+
+invalid password

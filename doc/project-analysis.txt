@@ -147,8 +147,8 @@ Contents
 				**Logout-Link
 
 
-### * Footer
-	Epic: As a user I can easily find links to additional material in order to further my studies
+### ** Footer
+	** Epic: As a user I can easily find links to additional material in order to further my studies
 
 
 	** As a user I can have access to a detailed description of the language in order to gain a detailed insight
@@ -157,41 +157,57 @@ Contents
 
 			** There is a link in the footer to the XBasic manual
 
-	* As a user I can download XBasic in order to use it
+	** As a user I can download XBasic in order to use it
 
 		Acceptance Criteria
 		
-			* Links to the sourceforge and github sites in the footer with text
+			** Links to the sourceforge and github sites in the footer with text
 
-	* As a user I can connect to other users in order to discuss issues
+	** As a user I can connect to other users in order to discuss issues
 
-		* Links to the groups.io and sourceforge sites
+		** Links to the groups.io and sourceforge sites
 
 #### Tests
 
 	** Manual Link
 	** Sourceforge Link
-	GitHub Link
-	Groups.io Link
+	** GitHub Link
+	** Groups.io Link
 
 ### User authentication, Registration, General
 	* Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
 
 
 		Acceptance Criteria:
-		* There should be pages for Login, Sign-up and Logout
+		** There should be pages for Login, Sign-up and Logout
+		** A message should be displayed after logout/login and register
+		** The user should be returned to the home page after each action
 
 
-	* As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
+	** As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
 
 		Acceptance Criteria:
-		* The menu item for Logout should only be visible if the the user is logged-in
+		** The menu item for Logout should only be visible if the the user is logged-in
 
-		* The menu item for Login/Sign-up should only be visible if the user is NOT logged
+		** The menu item for Login/Sign-up should only be visible if the user is NOT logged-in
 
-	As a new user, I can register a username, in order to have my texts attributed
+	** As a new user, I can register a username, in order to have my texts attributed
 		Acceptance Criteria:
-		Registration details include a username
+		** Registration details include a username
+
+#### Data Tests
+	Registration
+		omit username
+		omit password
+		poor password
+
+	Login
+		omit username
+		invalid username
+		omit password
+		invalid password
+
+	Logout
 
 ### Administration Editor
 	Epic: As an administrator I can edit, read or delete a feature page section in order to enable site 
