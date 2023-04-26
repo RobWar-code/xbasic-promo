@@ -151,11 +151,11 @@ Contents
 	Epic: As a user I can easily find links to additional material in order to further my studies
 
 
-	* As a user I can have access to a detailed description of the language in order to gain a detailed insight
+	** As a user I can have access to a detailed description of the language in order to gain a detailed insight
 
 		Acceptance Criteria
 
-			* There is a link in the footer to the XBasic manual
+			** There is a link in the footer to the XBasic manual
 
 	* As a user I can download XBasic in order to use it
 
@@ -167,6 +167,12 @@ Contents
 
 		* Links to the groups.io and sourceforge sites
 
+#### Tests
+
+	** Manual Link
+	** Sourceforge Link
+	GitHub Link
+	Groups.io Link
 
 ### User authentication, Registration, General
 	* Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities

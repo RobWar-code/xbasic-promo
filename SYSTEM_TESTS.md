@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For more details on these test please consult [Project Analysis](/doc/project-analysis.txt)
+For more details on these tests please consult [Project Analysis](/doc/project-analysis.txt)
 
 ## Header
 
@@ -83,3 +83,33 @@ Logout
 Logout Link
 
 ![Logout Link Page](./doc/screenshots/logout-link-crop.webp)
+
+## Footer
+
+### Acceptance Criteria
+
+There is a link in the footer to the XBasic manual
+
+Links to the sourceforge and github sites in the footer with text
+
+Links to the groups.io and sourceforge sites
+
+![Footer](./doc/screenshots/footer-crop.webp)
+
+### Link Tests
+
+XBasic Manual
+
+![XBasic Manual Link](./doc/screenshots/xbasic-manual-link.webp)
+
+Sourceforge Download
+
+![Sourceforge Download Link](./doc/screenshots/sourceforge-link.webp)
+
+GitHub Download
+
+![GitHub Download Link](./doc/screenshots/github-link.webp)
+
+Groups.io
+
+![Groups.io Link](./doc/screenshots/groups-io-link.webp)
