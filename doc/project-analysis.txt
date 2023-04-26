@@ -125,26 +125,26 @@ Contents
 			** On small screens the menu should appear as a drop-down menu
 
 
-	Tests
+#### Tests
 
-		Each of the menu items is highlighted when hovered on and the links work:
+		** Each of the menu items is highlighted when hovered on and the links work:
 
 			** Home
 				** Home Link
-			GUI-Design
-				GUI-Design Link
-			Language
-				Language Link
-			Functions
-				Functions Link
-			Debugging
-				Debugging Link
-			Issues
-				Issues Link
-			Sign-up/Logon
-				Sign-up/Logon Link
-			Logout
-				Logout-Link
+			** GUI-Design
+				** GUI-Design Link
+			** Language
+				** Language Link
+			** Functions
+				** Functions Link
+			** Debugging
+				** Debugging Link
+			** Issues
+				** Issues Link
+			** Sign-up/Logon
+				** Sign-up/Logon Link
+			** Logout
+				**Logout-Link
 
 
 ### * Footer

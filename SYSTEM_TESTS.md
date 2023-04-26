@@ -43,3 +43,43 @@ Language
 Language Link
 
 ![Language Link Page](./doc/screenshots/language-link-crop.webp)
+
+Functions
+
+![Hover on Functions](./doc/screenshots/hover-functions-crop.webp)
+
+Functions Link
+
+![Functions Link Page](./doc/screenshots/functions-link-crop.webp)
+
+Debugging
+
+![Hover on Debugging](./doc/screenshots/hover-debugging-crop.webp)
+
+Debugging Link
+
+![Debugging Link Page](./doc/screenshots/debugging-link-crop.webp)
+
+Issues
+
+![Hover on Issues](./doc/screenshots/hover-issues-crop.webp)
+
+Issues Link
+
+![Issues Link Page](./doc/screenshots/issues-link-crop.webp)
+
+Sign-in/up
+
+![Hover on sign-in/up](./doc/screenshots/hover-sign-in-up-crop.webp)
+
+Sign-in/up Link
+
+![Sign-in/up Link Page](./doc/screenshots/sign-in-up-link-crop.webp)
+
+Logout
+
+![Hover on Logout](./doc/screenshots/hover-logout-crop.webp)
+
+Logout Link
+
+![Logout Link Page](./doc/screenshots/logout-link-crop.webp)
