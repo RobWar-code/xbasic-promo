@@ -1,19 +1,29 @@
+from django import forms
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
+from django_summernote.widgets import SummernoteWidget
 from .models import FeaturePage, FeatureSection, Issue, Answer
+
+
+class FeaturePageForm(forms.ModelForm):
+    class Meta:
+        model = FeaturePage
+        fields = '__all__'
 
 
 # Register your models here.
 @admin.register(FeaturePage)
-class PostAdmin(SummernoteModelAdmin):
+class FeaturePageAdmin(admin.ModelAdmin):
+    form = FeaturePageForm
     prepopulated_fields = {'slug': ('page_name', )}
-    summernote_fields = ('page_intro')
 
 
-@admin.register(FeatureSection)
 class SectionAdmin(SummernoteModelAdmin):
     summernote_fields = ('article')
     list_display = ('feature_page', 'title')
+
+
+admin.site.register(FeatureSection, SectionAdmin)
 
 
 @admin.register(Issue)

@@ -42,6 +42,10 @@ Contents
 	members of this group or possibly on slack to get a slightly
 	wider perspective.
 
+	In practice, I received no response from the survey, so the
+	assumed needs of users are taken as the basis for this
+	project.
+
 ## Course Tool Requirements
 
 	Project Management and recording should be set-up and
@@ -175,7 +179,7 @@ Contents
 	** Groups.io Link
 
 ### User authentication, Registration, General
-	* Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
+	** Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
 
 
 		Acceptance Criteria:
@@ -217,9 +221,45 @@ Contents
 	As an administrator I can associate an image with the text for the feature page in order to provide readers 
 		with visual examples
 
-	As an adminstrator I can use text styling features in the text for the feature pages
+	As an administrator I can use text styling features in the text for the feature pages
 
 		We can use the Summernotes editor to provide these features
+
+	As an administrator I can add a page or site introduction section to a page in order 
+		to clearly explain the site to users
+
+	Acceptance Criteria
+
+		Editing of the feature pages is provided by the site/admin/ url
+
+		There is provision for feature pages
+
+		The administrator can add feature pages
+
+		The administrator can edit feature pages
+
+		The administrator can include a feature page introduction with an image
+
+		The administrator can delete feature pages
+
+		Confirmation is required for feature page deletion
+
+		Site page contents are updated according to the feature page record
+
+
+		There is provision for page sections
+
+		The administrator can add page sections
+
+		There is a text styling editor available for content
+
+		The administrator can edit page sections
+
+		Site page contents are updated according to changes to the page sections
+
+		The administrator can delete page sections
+
+		Confirmation is required for section deletion
 
 #### Implementation Notes
 	These features are to be performed using the Django admin pages as exampled in the django-blog
@@ -257,6 +297,19 @@ Contents
 	text and image alternating sides, full width on small screens. Where the image is
 	absent, the text occupies the full width.
 
+#### Data Tests 
+
+	Admin Login
+
+		Invalid User Details
+
+	Pages
+
+		Administrator enters non-unique page title
+
+	Sections
+
+		Administrator enters non-unique section title
 
 ### Epic: Introduction to PDE and XBasic - XBasic Intro page
 

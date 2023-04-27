@@ -203,3 +203,33 @@ Focus set on password, message displayed
 invalid password
 
 ![Sign-in Invalid Password](./doc/screenshots/sign-in-password-invalid.webp)
+
+## Administration Editor
+
+### Acceptance Criteria
+
+Feature Pages:
+
+Editing of the feature pages is provided by the site/admin/ url
+
+![Admin Editor Login](./doc/screenshots/admin-editor-login.webp)
+
+There is provision for feature pages
+
+![Admin Editor Main Page - Feature Pages](./doc/screenshots/admin-editor-main-page.webp)
+
+The administrator can add feature pages
+
+![Admin Editor Add Page](./doc/screenshots/admin-editor-add-page.webp)
+
+The administrator can edit feature pages
+
+
+The administrator can include a feature page introduction with an image
+
+The administrator can delete feature pages
+
+Confirmation is required for feature page deletion
+
+Site page contents are updated according to the feature page record
+

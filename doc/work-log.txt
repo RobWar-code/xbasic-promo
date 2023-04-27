@@ -4,6 +4,7 @@ Contents
 
 Work Due
     
+    Document and remove problem with summernote on admin pages
 
     Documentation:
 
