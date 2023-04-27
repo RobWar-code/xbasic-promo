@@ -197,15 +197,16 @@ Contents
 
 #### Data Tests
 	Registration
-		omit username
-		omit password
-		poor password
+		** omit username
+		** omit password
+		** poor password
+		** username already exists
 
 	Login
-		omit username
-		invalid username
-		omit password
-		invalid password
+		** omit username
+		** invalid username
+		** omit password
+		** invalid password
 
 	Logout
 

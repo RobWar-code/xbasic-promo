@@ -164,18 +164,42 @@ Registration:
 
 omit username
 
+Focus returned to username with focus message
+
+![Register Username Omitted](./doc/screenshots/register-username-omitted.webp)
+
 omit password
+
+Focus returned to password with focus message
+
+![Register Password Omitted](./doc/screenshots/register-password-omitted.webp)
 
 poor password
 
-valid
+![Register Password Poor](./doc/screenshots/register-password-poor.webp)
+
+username already exists
+
+![Register Username Exists](./doc/screenshots/register-username-exists.webp)
 
 Login:
 
 omit username
 
+Focus set on username and option to view saved logins presented
+
+![Sign-in Username Omitted](./doc/screenshots/sign-in-username-omitted.webp)
+
 invalid username
+
+![Sign-in Username Invalid](./doc/screenshots/sign-in-username-invalid.webp)
 
 omit password
 
+Focus set on password, message displayed
+
+![Sign-in Password Omitted](./doc/screenshots/sign-in-password-omitted.webp)
+
 invalid password
+
+![Sign-in Invalid Password](./doc/screenshots/sign-in-password-invalid.webp)
