@@ -221,37 +221,32 @@ Contents
 	As an administrator I can associate an image with the text for the feature page in order to provide readers 
 		with visual examples
 
-	As an administrator I can use text styling features in the text for the feature pages
-
-		We can use the Summernotes editor to provide these features
-
 	As an administrator I can add a page or site introduction section to a page in order 
 		to clearly explain the site to users
 
 	Acceptance Criteria
 
-		Editing of the feature pages is provided by the site/admin/ url
+		** Editing of the feature pages, issues and answers is provided by the site/admin/ url
 
-		There is provision for feature pages
+		** There is provision for feature pages
 
-		The administrator can add feature pages
+		** The administrator can add feature pages
 
-		The administrator can edit feature pages
+		** The administrator can edit feature pages
 
-		The administrator can include a feature page introduction with an image
+		** Site page contents are updated according to the feature page record
 
-		The administrator can delete feature pages
+		** The administrator can include a feature page introduction with an image
 
-		Confirmation is required for feature page deletion
+		** The administrator can delete feature pages
 
-		Site page contents are updated according to the feature page record
+		** Confirmation is required for feature page deletion
+
 
 
 		There is provision for page sections
 
 		The administrator can add page sections
-
-		There is a text styling editor available for content
 
 		The administrator can edit page sections
 
@@ -260,6 +255,30 @@ Contents
 		The administrator can delete page sections
 
 		Confirmation is required for section deletion
+
+	As an administrator I can edit/add or delete Issues using the admin pages in order to 
+	ensure editorial standards
+
+		Acceptance criteria
+
+			Admin Pages Add Issue
+
+			Admin Pages Edit Issue
+
+			Admin Pages Delete Issue
+
+
+	As an administrator I can edit/add or delete Answers using the admin pages in order to 
+	ensure editorial standards
+
+		Acceptance criteria
+
+			Admin Pages Add Answer
+
+			Admin Pages Edit Answer
+
+			Admin Pages Delete Answer
+
 
 #### Implementation Notes
 	These features are to be performed using the Django admin pages as exampled in the django-blog

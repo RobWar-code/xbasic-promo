@@ -35,3 +35,16 @@ xbasic-promo. [Project Planner](https://github.com/users/RobWar-code/projects/4)
 
 Tasks in relation to user stories and other aspects of project work are recorded in
 [Work Log](/doc/work-log.txt)
+
+## Errors / Bug Reports
+
+Problem: Admin Pages, Model Data Editing:
+Status: Fixed
+
+The summernote presentation of the textfields had ceased to work after summernote
+was used on the issues and answers pages. This may be a library usage problem.
+
+Solution:
+
+Withdraw the summernote presentation on the admin pages.
+

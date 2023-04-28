@@ -18,23 +18,39 @@ class FeaturePageAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('page_name', )}
 
 
-class SectionAdmin(SummernoteModelAdmin):
-    summernote_fields = ('article')
+class FeatureSectionForm(forms.ModelForm):
+    class Meta:
+        model = FeatureSection
+        fields = '__all__'
+
+
+@admin.register(FeatureSection)
+class SectionAdmin(admin.ModelAdmin):
+    form = FeatureSectionForm
     list_display = ('feature_page', 'title')
 
 
-admin.site.register(FeatureSection, SectionAdmin)
+class IssueAdminForm(forms.ModelForm):
+    class Meta:
+        model = Issue
+        fields = '__all__'
 
 
 @admin.register(Issue)
-class IssueAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content')
+class IssueAdmin(admin.ModelAdmin):
+    form = IssueAdminForm
     prepopulated_fields = {'slug': ('title', )}
     list_display = ('title', 'date_submitted')
 
 
+class AnswerAdminForm(forms.ModelForm):
+    class Meta:
+        model = Answer
+        fields = '__all__'
+
+
 @admin.register(Answer)
-class AnswerAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content')
+class AnswerAdmin(admin.ModelAdmin):
+    form = AnswerAdminForm
     search_fields = ['related_issue']
     list_display = ('related_issue', "title", "date_submitted")

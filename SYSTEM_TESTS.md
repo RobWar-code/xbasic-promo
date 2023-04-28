@@ -224,12 +224,23 @@ The administrator can add feature pages
 
 The administrator can edit feature pages
 
-
 The administrator can include a feature page introduction with an image
+
+Site page contents are updated according to the feature page record
+
+![Admin Editor make Change](./doc/screenshots/admin-editor-edit-page.webp)
+
+![Admin Editor page displayed](./doc/screenshots/admin-editor-edit-change.webp)
 
 The administrator can delete feature pages
 
 Confirmation is required for feature page deletion
 
-Site page contents are updated according to the feature page record
+![Admin Editor feature page listed to delete](./doc/screenshots/admin-editor-delete-page-1.webp)
+
+![Admin Editor feature page to be deleted](./doc/screenshots/admin-editor-delete-page-2.webp)
+
+![Admin Editor feature page delete confirmation](./doc/screenshots/admin-editor-delete-page-3.webp)
+
+![Admin Editor feature page delete done](./doc/screenshots/admin-editor-delete-page-4.webp)
 
