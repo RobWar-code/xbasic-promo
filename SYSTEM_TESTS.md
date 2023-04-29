@@ -244,3 +244,37 @@ Confirmation is required for feature page deletion
 
 ![Admin Editor feature page delete done](./doc/screenshots/admin-editor-delete-page-4.webp)
 
+Feature Sections:
+
+There is provision for feature sections
+
+![Admin Editor feature sections list](./doc/screenshots/admin-editor-features.webp)
+
+The administrator can add feature sections
+
+![Admin Editor add feature section](./doc/screenshots/admin-editor-add-section.webp)
+
+The administrator can edit feature sections
+
+![Admin Editor edit feature section select](./doc/screenshots/admin-editor-edit-section-1.webp)
+
+![Admin Editor edit feature section page](/doc/screenshots/admin-editor-edit-section-2.webp)
+
+Site page contents are updated according to changes to the feature sections
+
+![Admin Editor display feature section](./doc/screenshots/admin-editor-add-section-display.webp)
+
+![Admin Editor edit feature section display](./doc/screenshots/admin-editor-edit-section-3.webp)
+
+The administrator can delete feature sections
+
+Confirmation is required for section deletion
+
+![Admin Editor delete section list](./doc/screenshots/admin-editor-delete-section-1.webp)
+
+![Admin Editor delete section item](./doc/screenshots/admin-editor-delete-section-2.webp)
+
+![Admin Editor delete section confirmation](./doc/screenshots/admin-editor-delete-section-3.webp)
+
+![Admin Editor delete section deleted](./doc/screenshots/admin-editor-delete-section-4.webp)
+

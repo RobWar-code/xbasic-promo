@@ -215,16 +215,18 @@ Contents
 	Logout
 
 ### Administration Editor
-	Epic: As an administrator I can edit, read or delete a feature page section in order to enable site 
+	** Epic: As an administrator I can edit, read or delete a feature page section in order to enable site 
 		readers to be informed about features
 
-	As an administrator I can associate an image with the text for the feature page in order to provide readers 
+	** As an administrator I can associate an image with the text for the feature page in order to provide readers 
 		with visual examples
 
-	As an administrator I can add a page or site introduction section to a page in order 
+	** As an administrator I can add a page or site introduction section to a page in order 
 		to clearly explain the site to users
 
 	Acceptance Criteria
+
+	** Feature Pages:
 
 		** Editing of the feature pages, issues and answers is provided by the site/admin/ url
 
@@ -243,18 +245,20 @@ Contents
 		** Confirmation is required for feature page deletion
 
 
+	** Feature Sections:
 
-		There is provision for page sections
+		** There is provision for feature sections
 
-		The administrator can add page sections
+		** The administrator can add feature sections
 
-		The administrator can edit page sections
+		** The administrator can edit feature sections
 
-		Site page contents are updated according to changes to the page sections
+		** Site page contents are updated according to changes to the feature sections
 
-		The administrator can delete page sections
+		** The administrator can delete feature sections
 
-		Confirmation is required for section deletion
+		** Confirmation is required for section deletion
+
 
 	As an administrator I can edit/add or delete Issues using the admin pages in order to 
 	ensure editorial standards
@@ -265,7 +269,11 @@ Contents
 
 			Admin Pages Edit Issue
 
+			Issues are updated accordingly on the Issues page of the website
+
 			Admin Pages Delete Issue
+
+			Deletion requires confirmation
 
 
 	As an administrator I can edit/add or delete Answers using the admin pages in order to 
