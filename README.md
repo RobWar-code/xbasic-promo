@@ -39,6 +39,7 @@ Tasks in relation to user stories and other aspects of project work are recorded
 ## Errors / Bug Reports
 
 Problem: Admin Pages, Model Data Editing:
+
 Status: Fixed
 
 The summernote presentation of the textfields had ceased to work after summernote
@@ -47,4 +48,14 @@ was used on the issues and answers pages. This may be a library usage problem.
 Solution:
 
 Withdraw the summernote presentation on the admin pages.
+
+--------------------
+
+Problem: Admin Pages, Add Issue - Search Vector field not updated
+
+Status: Ongoing
+
+Priority: Low
+
+When the entry is updated the search vector field IS updated.
 

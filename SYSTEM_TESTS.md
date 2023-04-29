@@ -284,13 +284,30 @@ Issues:
 
 Admin Pages Add Issue
 
-![Admin Editor list issues](./doc/screenshots/admin-editor-add-issue-1.webp)
-
 Issues are updated accordingly on the Issues page of the website
 
+![Admin Editor list issues](./doc/screenshots/admin-editor-add-issue-1.webp)
+
+![Admin Editor add issue page](./doc/screenshots/admin-editor-add-issue-2.webp)
+
+![Admin Editor add issue list updated](./doc/screenshots/admin-editor-add-issue-3.webp)
+
+![Admin Editor add issue page updated](./doc/screenshots/admin-editor-add-issue-4.webp)
+
 Admin Pages Edit Issue
+
+![Admin Editor edit issue page](./doc/screenshots/admin-editor-edit-issue-1.webp)
+
+![Admin Editor edit issue - issue page](./doc/screenshots/admin-editor-edit-issue-2.webp)
 
 Admin Pages Delete Issue
 
 Deletion requires confirmation
 
+![Admin Editor delete issue - selection](./doc/screenshots/admin-editor-delete-issue-1.webp)
+
+![Admin Editor delete issue - edit issue page](./doc/screenshots/admin-editor-delete-issue-2.webp)
+
+![Admin Editor delete issue - confirmation](./doc/screenshots/admin-editor-delete-issue-3.webp)
+
+![Admin Editor delete issue - item deleted](./doc/screenshots/admin-editor-delete-issue-4.webp)
