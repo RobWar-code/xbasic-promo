@@ -277,4 +277,20 @@ Confirmation is required for section deletion
 ![Admin Editor delete section confirmation](./doc/screenshots/admin-editor-delete-section-3.webp)
 
 ![Admin Editor delete section deleted](./doc/screenshots/admin-editor-delete-section-4.webp)
+As an administrator I can edit/add or delete Issues using the admin pages in order to 
+ensure editorial standards
+
+Issues:
+
+Admin Pages Add Issue
+
+![Admin Editor list issues](./doc/screenshots/admin-editor-add-issue-1.webp)
+
+Issues are updated accordingly on the Issues page of the website
+
+Admin Pages Edit Issue
+
+Admin Pages Delete Issue
+
+Deletion requires confirmation
 

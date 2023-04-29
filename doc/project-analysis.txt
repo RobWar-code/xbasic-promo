@@ -265,11 +265,13 @@ Contents
 
 		Acceptance criteria
 
+		Issues:
+
 			Admin Pages Add Issue
 
-			Admin Pages Edit Issue
-
 			Issues are updated accordingly on the Issues page of the website
+
+			Admin Pages Edit Issue
 
 			Admin Pages Delete Issue
 
