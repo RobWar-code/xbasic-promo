@@ -311,3 +311,66 @@ Deletion requires confirmation
 ![Admin Editor delete issue - confirmation](./doc/screenshots/admin-editor-delete-issue-3.webp)
 
 ![Admin Editor delete issue - item deleted](./doc/screenshots/admin-editor-delete-issue-4.webp)
+
+Answers:
+
+As an administrator I can edit/add or delete Answers using the admin pages in order to 
+ensure editorial standards
+
+Acceptance criteria:
+
+Admin Pages Add Answer
+
+Answers are updated accordingly on the Issues page of the website
+
+![Admin Editor - Add Answe, list of answers](./doc/screenshots/admin-editor-add-answer-1.webp)
+
+![Admin Editor - Add Answer page](./doc/screenshots/admin-editor-add-answer-2.webp)
+
+![Admin Editor - Add Answer, list updated](./doc/screenshots/admin-editor-add-answer-3.webp)
+
+![Admin Editor - Add Answer, Issue Page](./doc/screenshots/admin-editor-add-answer-4.webp)
+
+
+Admin Pages Edit Answer
+
+![Admin Editor - Edit Answer, list selection](./doc/screenshots/admin-editor-edit-answer-1.webp)
+
+![Admin Editor - Edit Answer, edit page](./doc/screenshots/admin-editor-edit-answer-2.webp)
+
+![Admin Editor - Edit Answer, list updated](./doc/screenshots/admin-editor-edit-answer-3.webp)
+
+![Admin Editor - Edit Answer, Issue Page Updated](./doc/screenshots/admin-editor-edit-answer-4.webp)
+
+Admin Pages Delete Answer
+
+Deletion requires confirmation
+
+![Admin Editor - Delete Answer, Select from list](./doc/screenshots/admin-editor-delete-answer-1.webp)
+
+![Admin Editor - Delete Answer, record to delete](./doc/screenshots/admin-editor-delete-answer-2.webp)
+
+![Admin Editor - Delete Answer, confirm deletion](./doc/screenshots/admin-editor-delete-answer-3.webp)
+
+![Admin Editor - Delete Answer, list updated](./doc/screenshots/admin-editor-delete-answer-4.webp)
+
+#### Data Tests
+
+Duplicate Title - Should be Unique in all cases:
+
+Add Feature Page
+
+![Admin Editor - Add Page - Duplicate Title](./doc/screenshots/admin-editor-page-duplicate-1.webp)
+
+![Admin Editor - Submit Page - Duplicate Title](./doc/screenshots/admin-editor-page-duplicate-2.webp)
+
+Add Feature Section
+
+![Admin Editor - Add Section - Duplicate Title](./doc/screenshots/admin-editor-section-duplicate-1.webp)
+
+![Admin Editor - Submit Section - Duplicate Title](./doc/screenshots/admin-editor-section-duplicate-2.webp)
+
+Add Issue
+
+Add Answer
+

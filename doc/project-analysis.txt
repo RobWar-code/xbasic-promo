@@ -260,34 +260,50 @@ Contents
 		** Confirmation is required for section deletion
 
 
-	As an administrator I can edit/add or delete Issues using the admin pages in order to 
+	** As an administrator I can edit/add or delete Issues using the admin pages in order to 
 	ensure editorial standards
 
-		Acceptance criteria
+		** Acceptance criteria
 
-		Issues:
+		** Issues:
 
-			Admin Pages Add Issue
+			** Admin Pages Add Issue
 
-			Issues are updated accordingly on the Issues page of the website
+			** Issues are updated accordingly on the Issues page of the website
 
-			Admin Pages Edit Issue
+			** Admin Pages Edit Issue
 
-			Admin Pages Delete Issue
+			** Admin Pages Delete Issue
 
-			Deletion requires confirmation
+			** Deletion requires confirmation
 
 
-	As an administrator I can edit/add or delete Answers using the admin pages in order to 
+	** As an administrator I can edit/add or delete Answers using the admin pages in order to 
 	ensure editorial standards
 
-		Acceptance criteria
+		** Acceptance criteria
 
-			Admin Pages Add Answer
+			** Admin Pages Add Answer
 
-			Admin Pages Edit Answer
+			** Answers are updated accordingly on the Issues page of the website
 
-			Admin Pages Delete Answer
+			** Admin Pages Edit Answer
+
+			** Admin Pages Delete Answer
+
+			** Deletion requires confirmation
+
+#### Data Tests
+
+	Duplicate Title - Should be Unique in all cases:
+
+		Add Feature Page
+
+		Add Feature Section
+
+		Add Issue
+
+		Add Answer
 
 
 #### Implementation Notes
