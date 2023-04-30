@@ -372,5 +372,13 @@ Add Feature Section
 
 Add Issue
 
+![Admin Editor - Add Issue - Duplicate Title](./doc/screenshots/admin-editor-issue-duplicate-1.webp)
+
+![Admin Editor - Submit Issue - Duplicate Title](./doc/screenshots/admin-editor-issue-duplicate-2.webp)
+
 Add Answer
+
+![Admin Editor - Add Answer - Duplicate Title](./doc/screenshots/admin-editor-answer-duplicate-1.webp)
+
+![Admin Editor - Submit Answer - Duplicate Title](./doc/screenshots/admin-editor-answer-duplicate-2.webp)
 
