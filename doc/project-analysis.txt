@@ -435,24 +435,47 @@ Contents
 			** Debugging description is supported by screenshots
 
 ### Issue Pages
-	Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
+	** Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
 	my understanding or help to resolve a problem
 
-		Error and problem discussion page/database
+		** Error and problem discussion page/database
+
+
+	** As a user I can search for issues previously raised in order to find something like my own
+
+		Acceptance Criteria
+
+			** By default, the issue page presents the most recent issue
+
+			** Issues can be scrolled through in date or search rank order
+
+			** The problem page has a search input field at the top
+
+			** The search is conducted by description, title or keywords
+
+	** As a user I can scroll through the replies to an issue in date order in order to 
+	find an appropriate response.
+
+		Acceptance Criteria
+
+			** There are next and previous buttons on the reply area
+
+	
+	Add Issue
 
 	As a user, I can raise an issue, in order to ask for help in resolving my problem/issue
 
 		Acceptance Criteria
 
-			On the problems page there is an add issue button
+			On the issues page there is an new issue button
 
-			When the user clicks on the add issue button a form area is presented, ready to enter text into 
+			When the user clicks on the new issue button a form area is presented, ready to enter text into 
 
 	As a user I can enter a title for an issue in order for myself and others to find it
 
 		Acceptance Criteria
 
-			When the Add Issue button is clicked, the user is first required to enter a title
+			When the new Issue button is clicked, the user is required to enter a title
 
 	As a user I can enter keywords for my issue so that it can be searched for later
 
@@ -461,46 +484,27 @@ Contents
 			When the user clicks the Add Issue button, he is presented with a keywords field
 			along with the other fields.
 
-			The keywords field is supported by explanatory text
-
 	As a user I can more clearly explain my issue with a screenshot in order to communicate the issue
 
 		Acceptance Criteria
 
-			The issue entry layout includes a feature to drag and drop an image/s
+			The issue entry layout includes a feature to select an image using a file system browser
 
 			Images are recorded along with the issue description
 
-	As a user I can search for issues previously raised in order to find something like my own
+	As user I can see clearly when a issue has been added in order to be confident
 
-		Acceptance Criteria
+		The user is returned to the issues page after a submit, with the entry showing
 
-			By default, the problem page presents the most recent issue
+		A message appears at the top of the screen to indicate an issue added
 
-			Issues can be scrolled through in date order
+	Data Tests
 
-			The problem page has a search input field at the top
+		Title Left Blank
 
-			The search is conducted by username, title or keywords
+		Title Duplicated
 
-			Where there is more than one match, the issues can be scrolled through in date order
-
-			After a search the number of matches is displayed
-
-	As a user I can scroll through the replies to an issue in date order in order to 
-	find an appropriate response.
-
-		Acceptance Criteria
-
-			There are next and previous buttons on the reply area
-
-	As a Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
-
-		Acceptance Criteria
-
-			There should be a message after the delete
-
-			There should be a confirmation before the delete is executed
+	Edit Issue
 
 	As an Owner/Administrator I can edit issues so that they conform to standards
 
@@ -518,6 +522,18 @@ Contents
 
 		Acceptance Criteria:
 		A success message appears toward the top of the page
+
+
+	Delete Issue
+
+	As a Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
+
+		Acceptance Criteria
+
+			There should be a message after the delete
+
+			There should be a confirmation before the delete is executed
+
 
 #### Data Model
 

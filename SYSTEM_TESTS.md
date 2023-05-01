@@ -461,5 +461,33 @@ Debugging description is supported by screenshots
 
 ![Debugging - Runtime Errors](./doc/screenshots/debugging-2.webp)
 
+### Issue Pages
+
+As a user, I can discuss/read about issues and problems with XBasic, in order to further 
+	my understanding or help to resolve a problem
+
+Acceptance Criteria:
+
+Error and problem discussion page/database
+
+By default, the issue page presents the most recent issue
+
+Issues can be scrolled through in date or search rank order
+
+The problem page has a search input field at the top
+
+There are next and previous buttons on the reply area
+
+![Issue Page - start of set](./doc/screenshots/issue-page-1.webp)
+
+![Issue Page - end of set](./doc/screenshots/issue-page-2.webp)
+
+The search is conducted by description, title or keywords
+
+![Issue Page - search 1](./doc/screenshots/issue-page-search-1.webp)
+
+![Issue Page - search 2](./doc/screenshots/issue-page-search-2.webp)
+
+
 
 

@@ -38,16 +38,13 @@ Tasks in relation to user stories and other aspects of project work are recorded
 
 ## Errors / Bug Reports
 
-Problem: Admin Pages, Model Data Editing:
+### Due:
 
-Status: Fixed
+Problem: Admin Pages, Delete Feature Page - Title not displayed on confirmation
 
-The summernote presentation of the textfields had ceased to work after summernote
-was used on the issues and answers pages. This may be a library usage problem.
+Status: Ongoing
 
-Solution:
-
-Withdraw the summernote presentation on the admin pages.
+Priority: Medium
 
 --------------------
 
@@ -59,3 +56,15 @@ Priority: Low
 
 When the entry is updated the search vector field IS updated.
 
+### Fixed
+
+Problem: Admin Pages, Model Data Editing:
+
+Status: Fixed
+
+The summernote presentation of the textfields had ceased to work after summernote
+was used on the issues and answers pages. This may be a library usage problem.
+
+Solution:
+
+Withdraw the summernote presentation on the admin pages.
