@@ -200,19 +200,19 @@ Contents
 		** Registration details include a username
 
 #### Data Tests
-	Registration
+	** Registration
 		** omit username
 		** omit password
 		** poor password
 		** username already exists
 
-	Login
+	** Login
 		** omit username
 		** invalid username
 		** omit password
 		** invalid password
 
-	Logout
+	** Logout
 
 ### Administration Editor
 	** Epic: As an administrator I can edit, read or delete a feature page section in order to enable site 
@@ -295,15 +295,15 @@ Contents
 
 #### Data Tests
 
-	Duplicate Title - Should be Unique in all cases:
+	** Duplicate Title - Should be Unique in all cases:
 
-		Add Feature Page
+		** Add Feature Page
 
-		Add Feature Section
+		** Add Feature Section
 
-		Add Issue
+		** Add Issue
 
-		Add Answer
+		** Add Answer
 
 
 #### Implementation Notes
@@ -334,7 +334,9 @@ Contents
 
 #### Feature Page Layouts
 
-	The feature pages are built from data models above and the base template.
+	The requirements for the feature pages are given in the following sections.
+
+	The feature pages are built from the data models described above and the base template.
 
 	A page introduction may or may not be included. Where it is a background image is used.
 
@@ -342,61 +344,49 @@ Contents
 	text and image alternating sides, full width on small screens. Where the image is
 	absent, the text occupies the full width.
 
-#### Data Tests 
 
-	Admin Login
-
-		Invalid User Details
-
-	Pages
-
-		Administrator enters non-unique page title
-
-	Sections
-
-		Administrator enters non-unique section title
-
-### Epic: Introduction to PDE and XBasic - XBasic Intro page
-
-	* As user I can read briefly about the intentions of the site in order to understand the site
-
-		Acceptance Criteria
-
-			There is an introductory panel describing the site
-
-	* As a new or existing programmer I can read a brief desciption of the 
+### Introduction to PDE and XBasic - XBasic Intro page
+	Epic: ** As a new or existing programmer I can read a brief desciption of the 
 	XBasic PDE and Language in order to get an overview.
 
 		Acceptance Criteria
 
-			The opening page has a brief description of the XBasic system.
+			** The opening page has a brief description of the XBasic system.
 
-			There is a screenshot of the PDE and console on the opening page
+			** There is a screenshot of the PDE and console on the opening page
 
-			There is a screenshot example of some code which has been run
+			** There is a screenshot example of some code which has been run
 
-	* As a user I can read about the operational platforms for XBasic in order
+
+	** As a user I can read briefly about the intentions of the site in order to understand the site
+
+		Acceptance Criteria
+
+			** There is an introductory panel describing the site
+
+
+	** As a user I can read about the operational platforms for XBasic in order
 	to assess its suitability
 
 		Acceptance Criteria
 
-			It should be clear what environments the language will operate in
+			** It should be clear what environments the language will operate in
 
-	As a utility programmer I need to know what file processing and database handling features/facilities there are
+	** As a utility programmer I need to know what file processing and database handling features/facilities there are
 	in order to establish that XBasic is suitable for my needs
 
 		Acceptance Criteria
 			
-			There is a description of file handling capabilities
+			** There is a description of file handling capabilities
 
-			There is a description of database handling capabilities
+			** There is a description of database handling capabilities
 
-	* As an application programmer I need to know briefly about GUI capabilities in order to assess the
+	** As an application programmer I need to know briefly about GUI capabilities in order to assess the
 	suitability of the program
 
 		Acceptance Criteria
 
-			There is a brief description of the GUI toolkit
+			** There is a brief description of the GUI toolkit
 
 ### * Epic: GUI Design
 

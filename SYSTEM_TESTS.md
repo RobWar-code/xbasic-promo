@@ -382,3 +382,29 @@ Add Answer
 
 ![Admin Editor - Submit Answer - Duplicate Title](./doc/screenshots/admin-editor-answer-duplicate-2.webp)
 
+### XBasic Intro Page
+
+As a new or existing programmer I can read a brief desciption of the 
+XBasic PDE and Language in order to get an overview.
+
+Acceptance Criteria
+
+There is an introductory panel describing the site
+
+![XBasic Site Introduction](./doc/screenshots/xb-intro-1.webp)
+
+The opening page has a brief description of the XBasic system.
+
+There is a screenshot of the PDE and console on the opening page
+
+There is a screenshot example of some code which has been run
+
+It should be clear what environments the language will operate in
+
+There is a description of file handling capabilities
+
+There is a description of database handling capabilities
+
+There is a brief description of the GUI toolkit
+
+![XBasic - General Introduction](./doc/screenshots/xb-intro-2.webp)
