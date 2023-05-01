@@ -488,6 +488,52 @@ The search is conducted by description, title or keywords
 
 ![Issue Page - search 2](./doc/screenshots/issue-page-search-2.webp)
 
+When no user is logged-in an options message is displayed
 
+![Issue Page - No Login](./doc/screenshots/issue-page-no-login.webp)
+
+When a user's issue is displayed, the new and edit options are available
+
+![Issue Page - User's issue](./doc/screenshots/issue-page-user-issue.webp)
+
+When another user's issue is displayed, only the new option is available
+
+![Issue Page - Different User](./doc/screenshots/issue-page-user-logged-in-1.webp)
+
+When the user is an administrator the New, Edit and Delete buttons are available
+
+![Issue Page - Admin Logged In](./doc/screenshots/issue-page-admin-logged-in.webp)
+
+Add Issue:
+
+As a user, I can raise an issue, in order to ask for help in resolving my problem/issue
+
+Acceptance Criteria:
+
+On the issues page there is an new issue button
+
+![New Issue - New Button](./doc/screenshots/new-issue-1.webp)
+
+When the user clicks on the new issue button a form area is presented, ready to enter text into 
+
+When the new Issue button is clicked, the user is required to enter a title
+
+When the user clicks the new Issue button, he is presented with a keywords field
+along with the other fields.
+
+The issue entry layout includes a feature to select an image using a file system browser
+
+Images are recorded along with the issue description
+
+The user is returned to the issues page after a submit, with the entry showing
+
+A message appears at the top of the screen to indicate an issue added
+
+
+Data Tests
+
+Title Left Blank
+
+Title Duplicated
 
 
