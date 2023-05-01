@@ -408,3 +408,58 @@ There is a description of database handling capabilities
 There is a brief description of the GUI toolkit
 
 ![XBasic - General Introduction](./doc/screenshots/xb-intro-2.webp)
+
+
+### GUI Design
+
+As an existing programmer I can refer to a description of the GUI toolkit in order to determine
+whether XBasic is suitable for my requirements
+
+Acceptance Criteria:
+
+GUI toolkit description and screenshots on own page
+
+![GUI Design Intro](./doc/screenshots/gui-design-1.webp)
+
+![GUI Design Code](./doc/screenshots/gui-design-2.webp)
+
+### Language Features - Language page
+
+As a user I can read a summary description of language features in order to gain more insight
+
+Acceptance Criteria:
+
+On a separate page there is a summary description of key language features
+
+The description has associated screenshots
+
+![Language - Data Types](./doc/screenshots/language-1.webp)
+
+![Language - Program Structure](./doc/screenshots/language-2.webp)
+
+### Built-in Functions - Functions Page
+
+As a user I can read about built-in functions in order to gain more insight into language features
+
+Acceptance Criteria
+
+On a separate page there is a summary description of built-in functions
+
+![Functions Page](./doc/screenshots/functions-1.webp)
+
+### Debugging Features - Debugging Page
+
+As a user I can read a description of debugging features in order to know about ease of coding
+
+Acceptance Criteria:
+
+On a separate page there is a summary description of debugging features
+
+Debugging description is supported by screenshots
+
+![Debugging - Compile Time Errors](./doc/screenshots/debugging-1.webp)
+
+![Debugging - Runtime Errors](./doc/screenshots/debugging-2.webp)
+
+
+

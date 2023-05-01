@@ -388,51 +388,51 @@ Contents
 
 			** There is a brief description of the GUI toolkit
 
-### * Epic: GUI Design
+### ** GUI Design
 
-	* As an existing programmer I can refer to a description of the GUI toolkit in order to determine
+	*** Epic: As an existing programmer I can refer to a description of the GUI toolkit in order to determine
 	whether XBasic is suitable for my requirements
 
 		Acceptance Criteria
 
-			GUI toolkit description and screenshots on own page
+			** GUI toolkit description and screenshots on own page
 
 
-### Epic: * Language Features - Language page
+### ** Language Features - Language page
 
-	* As a user I can read a summary description of language features in order to gain more insight
-
-		Acceptance Criteria
-
-			On a separate page there is a summary description of key language features
-
-			The description has associated screenshots
-
-	As a user I can find some code examples in order to learn the language
+	** Epic: As a user I can read a summary description of language features in order to gain more insight
 
 		Acceptance Criteria
 
-			In the language summary reference to the code examples provided with the download
+			** On a separate page there is a summary description of key language features
 
-### * Epic: Built-in Functions - Functions page
+			** The description has associated screenshots
+
+	** As a user I can find some code examples in order to learn the language
+
+		Acceptance Criteria
+
+			** In the language summary, reference to the code examples provided with the download
+
+### ** Built-in Functions - Functions Page
 
 	Feature: Built-in Functions
 
-	* As a user I can read about built-in functions in order to gain more insight into language features
+	Epic: ** As a user I can read about built-in functions in order to gain more insight into language features
 
 		Acceptance Criteria
 
-			On a separate page there is a summary description of built-in functions
+			** On a separate page there is a summary description of built-in functions
 
-### * Epic: Debugging Features - Debugging page
+### ** Debugging Features - Debugging Page
 
-	* As a user I can read a description of debugging features in order to know about ease of coding
+	** Epic: As a user I can read a description of debugging features in order to know about ease of coding
 
 		Acceptance Criteria
 
-			On a separate page there is a summary description of debugging features
+			** On a separate page there is a summary description of debugging features
 
-			Debugging description is supported by screenshots
+			** Debugging description is supported by screenshots
 
 ### Issue Pages
 	Epic: As a user, I can discuss/read about issues and problems with XBasic, in order to further 
