@@ -9,6 +9,7 @@ from django.contrib.postgres.search import SearchVector, SearchQuery,\
     SearchRank
 from django.contrib import messages
 from django.db.models import F
+import cloudinary.uploader
 from .models import FeaturePage, Issue, Answer
 from .forms import IssueForm, AnswerForm
 
@@ -126,7 +127,18 @@ class IssueEdit(View):
         # Update record
         issue_form = IssueForm(request.POST, instance=issue)
         if issue_form.is_valid():
-            issue_form.save()
+            instance = issue_form.save(commit=False)
+
+            if issue_form.cleaned_data['screenshot_img'] != 'placeholder':
+                # Upload the file to Cloudinary
+                uploaded_file = cloudinary.uploader.\
+                    upload(request.FILES['screenshot_img'])
+
+                # Assign the Cloudinary URL to the `image` field of the `Issue`
+                # model instance
+                instance.screenshot_img = uploaded_file['url']
+
+            instance.save()
 
             message_text = "Issue Updated Successfully!"
             messages.success(request, message_text)
@@ -151,10 +163,22 @@ class IssueAdd(View):
 
     def post(self, request, *args, **kwargs):
         issue_form = IssueForm(request.POST)
+        print("GOT TO issue_add, POST")
         if issue_form.is_valid():
+            print("GOT TO issue_add valid form")
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
             instance.author = request.user
+
+            if issue_form.cleaned_data['screenshot_img'] != 'placeholder':
+                # Upload the file to Cloudinary
+                uploaded_file = cloudinary.uploader.\
+                    upload(request.FILES['screenshot_img'])
+
+                # Assign the Cloudinary URL to the `image` field of the `Issue`
+                # model instance
+                instance.screenshot_img = uploaded_file['url']
+
             instance.save()
             # Get the saved record and resave so that we can update search
             # vector
@@ -222,6 +246,14 @@ class AnswerAdd(View):
             answer = answer_form.save(commit=False)
             answer.author = request.user
             answer.related_issue = issue
+            if answer_form.cleaned_data['screenshot_img'] != 'placeholder':
+                # Upload the file to Cloudinary
+                uploaded_file = cloudinary.uploader.\
+                    upload(request.FILES['screenshot_img'])
+
+                # Assign the Cloudinary URL to the `image` field of the `Issue`
+                # model instance
+                answer.screenshot_img = uploaded_file['url']
             answer.save()
 
             message_text = "Answer Added Successfully!"
@@ -264,7 +296,17 @@ class AnswerEdit(View):
         answer = get_object_or_404(Answer, id=answer_id)
         answer_form = AnswerForm(request.POST, instance=answer)
         if answer_form.is_valid():
-            answer_form.save()
+            instance = answer_form.save(commit=False)
+            if answer_form.cleaned_data['screenshot_img'] != 'placeholder':
+                # Upload the file to Cloudinary
+                uploaded_file = cloudinary.uploader.\
+                    upload(request.FILES['screenshot_img'])
+
+                # Assign the Cloudinary URL to the `image` field of the `Issue`
+                # model instance
+                instance.screenshot_img = uploaded_file['url']
+
+            instance.save()
         else:
             print("invalid form")
             print(answer_form.errors)

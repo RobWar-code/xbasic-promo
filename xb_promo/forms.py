@@ -1,5 +1,6 @@
 from django import forms
 from django_summernote.widgets import SummernoteWidget
+from cloudinary.forms import CloudinaryJsFileField
 from .models import Issue, Answer
 
 
@@ -24,6 +25,7 @@ class IssueForm(forms.ModelForm):
                                   TextInput(attrs={'style': 'width: 80%'}))
     keywords = forms.CharField(widget=forms.
                                TextInput(attrs={'style': 'width: 81%'}))
+    # screenshot_img = CloudinaryJsFileField()
 
 
 class AnswerForm(forms.ModelForm):

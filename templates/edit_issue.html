@@ -3,10 +3,11 @@
 {% block content %}
 
 <div class="container">
-    {% if edit %}
-    <form method="post" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
+    {% if edit == 1 %}
+    <form method="post" enctype="multipart/form-data" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
     {% else %}
-    <form method="post">
+    <p>Got Edit: {{ edit }}</p>
+    <form method="post" enctype="multipart/form-data" action="{% url 'add_issue' %}">
     {% endif %}
         {% csrf_token %}
         {{ form.as_p }}

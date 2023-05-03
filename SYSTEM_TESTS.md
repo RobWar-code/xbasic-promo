@@ -523,9 +523,9 @@ along with the other fields.
 
 The issue entry layout includes a feature to select an image using a file system browser
 
-Images are recorded along with the issue description
-
 ![New Issue - entry page](./doc/screenshots/new-issue-2.webp)
+
+Images are recorded along with the issue description
 
 The user is returned to the issues page after a submit, with the entry showing
 
