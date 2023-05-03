@@ -525,12 +525,14 @@ The issue entry layout includes a feature to select an image using a file system
 
 Images are recorded along with the issue description
 
+![New Issue - entry page](./doc/screenshots/new-issue-2.webp)
+
 The user is returned to the issues page after a submit, with the entry showing
 
 A message appears at the top of the screen to indicate an issue added
 
 
-Data Tests
+Data Tests:
 
 Title Left Blank
 
