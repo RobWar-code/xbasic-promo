@@ -129,7 +129,7 @@ class IssueEdit(View):
         if issue_form.is_valid():
             instance = issue_form.save(commit=False)
 
-            if issue_form.cleaned_data['screenshot_img'] != 'placeholder':
+            if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
                     upload(request.FILES['screenshot_img'])
@@ -170,7 +170,7 @@ class IssueAdd(View):
             instance.slug = slugify(instance.title)
             instance.author = request.user
 
-            if issue_form.cleaned_data['screenshot_img'] != 'placeholder':
+            if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
                     upload(request.FILES['screenshot_img'])
@@ -246,7 +246,7 @@ class AnswerAdd(View):
             answer = answer_form.save(commit=False)
             answer.author = request.user
             answer.related_issue = issue
-            if answer_form.cleaned_data['screenshot_img'] != 'placeholder':
+            if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
                     upload(request.FILES['screenshot_img'])
@@ -297,7 +297,7 @@ class AnswerEdit(View):
         answer_form = AnswerForm(request.POST, instance=answer)
         if answer_form.is_valid():
             instance = answer_form.save(commit=False)
-            if answer_form.cleaned_data['screenshot_img'] != 'placeholder':
+            if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
                     upload(request.FILES['screenshot_img'])

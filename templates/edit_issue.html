@@ -6,7 +6,6 @@
     {% if edit == 1 %}
     <form method="post" enctype="multipart/form-data" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
     {% else %}
-    <p>Got Edit: {{ edit }}</p>
     <form method="post" enctype="multipart/form-data" action="{% url 'add_issue' %}">
     {% endif %}
         {% csrf_token %}
