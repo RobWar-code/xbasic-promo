@@ -531,11 +531,17 @@ The user is returned to the issues page after a submit, with the entry showing
 
 A message appears at the top of the screen to indicate an issue added
 
+![New Issue - issue added](./doc/screenshots/new-issue-3.webp)
 
 Data Tests:
 
 Title Left Blank
 
+Focus is set on title field and hover message appears
+
+![New Issue - title left blank](./doc/screenshots/new-issue-title-blank.webp)
+
 Title Duplicated
+![New Issue - title duplicated](./doc/screenshots/new-issue-duplicate-title.webp)
 
 

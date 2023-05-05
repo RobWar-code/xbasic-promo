@@ -39,25 +39,6 @@ Tasks in relation to user stories and other aspects of project work are recorded
 ## Errors / Bug Reports
 
 ### Due:
-Problem: Image not saved with add/edit issue and add/edit answer
-
-Status: Ongoing
-
-Priority: High
-
-The problem was caused by the cloudinary image field not being updated/connected
-to the site using the ModelForm. This has to be done explicitly.
-
-            # Upload the file to Cloudinary
-            uploaded_file = cloudinary.uploader.\
-                upload(request.FILES['screenshot_img'])
-
-            # Assign the Cloudinary URL to the `image` field of the `Issue`
-            # model instance
-            instance.screenshot_img = uploaded_file['url']
-
-
-----
 
 Problem: Admin Pages, Delete Feature Page - Title not displayed on confirmation
 
@@ -87,3 +68,25 @@ was used on the issues and answers pages. This may be a library usage problem.
 Solution:
 
 Withdraw the summernote presentation on the admin pages.
+
+------
+
+Problem: Image not saved with add/edit issue and add/edit answer
+
+Status: Fixed
+
+Priority: High
+
+The problem was caused by the cloudinary image field not being updated/connected
+to the site using the ModelForm. This has to be done explicitly.
+
+            # Upload the file to Cloudinary
+            uploaded_file = cloudinary.uploader.\
+                upload(request.FILES['screenshot_img'])
+
+            # Assign the Cloudinary URL to the `image` field of the `Issue`
+            # model instance
+            instance.screenshot_img = uploaded_file['url']
+
+
+----
