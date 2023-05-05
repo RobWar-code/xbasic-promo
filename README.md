@@ -69,7 +69,7 @@ Solution:
 
 Withdraw the summernote presentation on the admin pages.
 
-------
+----------------------
 
 Problem: Image not saved with add/edit issue and add/edit answer
 
@@ -89,4 +89,25 @@ to the site using the ModelForm. This has to be done explicitly.
             instance.screenshot_img = uploaded_file['url']
 
 
-----
+-----------------
+Problem: Add/Edit Issue - The submit button is too small for the text on small screens
+
+Status: Fixed
+
+Priority: High
+
+Submit button div set to col-4 col-lg-2
+------------------
+Problem: Edit Issue Page - No error message reported to user when duplicate title field
+submitted
+
+Status: Fixed
+
+It was necessary to detect the form error explicitly in the invalid form section
+of the IssueEdit view:
+
+message_text = issue_form.errors.get('title', None)
+
+messages.warning(request, message_text)
+ 
+------------------

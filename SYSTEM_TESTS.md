@@ -544,4 +544,64 @@ Focus is set on title field and hover message appears
 Title Duplicated
 ![New Issue - title duplicated](./doc/screenshots/new-issue-duplicate-title.webp)
 
+Edit Issue:
 
+As an Owner/Administrator I can edit issues so that they conform to standards
+
+Acceptance Criteria
+
+If the user is an owner/administrator an edit button appears on an issue
+
+![Edit Issue - edit facility](./doc/screenshots/edit-issue-1.webp)
+
+Clicking the edit button enables editing of the current issue
+
+When the edit button is clicked a submit button appears in the issue area
+
+![Edit Issue - edit page](./doc/screenshots/edit-issue-2.webp)
+
+The user is returned to the issue page with entry after an edit
+
+A success message appears toward the top of the page
+
+![Edit Issue - edit completed](./doc/screenshots/edit-issue-3.webp)
+
+Data Tests
+
+Image Deleted
+
+![Edit Issue - image delete - clear](./doc/screenshots/edit-issue-image-deleted-1.webp)
+
+![Edit Issue - image deleted](./doc/screenshots/edit-issue-image-deleted-2.webp)
+
+Image Replaced
+
+![Edit Issue - image replaced - page](./doc/screenshots/edit-issue-image-replaced-1.webp)
+
+![Edit Issue - image replace - completed](./doc/screenshots/edit-issue-image-replaced-2.webp)
+
+Title Blank
+
+Focus set on title, hover message appears
+
+![Edit Issue - title left blank](./doc/screenshots/edit-issue-title-left-blank.webp)
+
+Title Duplicated
+
+![Edit Issue - duplicate title](./doc/screenshots/edit-issue-title-duplicated.webp)
+
+Delete Issue
+
+As an Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
+
+Acceptance Criteria
+
+![Delete Issue - delete option available](./doc/screenshots/delete-issue-1.webp)
+
+There should be a confirmation before the delete is executed
+
+![Delete Issue - confirmation](./doc/screenshots/delete-issue-2.webp)
+
+There should be a message after the delete
+
+![Delete Issue - message](./doc/screenshots/delete-issue-3.webp)

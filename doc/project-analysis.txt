@@ -460,98 +460,110 @@ Contents
 
 			** There are next and previous buttons on the reply area
 
-	As a user, when I am not logged-in I can see a message about issue options in order to be informed
+	** As a user, when I am not logged-in I can see a message about issue options in order to be informed
 
 		Acceptance Criteria
 
-		When the user is not logged-in a message is displayed
+		** When the user is not logged-in a message is displayed
 
-	As user I can add issues or edit my own issues so that I do not interfere with others work
+	** As user I can add issues or edit my own issues so that I do not interfere with others work
 
 		Acceptance Criteria
 
-		When a user's issue is displayed, the new and edit options are available
+		** When a user's issue is displayed, the new and edit options are available
 
-		When another user's issue is displayed, only the new option is available
+		** When another user's issue is displayed, only the new option is available
 
-	As an administrator I can add, edit or delete any issue in order to maintain editorial standards
+	** As an administrator I can add, edit or delete any issue in order to maintain editorial standards
 
 		Acceptance Criteria
 		
-		When the user is an administrator the New, Edit and Delete buttons are available
+		** When the user is an administrator the New, Edit and Delete buttons are available
 
 	Add Issue
 
-	As a user, I can raise an issue, in order to ask for help in resolving my problem/issue
+	** As a user, I can raise an issue, in order to ask for help in resolving my problem/issue
 
 		Acceptance Criteria
 
-			On the issues page there is an new issue button
+			** On the issues page there is an new issue button
 
-			When the user clicks on the new issue button a form area is presented, ready to enter text into 
+			** When the user clicks on the new issue button a form area is presented, ready to enter text into 
 
-	As a user I can enter a title for an issue in order for myself and others to find it
-
-		Acceptance Criteria
-
-			When the new Issue button is clicked, the user is required to enter a title
-
-	As a user I can enter keywords for my issue so that it can be searched for later
+	** As a user I can enter a title for an issue in order for myself and others to find it
 
 		Acceptance Criteria
 
-			When the user clicks the Add Issue button, he is presented with a keywords field
-			along with the other fields.
+			** When the new Issue button is clicked, the user is required to enter a title
 
-	As a user I can more clearly explain my issue with a screenshot in order to communicate the issue
+	** As a user I can enter keywords for my issue so that it can be searched for later
 
 		Acceptance Criteria
 
-			The issue entry layout includes a feature to select an image using a file system browser
+			** When the user clicks the Add Issue button, he is presented with a keywords field
+			** along with the other fields.
 
-			Images are recorded along with the issue description
+	** As a user I can more clearly explain my issue with a screenshot in order to communicate the issue
 
-	As user I can see clearly when a issue has been added in order to be confident
+		Acceptance Criteria
 
-		The user is returned to the issues page after a submit, with the entry showing
+			** The issue entry layout includes a feature to select an image using a file system browser
 
-		A message appears at the top of the screen to indicate an issue added
+			** Images are recorded along with the issue description
+
+	** As user I can see clearly when a issue has been added in order to be confident
+
+		** The user is returned to the issues page after a submit, with the entry showing
+
+		** A message appears at the top of the screen to indicate an issue added
 
 	Data Tests
 
-		Title Left Blank
+		** Title Left Blank
 
-		Title Duplicated
+		** Title Duplicated
 
 	Edit Issue
 
-	As an Owner/Administrator I can edit issues so that they conform to standards
+	** As an Owner/Administrator I can edit issues so that they conform to standards
 
 		Acceptance Criteria
 
-			If the user is an owner/administrator an edit button appears on an issue
+			** If the user is an owner/administrator an edit button appears on an issue
 
-			Clicking the edit button enables editing of the current issue
+			** Clicking the edit button enables editing of the current issue
 
-			When the edit button is clicked a submit button appears in the issue area
+			** When the edit button is clicked a submit button appears in the issue area
 
 
-	As a user I can see when an edit or addition of an issue is effective in order to 
+	** As a user I can see when an edit or addition of an issue is effective in order to 
 		feel confident of my modification
 
 		Acceptance Criteria:
-		A success message appears toward the top of the page
 
+		** The user is returned to the issue page with entry after an edit
 
-	Delete Issue
+		** A success message appears toward the top of the page
 
-	As a Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
+	Data Tests
+
+		** Image Deleted
+
+		** Image Replaced
+
+		** Title Blank
+
+		** Title Duplicated
+
+	** Delete Issue
+
+	** As a Owner/Administrator, I can delete an issue, in order to remove unnecessary or offensive issues
 
 		Acceptance Criteria
 
-			There should be a message after the delete
+			** There should be a confirmation before the delete is executed
 
-			There should be a confirmation before the delete is executed
+			** There should be a message after the delete
 
 
 #### Data Model

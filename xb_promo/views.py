@@ -147,6 +147,9 @@ class IssueEdit(View):
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field)
 
+        # Check for duplicate title
+        message_text = issue_form.errors.get('title', None)
+        messages.warning(request, message_text)
         form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
                       {'form': form,
@@ -163,9 +166,7 @@ class IssueAdd(View):
 
     def post(self, request, *args, **kwargs):
         issue_form = IssueForm(request.POST)
-        print("GOT TO issue_add, POST")
         if issue_form.is_valid():
-            print("GOT TO issue_add valid form")
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
             instance.author = request.user
@@ -308,8 +309,6 @@ class AnswerEdit(View):
 
             instance.save()
         else:
-            print("invalid form")
-            print(answer_form.errors)
             return redirect('edit_answer', issue_id=issue_id,
                             answer_id=answer_id)
 
@@ -339,14 +338,11 @@ def delete_answer(request, issue_id, answer_id):
         message_text = "Delete Answer Successful!"
         messages.success(request, message_text)
         # Get the issue to redisplay
-        print(f"issue id: {issue_id}")
         issue = Issue.objects.get(id=issue_id)
         search_field = issue.title
-        print(f"Title: {search_field}")
         redirect_url = reverse('step_issue',
                                kwargs={'issue_num': 0, 'answer_num': 0,
                                        'search_field': search_field})
-        print(f"Url: {redirect_url}")
         return JsonResponse({
             'success': True,
             'redirect_url': f'{redirect_url}'
