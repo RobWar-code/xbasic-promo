@@ -37,13 +37,6 @@ Tasks in relation to user stories and other aspects of project work are recorded
 [Work Log](/doc/work-log.txt)
 
 ## Errors / Bug Reports
-Problem: Add Answer/Edit Answer - Image not uploaded
-
-Status: Ongoing
-
-Priority: high
-
-This is the same as the problem as it appeared in the issue form.
 
 ### Due:
 
@@ -118,3 +111,17 @@ message_text = issue_form.errors.get('title', None)
 messages.warning(request, message_text)
  
 ------------------
+
+Problem: Add Answer/Edit Answer - Image not uploaded
+
+Status: Fixed
+
+Priority: high
+
+This is the same as the problem as it appeared in the issue form.
+In this case solved by adding 
+
+enctype="multipart/form-data"
+
+to the template.
+---------------------

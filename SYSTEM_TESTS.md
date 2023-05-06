@@ -659,3 +659,21 @@ Message to indicate how to add
 Add Answer
 
 As a logged-in user I can add a reply to an issue in order to inform other users and participate
+
+Acceptance Criteria
+
+There is a New button on the issues area, which raises an Answer entry form
+on the issues page
+
+The layout of the Answer form is very similar to the issue form
+
+![Add Answer - form](./doc/screenshots/add-answer-1.webp)
+
+When the new answer is submitted, the user is returned to the issues page with
+the issue and answer displayed
+
+A message appears when the form is successfully submitted
+
+![Add Answer - submitted message](./doc/screenshots/add-answer-2.webp)
+
+![Add Answer - page presented](./doc/screenshots/add-answer-3.webp)

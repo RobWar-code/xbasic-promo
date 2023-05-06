@@ -3,7 +3,11 @@
 {% block content %}
 
 <div class="container">
-    
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Issue</h3>
+        </div>
+    </div>
     {% if edit == 1 %}
     <form method="post" enctype="multipart/form-data" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
     {% else %}

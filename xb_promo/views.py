@@ -170,7 +170,6 @@ class IssueAdd(View):
             instance = issue_form.save(commit=False)
             instance.slug = slugify(instance.title)
             instance.author = request.user
-
             if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
@@ -242,14 +241,11 @@ class AnswerAdd(View):
     def post(self, request, *args, **kwargs):
         issue_id = kwargs["issue_id"]
         issue = get_object_or_404(Issue, id=issue_id)
-        answer_form = AnswerForm(request.POST)
+        answer_form = AnswerForm(request.POST, request.FILES)
         if answer_form.is_valid():
             answer = answer_form.save(commit=False)
             answer.author = request.user
             answer.related_issue = issue
-            # Debug
-            print("Files:", request.FILES)
-            print("Form:", request.FORM)
             if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\
