@@ -605,3 +605,57 @@ There should be a confirmation before the delete is executed
 There should be a message after the delete
 
 ![Delete Issue - message](./doc/screenshots/delete-issue-3.webp)
+
+### Answers
+
+Answer Edit Options Availability:
+
+If user is super-user/owner/administrator
+
+No Answers
+
+Options: New
+
+![No Answers](./doc/screenshots/answer-opts-owner-no-answers.webp)
+
+Otherwise
+                    
+Options: New, Edit, Delete
+
+![Has Answer](./doc/screenshots/answer-opts-owner-has-answer.webp)
+
+Else If general user
+
+No Answers:
+
+Options: New
+
+![General User - no answer](./doc/screenshots/answer-opts-gen-user-no-answers.webp)
+
+If the user is the author:
+
+Options: New, Edit
+
+![General User - answer author](./doc/screenshots/answer-opts-gen-user-author-answer.webp)
+
+If the user is NOT the author:
+
+![General User - not author](./doc/screenshots/answer-opts-gen-user-not-author.webp)
+
+Options: New
+
+Else (NOT logged-in)
+
+Options: None
+                
+Message to indicate how to add
+
+![No User Logged-in - message](./doc/screenshots/answer-opts-no-user-1.webp)
+
+![No User Logged-in - no answers](./doc/screenshots/answer-opts-no-user-2.webp)
+
+![No User Logged-in - has answers](./doc/screenshots/answer-opts-no-user-3.webp)
+
+Add Answer
+
+As a logged-in user I can add a reply to an issue in order to inform other users and participate

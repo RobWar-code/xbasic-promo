@@ -590,6 +590,20 @@ Epic: As a logged-in user I can add a reply to an issue in order to inform other
 
 			The layout of the Answer form is very similar to the issue form
 
+			When the new answer is submitted, the user is returned to the issues page with
+			the issue and answer displayed
+
+			A message appears when the form is successfully submitted
+
+	Data Tests
+		image inserted
+
+		image blank
+
+		title blank
+
+		title duplicated
+
 	As an Administrator or the author I can edit replies so that they conform to standards
 
 		Acceptance Criteria:

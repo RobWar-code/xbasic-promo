@@ -309,6 +309,8 @@ class AnswerEdit(View):
 
             instance.save()
         else:
+            message_text = answer_form.errors.get('title', None)
+            messages.warning(request, message_text)
             return redirect('edit_answer', issue_id=issue_id,
                             answer_id=answer_id)
 
