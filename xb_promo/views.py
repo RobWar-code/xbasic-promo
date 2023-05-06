@@ -247,6 +247,9 @@ class AnswerAdd(View):
             answer = answer_form.save(commit=False)
             answer.author = request.user
             answer.related_issue = issue
+            # Debug
+            print("Files:", request.FILES)
+            print("Form:", request.FORM)
             if 'screenshot_img' in request.FILES:
                 # Upload the file to Cloudinary
                 uploaded_file = cloudinary.uploader.\

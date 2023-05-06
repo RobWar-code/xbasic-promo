@@ -37,6 +37,13 @@ Tasks in relation to user stories and other aspects of project work are recorded
 [Work Log](/doc/work-log.txt)
 
 ## Errors / Bug Reports
+Problem: Add Answer/Edit Answer - Image not uploaded
+
+Status: Ongoing
+
+Priority: high
+
+This is the same as the problem as it appeared in the issue form.
 
 ### Due:
 
