@@ -689,3 +689,62 @@ The focus is set on the title, with a hover message displayed
 title duplicated
 
 ![Add Answer - title duplicated](./doc/screenshots/add-answer-duplicate-title.webp)
+
+Edit Answer:
+
+As an Administrator or the author I can edit answers so that they conform to standards
+
+Acceptance Criteria:
+
+If the user is an owner/administrator an edit button appears above the answer
+
+![Edit Answer - Edit Button](./doc/screenshots/edit-answer-1.webp)
+
+Clicking the edit button enables editing of the current answer
+
+![Edit Answer - Edit Answer Page Top](./doc/screenshots/edit-answer-2.webp)
+
+![Edit Answer - Edit Answer Page Form](./doc/screenshots/edit-answer-3.webp)
+
+When the submit button is clicked the user is returned to the issues page with the 
+appropriate issue and answer displayed
+
+When the record is added a message appears on the relevant issues page
+
+![Edit Answer - Submitted - Issue Page](./doc/screenshots/edit-answer-4.webp)
+
+![Edit Answer - Submitted - Issue Page Answer](./doc/screenshots/edit-answer-5.webp)
+
+Data Tests:
+
+title blank
+
+message appears in hover text with the focus on title
+
+![Edit Answer - Title Blank](./doc/screenshots/edit-answer-title-blank.webp)
+
+title duplicated
+
+![Edit Answer - Title Duplicated](./doc/screenshots/edit-answer-title-duplicated.webp)
+
+Delete Answers
+
+As an Administrator I can delete answers in order to maintain standards
+
+Acceptance Criteria:
+
+![Delete Answer - Delete Button](./doc/screenshots/delete-answer-1.webp)
+
+Clicking the delete button on the answer form of the issues page causes
+the confirm option to appear
+
+![Delete Answer - User Confirmation](./doc/screenshots/delete-answer-2.webp)
+
+Once the deletion has been confirmed the answer record is deleted
+
+When an answer deletion is done a message appears at the top of the page
+
+![Delete Answer - Completed](./doc/screenshots/delete-answer-3.webp)
+
+When an answer deletion is done the issue page displays the current issue
+

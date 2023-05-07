@@ -581,33 +581,52 @@ Contents
 	search_vector   SearchVector     For keyword searches on title, description and keywords
 
 ### Answers, Add/Edit/Delete Answers
-Epic: As a logged-in user I can add a reply to an issue in order to inform other users and participate
+
+** Add Answers
+
+** Epic: As a logged-in user I can add a reply to an issue in order to inform other users and participate
 
 		Acceptance Criteria
 
-			There is a New button on the issues area, which raises a Answer entry form
+			** There is a New button on the issues area, which raises a Answer entry form
 			on the issues page
 
-			The layout of the Answer form is very similar to the issue form
+			** The layout of the Answer form is very similar to the issue form
 
-			When the new answer is submitted, the user is returned to the issues page with
+			** When the new answer is submitted, the user is returned to the issues page with
 			the issue and answer displayed
 
-			A message appears when the form is successfully submitted
+			** A message appears when the form is successfully submitted
 
 	Data Tests
-	
-		title blank
 
-		title duplicated
+		** title blank
 
-	As an Administrator or the author I can edit replies so that they conform to standards
+		** title duplicated
+
+
+	** Edit Answers
+
+	** As an Administrator or the author I can edit answers so that they conform to standards
 
 		Acceptance Criteria:
 
-			If the user is an owner/administrator an edit button appears on a reply
+			** If the user is an owner/administrator an edit button appears above the answer
 
-			Clicking the edit button enables editing of the current reply
+			** Clicking the edit button enables editing of the current answer
+
+			** When the submit button is clicked the user is returned to the issues page with appropriate issue 
+			and answer displayed
+
+			** When the record is added a message appears on the relevant issues page
+
+	Data Tests:
+
+		** Title blank
+
+		** Title Duplicated
+
+	Delete Answer
 
 	As an Administrator I can delete answers in order to maintain standards
 
