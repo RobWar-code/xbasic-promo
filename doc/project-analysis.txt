@@ -596,10 +596,7 @@ Epic: As a logged-in user I can add a reply to an issue in order to inform other
 			A message appears when the form is successfully submitted
 
 	Data Tests
-		image inserted
-
-		image blank
-
+	
 		title blank
 
 		title duplicated

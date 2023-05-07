@@ -677,3 +677,15 @@ A message appears when the form is successfully submitted
 ![Add Answer - submitted message](./doc/screenshots/add-answer-2.webp)
 
 ![Add Answer - page presented](./doc/screenshots/add-answer-3.webp)
+
+Data Tests:
+	
+title blank
+
+The focus is set on the title, with a hover message displayed
+
+![Add Answer - title blank](./doc/screenshots/add-answer-title-blank.webp)
+
+title duplicated
+
+![Add Answer - title duplicated](./doc/screenshots/add-answer-duplicate-title.webp)

@@ -125,3 +125,11 @@ enctype="multipart/form-data"
 
 to the template.
 ---------------------
+Problem: Add Answer, When Title Duplicated - no message
+
+Status: Fixed
+
+Priority: High
+
+Message displayed as warning
+-------------------
