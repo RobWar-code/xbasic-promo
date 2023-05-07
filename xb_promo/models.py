@@ -33,6 +33,9 @@ class FeatureSection(models.Model):
     class Meta:
         ordering = ['feature_page', 'section_number']
 
+    def __str__(self):
+        return self.title
+
 
 class Issue(models.Model):
     title = models.CharField(max_length=80, unique=True)

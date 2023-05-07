@@ -39,15 +39,18 @@ Tasks in relation to user stories and other aspects of project work are recorded
 ## Errors / Bug Reports
 
 ### Due:
-
-Problem: Admin Pages, Delete Feature Page - Title not displayed on confirmation
+Problem: Admin Pages - Summernote editor fails to work once 
+used elsewhere in site - needs investigation
 
 Status: Ongoing
 
 Priority: Medium
 
---------------------
+Temp fix - just use text editing on the content fields
 
+Could be due to a dual reference to the summernote library in different modules
+
+--------------------------
 Problem: Admin Pages, Add Issue - Search Vector field not updated
 
 Status: Ongoing
@@ -133,3 +136,17 @@ Priority: High
 
 Message displayed as warning
 -------------------
+
+Problem: Admin Pages, Delete Feature Section - Title not displayed on confirmation
+
+Status: Fixed
+
+Priority: Medium
+
+The model FeatureSection required the function
+
+def __str__(self):
+    return self.title
+
+![Admin Editor - Delete Section Confirmation](./doc/screenshots/admin-editor-debug-section-delete.webp)
+--------------------
