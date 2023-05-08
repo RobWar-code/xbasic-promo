@@ -66,15 +66,84 @@ Register 1140
 
 Admin Main Page - 350
 
+![Admin Main Page - 350 - 1](./doc/media-shots/admin-main-page-350-1.webp)
+
+![Admin Main Page - 350 - 2](./doc/media-shots/admin-main-page-350-2.webp)
+
 Admin Main Page - 540
+
+![Admin Main Page - 540 - 1](./doc/media-shots/admin-main-page-540-1.webp)
+
+![Admin Main Page - 540 - 2](./doc/media-shots/admin-main-page-540-2.webp)
 
 Admin Main Page - 720
 
+![Admin Main Page - 720 - 1](./doc/media-shots/admin-main-page-720-1.webp)
+
+![Admin Main Page - 720 - 2](./doc/media-shots/admin-main-page-720-2.webp)
+
 Admin Main Page - 960
+
+![Admin Main Page - 960 - 1](./doc/media-shots/admin-main-page-960-1.webp)
+
+![Admin Main Page - 960 - 2](./doc/media-shots/admin-main-page-960-2.webp)
 
 Admin Main Page - 1140
 
+![Admin Main Page - 1140 - 1](./doc/media-shots/admin-main-page-1140-1.webp)
+
+![Admin Main Page - 1140 - 2](./doc/media-shots/admin-main-page-1140-2.webp)
+
 ### Admin Record List Page
 
+Admin Record List 350
+
+![Admin Record List - 350](./doc/media-shots/admin-record-list-350.webp)
+
+Admin Record List 540
+
+![Admin Record List - 540](./doc/media-shots/admin-record-list-540.webp)
+
+Admin Record List 720
+
+![Admin Record List - 720](./doc/media-shots/admin-record-list-720.webp)
+
+Admin Record List 960
+
+![Admin Record List - 960](./doc/media-shots/admin-record-list-960.webp)
+
+Admin Record List 1140
+
+![Admin Record List - 1140](./doc/media-shots/admin-record-list-1140.webp)
 
 ### Admin Record Edit Page
+
+Admin Edit Record - 350
+
+![Admin Edit Record - 350 - 1](./doc/media-shots/admin-edit-record-350-1.webp)
+
+![Admin Edit Record - 350 - 2](./doc/media-shots/admin-edit-record-350-2.webp)
+
+Admin Edit Record - 540
+
+![Admin Edit Record - 540 - 1](./doc/media-shots/admin-edit-record-540-1.webp)
+
+![Admin Edit Record - 540 - 2](./doc/media-shots/admin-edit-record-540-2.webp)
+
+Admin Edit Record - 720
+
+![Admin Edit Record - 720 - 1](./doc/media-shots/admin-edit-record-720-1.webp)
+
+![Admin Edit Record - 720 - 2](./doc/media-shots/admin-edit-record-720-2.webp)
+
+Admin Edit Record - 960
+
+![Admin Edit Record - 960 - 1](./doc/media-shots/admin-edit-record-960-1.webp)
+
+![Admin Edit Record - 960 - 2](./doc/media-shots/admin-edit-record-960-2.webp)
+
+Admin Edit Record - 1140
+
+![Admin Edit Record - 1140 - 1](./doc/media-shots/admin-edit-record-1140-1.webp)
+
+![Admin Edit Record - 1140 - 2](./doc/media-shots/admin-edit-record-1140-2.webp)
