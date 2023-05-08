@@ -59,3 +59,22 @@ Register 960
 Register 1140
 
 ![Register 1140](./doc/media-shots/register-1140.webp)
+
+## Admin
+
+### Admin Main Page
+
+Admin Main Page - 350
+
+Admin Main Page - 540
+
+Admin Main Page - 720
+
+Admin Main Page - 960
+
+Admin Main Page - 1140
+
+### Admin Record List Page
+
+
+### Admin Record Edit Page
