@@ -147,3 +147,42 @@ Admin Edit Record - 1140
 ![Admin Edit Record - 1140 - 1](./doc/media-shots/admin-edit-record-1140-1.webp)
 
 ![Admin Edit Record - 1140 - 2](./doc/media-shots/admin-edit-record-1140-2.webp)
+
+## XBasic Main Site
+
+### Introductory Page
+
+Introductory Page - 350
+
+![Introduction - 350 - 1](./doc/media-shots/xb-intro-350-1.webp)
+
+![Introduction - 350 - 2](./doc/media-shots/xb-intro-350-2.webp)
+
+![Introduction - 350 - 3](./doc/media-shots/xb-intro-350-3.webp)
+
+Introductory Page - 540
+
+![Introduction - 540 - 1](./doc/media-shots/xb-intro-540-1.webp)
+
+![Introduction - 540 - 2](./doc/media-shots/xb-intro-540-2.webp)
+
+![Introduction - 540 - 3](./doc/media-shots/xb-intro-540-3.webp)
+
+Introductory Page - 720
+
+![Introduction - 720 - 1](./doc/media-shots/xb-intro-720-1.webp)
+
+![Introduction - 720 - 2](./doc/media-shots/xb-intro-720-2.webp)
+
+Introductory Page - 960
+
+![Introduction - 960 - 1](./doc/media-shots/xb-intro-960-1.webp)
+
+![Introduction - 960 - 2](./doc/media-shots/xb-intro-960-2.webp)
+
+Introductory Page - 1140
+
+![Introduction - 1140 - 1](./doc/media-shots/xb-intro-1140-1.webp)
+
+![Introduction - 1140 - 2](./doc/media-shots/xb-intro-1140-2.webp)
+
