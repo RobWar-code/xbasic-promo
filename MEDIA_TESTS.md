@@ -259,3 +259,34 @@ Issues 1140
 ![Issues - 1140 - 1](./doc/media-shots/issues-1140-1.webp)
 
 ![Issues - 1140 - 2](./doc/media-shots/issues-1140-2.webp)
+
+### Edit/Add Issue
+
+Edit Issue - 350
+
+![Edit Issue - 350 - 1](./doc/media-shots/edit-issue-350-1.webp)
+
+![Edit Issue - 350 - 2](./doc/media-shots/edit-issue-350-2.webp)
+
+Edit Issue - 540
+
+![Edit Issue - 540 - 1](./doc/media-shots/edit-issue-540-1.webp)
+
+![Edit Issue - 540 - 2](./doc/media-shots/edit-issue-540-2.webp)
+
+Edit Issue - 720
+
+![Edit Issue - 720 - 1](./doc/media-shots/edit-issue-720-1.webp)
+
+![Edit Issue - 720 - 2](./doc/media-shots/edit-issue-720-2.webp)
+
+
+Edit Issue - 960
+
+![Edit Issue - 960 - 1](./doc/media-shots/edit-issue-960-1.webp)
+
+![Edit Issue - 960 - 2](./doc/media-shots/edit-issue-960-2.webp)
+
+Edit Issue - 1140
+
+![Edit Issue - 1140](./doc/media-shots/edit-issue-1140.webp)
