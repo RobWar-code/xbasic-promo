@@ -4,24 +4,22 @@ Contents
 
 Work Due
     
-    Document and remove problem with summernote on admin pages
-
     Documentation:
 
-    Add the acceptance criteria to the issues in the project plan
+    Document the set-up procedures for the project in the README
 
-    Prepare the manual systems test plan
+    Perform the PEP-C8 python tests
 
-    General:
+    Perform the W3C CSS test
 
-    Include the meta author fields etc. in base.html
+    Perform the W3C HTML test
+
+    Perform the deployment of the project to heroku
+
+    Perform the google performance tests
+
     
-    * Put actual times for development in schedule
-
-    * Rework Project Notes to allow for Django MVT following the guidelines
-      established for portfolio4 of the CI Course.
-
-    * Set-up the github project as a Django project
+    General:
 
         Review the README.md layout example on the CI Course
 
@@ -30,6 +28,26 @@ Work Due
     Write-up notes on django/ajax interaction
 
 Work Done (completed by date)
+    08/05/2023
+    * Document and remove problem with summernote on admin pages
+
+    * Add the acceptance criteria to the issues in the project plan
+
+    * Prepare the manual systems test plan
+
+    * Execute Systems Tests
+
+    * Do Media Responsiveness Tests
+
+    * Include the meta author fields etc. in base.html
+    
+    * Put actual times for development in schedule
+
+    * Rework Project Notes to allow for Django MVT following the guidelines
+      established for portfolio4 of the CI Course.
+
+    * Set-up the github project as a Django project
+
     23/04/2023
     Epic: Registration, General
     User Story: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities

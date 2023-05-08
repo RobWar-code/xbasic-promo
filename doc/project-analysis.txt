@@ -926,7 +926,7 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	The available time is 42 man days.
 
 	Systems Testing						10					    14
-	Media Tests							 3
+	Media Tests							 3						1
 	README details						 4
 
 	We need the problems and answers sections to meet the CI requirements. So
