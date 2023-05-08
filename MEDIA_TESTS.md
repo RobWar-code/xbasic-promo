@@ -186,3 +186,76 @@ Introductory Page - 1140
 
 ![Introduction - 1140 - 2](./doc/media-shots/xb-intro-1140-2.webp)
 
+### Feature Page Sample
+
+Feature Page - 350
+
+![Feature Page - 350 - 1](./doc/media-shots/xb-feature-350-1.webp)
+
+![Feature Page - 350 - 2](./doc/media-shots/xb-feature-350-2.webp)
+
+![Feature Page - 350 - 3](./doc/media-shots/xb-feature-350-3.webp)
+
+Feature Page - 540
+
+![Feature Page - 540 - 1](./doc/media-shots/xb-feature-540-1.webp)
+
+![Feature Page - 540 - 2](./doc/media-shots/xb-feature-540-2.webp)
+
+![Feature Page - 540 - 3](./doc/media-shots/xb-feature-540-3.webp)
+
+Feature Page - 720
+
+![Feature Page - 720 - 1](./doc/media-shots/xb-feature-720-1.webp)
+
+![Feature Page - 720 - 2](./doc/media-shots/xb-feature-720-2.webp)
+
+![Feature Page - 720 - 3](./doc/media-shots/xb-feature-720-3.webp)
+
+Feature Page - 960
+
+![Feature Page - 960 - 1](./doc/media-shots/xb-feature-960-1.webp)
+
+![Feature Page - 960 - 2](./doc/media-shots/xb-feature-960-2.webp)
+
+Feature Page - 1140
+
+![Feature Page - 1140 - 1](./doc/media-shots/xb-feature-1140-1.webp)
+
+![Feature Page - 1140 - 2](./doc/media-shots/xb-feature-1140-2.webp)
+
+### Issues Page
+
+Issues 350
+
+![Issues - 350 - 1](./doc/media-shots/issues-350-1.webp)
+
+![Issues - 350 - 2](./doc/media-shots/issues-350-2.webp)
+
+![Issues - 350 - 3](./doc/media-shots/issues-350-3.webp)
+
+Issues 540
+
+![Issues - 540 - 1](./doc/media-shots/issues-540-1.webp)
+
+![Issues - 540 - 2](./doc/media-shots/issues-540-2.webp)
+
+![Issues - 540 - 3](./doc/media-shots/issues-540-3.webp)
+
+Issues 720
+
+![Issues - 720 - 1](./doc/media-shots/issues-720-1.webp)
+
+![Issues - 720 - 2](./doc/media-shots/issues-720-2.webp)
+
+Issues 960
+
+![Issues - 960 - 1](./doc/media-shots/issues-960-1.webp)
+
+![Issues - 960 - 2](./doc/media-shots/issues-960-2.webp)
+
+Issues 1140
+
+![Issues - 1140 - 1](./doc/media-shots/issues-1140-1.webp)
+
+![Issues - 1140 - 2](./doc/media-shots/issues-1140-2.webp)
