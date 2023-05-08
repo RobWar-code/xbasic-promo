@@ -36,6 +36,14 @@ xbasic-promo. [Project Planner](https://github.com/users/RobWar-code/projects/4)
 Tasks in relation to user stories and other aspects of project work are recorded in
 [Work Log](/doc/work-log.txt)
 
+## Systems Tests
+
+Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEMS_TESTS.md)
+
+## Media Tests
+
+Media Tests are in the file [MEDIA_TESTS.md](./SYSTEMS_TESTS.md)
+
 ## Errors / Bug Reports
 
 ### Due:

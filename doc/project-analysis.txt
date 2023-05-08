@@ -626,20 +626,20 @@ Contents
 
 		** Title Duplicated
 
-	Delete Answer
+	** Delete Answer
 
-	As an Administrator I can delete answers in order to maintain standards
+	** As an Administrator I can delete answers in order to maintain standards
 
 		Acceptance Criteria:
 
-			Clicking the delete button on the answer form of the issues page causes
+			** Clicking the delete button on the answer form of the issues page causes
 			the confirm option to appear
 
-			Once the deletion has been confirmed the answer record is deleted
+			** Once the deletion has been confirmed the answer record is deleted
 
-			When an answer deletion is done a message appears at the top of the page
+			** When an answer deletion is done a message appears at the top of the page
 
-			When an answer deletion is done the issue page displays the current issue
+			** When an answer deletion is done the issue page displays the current issue
 
 #### Data Model 
 	Field           Type             Other Aspects
@@ -653,7 +653,7 @@ Contents
 	screenshot_img  Cloudinary Field Default is 'placeholder', can be blank
 
 #### Summary of Editing Options for users
-        Ensure the right edit options are presented:
+        ** Ensure the right edit options are presented:
 
             If user is super-user
 
@@ -715,7 +715,7 @@ Forms reference: https://docs.djangoproject.com/en/dev/topics/forms/
 Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/
 
 
-### * Epic: As a new user I can register myself in order to be known to the XBasic community
+### ** Epic: As a new user I can register myself in order to be known to the XBasic community
 
 	* As a new user I can register my email address in order to receive XBasic mailings
 
@@ -776,7 +776,7 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	Built-in Functions - functions.html
 	Debugging Features - debugging.html
 	Problems/Issues - issues.html
-	Sign-In/Sign-Up - pop-up?
+	Sign-In/Sign-Up or Logout
 	Home
 
 ## Budgetary Constraints
@@ -899,7 +899,7 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	Redrafted 02/04/2023
 
 	Project Component				Man Days	Priority	Actual
-	Planning and Analysis				8			1
+	Planning and Analysis				8			1           12
 	Set-up of XB Doc Pages				1			2			0.2
 	Favicon								0.5			2			0.2
 	Logo / Title						0.5			1			0.5
@@ -912,19 +912,23 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	Introduction to Functions			2			2			1
 	Introduction to Debugging Features	2			2			1
 
-	General User sign-in/registration   2			1
+	General User sign-in/registration   2			1           2
 
-	                        Sub-Total   21
+	                        Sub-Total   21						21.4
 
 	The following will only be executed if there is sufficient time once the features are done
 	Search Problems and Answers			3    		3			2
 	Submit Problem						4.5			3			2
 	Submit Answers						2.5			3			1
 	Edit Problems/Answers				4			3			4
-                             Sub Total  14
-	Totals								35
-
+                             Sub Total  14                      9
+	Totals								35						30.4
 	The available time is 42 man days.
+
+	Systems Testing						10					    14
+	Media Tests							 3
+	README details						 4
+
 	We need the problems and answers sections to meet the CI requirements. So
 	this and the associated user registration should be worked on first.
 

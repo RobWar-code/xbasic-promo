@@ -2,7 +2,9 @@
 
 ## Introduction
 
-For more details on these tests please consult [Project Analysis](/doc/project-analysis.txt)
+For more details on these tests please consult [Project Analysis](./doc/project-analysis.txt)
+
+Media Responsiveness Tests are the file [MEDIA_TESTS.md](./MEDIA_TESTS.md)
 
 ## Header
 
