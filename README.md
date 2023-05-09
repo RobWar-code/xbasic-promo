@@ -72,6 +72,31 @@ Using: https://jigsaw.w3.org/css-validator/#validate_by_input
 
 ![style.css](./doc/code-test-shots/style-css-test.png)
 
+### HTML Templates
+Using djlint (pip install djlint), djlint file-path --lint
+
+templates directory
+
+answer_panel
+
+Note that the width for the image is set as 100% in the css file
+
+![Answer Panel Test](./doc/code-test-shots/answer-panel-html-test.webp)
+
+base
+
+edit_answer
+
+edit_issue
+
+index
+
+issue_control
+
+issue_panel
+
+issues
+
 
 ## Errors / Bug Reports
 
