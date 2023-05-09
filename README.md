@@ -85,18 +85,39 @@ Note that the width for the image is set as 100% in the css file
 
 base
 
+The duplicate attribute is a repeated href used also for the title logo
+
+![djlint base.html](./doc/code-test-shots/base-html-test.webp)
+
 edit_answer
+
+The apparently orphan form tag is a part of a template
+conditional if .. else
+
+![djlint edit_answer.html](./doc/code-test-shots/edit-answer-html-test.webp)
 
 edit_issue
 
+The apparently orphan form tag is a part of a template
+conditional if .. else
+
+![djlint edit_issue.html](./doc/code-test-shots/edit-issue-html-test.webp)
+
 index
+
+![djlint index.html](./doc/code-test-shots/index-html-test.webp)
 
 issue_control
 
+![djlint issue_control.html](./doc/code-test-shots/issue-control-html-test.webp)
+
 issue_panel
+
+![djlint issue_panel.html](./doc/code-test-shots/issue-panel-html-test.webp)
 
 issues
 
+![djlint issues.html](./doc/code-test-shots/issues-html-test.webp)
 
 ## Errors / Bug Reports
 

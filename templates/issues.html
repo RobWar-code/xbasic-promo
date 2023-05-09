@@ -14,7 +14,7 @@
         </div>
         <div class="row mb-3">
             <div class="col-12 text-center">
-                <form action="{% url 'issue_display' %}" method="GET">
+                <form action="{% url 'issue_display' %}" method="get">
                     {% if search_field == "X" %}
                     <input class="issue-search" name="issue_search" type="text" 
                         placeholder="Title, Description or Keyword words">

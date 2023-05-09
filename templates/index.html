@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 <style>
     .site-intro-section {
@@ -33,13 +32,13 @@
     <div class="row">
         {% if forloop.counter|divisibleby:2 %}
         <div class="col-12">
-            <img class="section-img section-img-right" src="{{ section.section_image.url }}"  width="100%" alt="XBasic Demo Screen">
+            <img class="section-img section-img-right" src="{{ section.section_image.url }}"  width="100%" height="auto" alt="XBasic Demo Screen">
             <h3>{{ section.title }}</h3>
             <p class="article-text">{{ section.article | safe }}</p>
         </div>
         {% else %}
         <div class="col-12">
-            <img class="section-img section-img-left" src="{{ section.section_image.url }}"  width="100%" alt="XBasic Demo Screen">
+            <img class="section-img section-img-left" src="{{ section.section_image.url }}"  width="100%" height="auto" alt="XBasic Demo Screen">
             <h3>{{ section.title }}</h3>
             <p class="article-text">{{ section.article | safe }}</p>
         </div>
