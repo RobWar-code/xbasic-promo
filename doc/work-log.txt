@@ -18,6 +18,7 @@ Work Due
 
     Perform the google performance tests
 
+    Add a description of the data models to README
     
     General:
 

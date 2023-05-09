@@ -44,6 +44,35 @@ Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEMS_TESTS.md)
 
 Media Tests are in the file [MEDIA_TESTS.md](./SYSTEMS_TESTS.md)
 
+## Code Quality Tests
+
+### Python Quality
+Using https://pep8ci.herokuapp.com
+
+xb-promo/admin.py
+
+![admin.py](./doc/code-test-shots/admin-py-test.png)
+
+xb-promo/forms.py
+
+![forms.py](./doc/code-test-shots/forms-py-test.png)
+
+xb-promo/models.py
+
+![models.py](./doc/code-test-shots/models-py-test.png)
+
+xb-promo/views.py
+
+![models.py](./doc/code-test-shots/views-py-test.png)
+
+### CSS Code
+Using: https://jigsaw.w3.org/css-validator/#validate_by_input
+
+/static/css/style.css
+
+![style.css](./doc/code-test-shots/style-css-test.png)
+
+
 ## Errors / Bug Reports
 
 ### Due:
