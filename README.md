@@ -17,6 +17,7 @@ Additionally, the site provides for existing users to discuss issues
 arising from their work.
 
 ## Development Methodology
+
 Following from the UXD approach to design, the requirements are
 established as a set of user stories and maintained as a list
 in the Github issues set-up for project management.
@@ -35,6 +36,216 @@ xbasic-promo. [Project Planner](https://github.com/users/RobWar-code/projects/4)
 
 Tasks in relation to user stories and other aspects of project work are recorded in
 [Work Log](/doc/work-log.txt)
+
+## Platforms Used
+
+The code and documentation is maintained on GitHub with updates
+deployed via the Gitpod IDE.
+
+The application runs on the python server engine provided by Heroku
+
+The database is retained on ElephantSQL as postgresql database
+
+Image files are retained on and accessible from the Cloudinary site
+
+## Initial Set-up Procedures
+
+This section provides the steps necessary to set-up the site
+
+### Setting-up The IDE project (gitpod)
+
+We are using cloudinary to store images, as image files on Heroku are ephemeral.
+
+Note that the settings for settings.py are already established, so if recreating
+this or similar based on this site, all that is necessary is to install the python
+libraries and to do the set-ups on Heroku, Cloudinary and ElephantSQL.
+
+On gitpod we 
+
+* install django
+* create a django project and app
+* set the project to use postgresql and cloudinary
+* deploy the project to django
+
+Install django and cloudinary
+
+* pip3 install 'django<4' gunicorn
+* pip3 install dj_database_url==0.5.0 psycopg2
+* pip3 install dj3-cloudinary-storage
+
+Create the requirements.txt file
+* pip3 freeze --local > requirements.txt
+
+
+Start Project
+* django-admin startproject xbasic-promo .
+
+To create an app for the project
+* python3 manage.py startapp xb-promo
+
+Add the app to settings.py in the project folder as:
+
+        INSTALLED_APPS = [
+            ...,
+            'blog'
+
+Migrate the changes to the database
+* python3 manage.py migrate
+
+Check that the install worked
+* python3 manage.py runserver
+
+### Setting-up the Heroku App and the ElephantSQL Database
+
+* Login to Heroku
+* Click on New for a new app
+* Click create new app
+* Enter a name for app - xbasic-promo
+* Select europe as the area
+
+* Login to ElephantSQL
+* Create a new instance (tiny turtle) - xbasic-promo-items
+* Set the nearest data centre
+* Review
+* Confirm
+* Copy the database url
+
+* create an env.py file
+* insert the database link into it
+		import os
+
+		os.environ["DATABASE_URL"] = "copied url link"
+		os.environ["SECRET_KEY"] = "my_magic_secret_key"
+		os.environ.setdefault('DEBUG', 'True')
+
+* in settings.py
+		import os
+		import dj_database_url
+
+		if os.path.isfile("env.py"):
+			import env
+
+		DEBUG = os.environ.get('DEBUG', False)
+
+		SECRET_KEY = os.environ.get['SECRET_KEY']
+
+* Comment out the existing database setting, insert
+		DATABASES = {
+			'default': dj_database.url.parse(os.environ.get('DATABASE_URL'))
+		}
+
+* Finally establish these settings using
+		python3 manage.py migrate
+
+You can check that the link to the ElephantSQL database is established by using
+the BROWSER option on the site for the relevant database. admin tables will have
+been established.
+
+* Add the config vars to the heroku site for the application
+		DATABASE_URL    my_database_url
+		SECRET_KEY      my_secret_key
+		PORT			8000
+
+### Setting the Link to Cloudinary
+* Create an account on cloudinary
+* Go to the dashboard - copy the API environment variable
+* In env.py
+
+		os.environ["CLOUDINARY_URL"] = "api from cloudinary"
+		
+(remove CLOUDINARY= from the start of the url)
+* Also paste this into heroku in config vars
+
+		CLOUDINARY_URL
+		DISABLE_COLLECTSTATIC		1
+
+* To the settings.py file in INSTALLED_APPS above django.contrib.staticfiles, add
+
+		'cloudinary_storage',
+
+* And above the app name ('xb-promo')
+
+		'cloudinary'
+
+* To set the file access for cloudinary add the following lines to settings.py
+below STATIC_URL
+
+		STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+		STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+		STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+* Below this in settings.py
+
+		MEDIA_URL = '/media/'
+		DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+### Setting the Templates Directory
+
+Like the other notes for settings.py this phase already completed in settings.py
+
+* In settings.py below BASE_DIR
+
+		TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
+* Change the DIRS entry of the TEMPLATES setting
+
+		'DIRS': [TEMPLATES_DIR],
+
+### Completing the Heroku Setup
+	
+Note that the following steps are already completed on the github site
+
+* In settings.py set ALLOWED_HOSTS
+
+		ALLOWED_HOSTS = ['my-django-blog-project.herokuapp.com', 'localhost']
+
+* in gitpod, create the following directories on the top level:
+
+		media
+		static
+		templates
+
+* Create the Procfile:
+
+		web: gunicorn codestar.wsgi
+
+Save the current status
+
+* Push the changes to the github repository
+
+		git add .
+		git commit -m "Add initial deployment"
+		git push
+
+### Deployment
+
+On the heroku site for the application
+
+* Click deploy
+* Choose Github
+* Select the repository
+* Connect
+* Deploy Branch
+
+* Click View to check the page
+
+If this fails to load as far as the python code page, you can check
+the logs by logging into the heroku CLI on gitpod
+		heroku login -i
+
+To get the authentication password for this, go to your heroku site
+and click the user icon on the top right.
+* Select Account Settings
+* Scroll to API Key
+* Click reveal and then copy it
+* Paste it into the CLI login prompt for password
+
+To get the logs:
+		heroku logs --app=my_heroku_app_name --tail
+	
+
+
+
 
 ## Systems Tests
 

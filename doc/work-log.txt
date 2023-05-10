@@ -8,17 +8,18 @@ Work Due
 
     Document the set-up procedures for the project in the README
 
-    Perform the PEP-C8 python tests
+    Add a description of the data models to README
 
-    Perform the W3C CSS test
-
-    Perform the W3C HTML test
-
+    Provide a multi-media image of the site main page
+    
+    Provide a features section for the README
+    
     Perform the deployment of the project to heroku
 
     Perform the google performance tests
 
-    Add a description of the data models to README
+    Do the browser tests
+
     
     General:
 
@@ -29,6 +30,13 @@ Work Due
     Write-up notes on django/ajax interaction
 
 Work Done (completed by date)
+    09/05/2023
+    * Perform the PEP-C8 python tests
+
+    * Perform the W3C CSS test
+
+    * Perform the djlint HTML tests
+
     08/05/2023
     * Document and remove problem with summernote on admin pages
 
