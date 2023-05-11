@@ -295,6 +295,28 @@ Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEMS_TESTS.md)
 
 Media Tests are in the file [MEDIA_TESTS.md](./SYSTEMS_TESTS.md)
 
+## Lighthouse Tests
+
+Main Page
+
+Performance is likely below par because of the additional Cloudinary web request load for the images
+
+![Main Page - Lighthouse](./doc/media-shots/lighthouse-main-page.png)
+
+
+Issues Page
+
+The performance may well be pulled down by the additional Cloudinary web request load for the images
+
+Accessibility is slightly down because the logo is a link for the home page and does not have a text name. 
+Since the home page also has a menu bar link, this is not necessary. There is also an issue raised about a duplicated
+id for the Confirmation Modal, this may be due to the aria-labelledby element containing the required element id, 
+rather than the other way around.
+
+The Best Practices score is down because the form cloudinary addresses for the cloudinary site are http:
+instead of https: This is an issue with the Cloudinary python library.
+
+![Issues Page - Lighthouse](./doc/media-shots/lighthouse-issues-page.png)
 ## Code Quality Tests
 
 ### Python Quality
