@@ -484,6 +484,35 @@ There are next and previous buttons on the reply area
 
 ![Issue Page - end of set](./doc/screenshots/issue-page-2.webp)
 
+Prev Button
+
+At Start of List
+
+![Issues prev start of list 1](./doc/screenshots/issues-prev-at-start-1.png)
+
+![Issues prev start of list 2](./doc/screenshots/issues-prev-at-start-2.png)
+
+Elsewhere in List
+
+![Issues prev in list 1](./doc/screenshots/issues-prev-in-list-1.png)
+
+![Issues prev in list 2](./doc/screenshots/issues-prev-in-list-2.png)
+
+Next Button
+
+At end of list
+
+![Issues next end of list 1](./doc/screenshots/issues-next-at-end-1.png)
+
+![Issues next end of list 2](./doc/screenshots/issues-next-at-end-2.png)
+
+Elsewhere in list
+
+![Issues next in list 1](./doc/screenshots/issues-next-in-list-1.png)
+
+![Issues next in list 2](./doc/screenshots/issues-next-in-list-2.png)
+
+
 The search is conducted by description, title or keywords
 
 ![Issue Page - search 1](./doc/screenshots/issue-page-search-1.webp)
@@ -609,6 +638,36 @@ There should be a message after the delete
 ![Delete Issue - message](./doc/screenshots/delete-issue-3.webp)
 
 ### Answers
+
+Prev Button
+
+At start of list
+
+![Answers prev at start 1](./doc/screenshots/answers-prev-at-start-1.png)
+
+![Answers prev at start 2](./doc/screenshots/answers-prev-at-start-2.png)
+
+Elsewhere in list
+
+![Answers prev in list 1](./doc/screenshots/answers-prev-in-list-1.png)
+
+![Answers prev in list 2](./doc/screenshots/answers-prev-in-list-2.png)
+
+Next Button
+
+At end of list
+
+![Answers next at end 1](./doc/screenshots/answers-next-at-end-1.png)
+
+![Answers next at end 2](./doc/screenshots/answers-next-at-end-2.png)
+
+
+Elsewhere in list
+
+![Answers next in list 1](./doc/screenshots/answers-next-in-list-1.png)
+
+![Answers next in list 2](./doc/screenshots/answers-next-in-list-2.png)
+
 
 Answer Edit Options Availability:
 
