@@ -16,6 +16,45 @@ on choosing the XBasic programming language.
 Additionally, the site provides for existing users to discuss issues
 arising from their work.
 
+- Main Page
+
+![Main Page](./doc/readme-shots/main-page.png)
+
+- Issues
+
+![Issues Page](./doc/readme-shots/issues.png)
+
+- Responsiveness
+
+
+## Features
+
+- Articles
+
+The site provides informative pages about the XBasic programming language and the PDE, which can be modified on demand by the owner/administrator via the /admin/ page.
+
+![GUI-Design](./doc/readme-shots/gui-design.png)
+
+- Supporting Documentation
+
+These notes are well supported by further documentation available via links on the footer. This also provides links to the user group and the download sites.
+
+![Footer](./doc/readme-shots/footer.png)
+
+- Issues and Answers
+
+The issues page allows a logged in user to add issues and answers to issues arising in the course of the work of existing XBasic users. It also provides for the owner/administrator to delete issues that are out of date or inappropriate. Issues and answers authored by the user, can be edited by the user.
+
+Issues can be searched for by keywords and/or by clicking through with the Prev and Next buttons
+
+- Issues
+
+![Issue](./doc/readme-shots/issues.png)
+
+- Answers
+
+![Issues - Answers](./doc/readme-shots/issue-2.png)
+
 ## Development Methodology
 
 Following from the UXD approach to design, the requirements are
@@ -24,17 +63,18 @@ in the Github issues set-up for project management.
 
 Although the development approach is basically a Waterfall approach in the
 sense that most of the design is done in advance, 
-it borrows from the Agile approach, in terms of staging of work in order of priority, 
+it uses the Agile approach, in terms of staging of work in order of priority, 
 so that the project has flexible scope rather than trying to skip the deadlines for a 
 completed work. 
 
 The initial analysis has been conducted in [Project Analysis](/doc/project-analysis.txt).
-High-level time recording and estimating is also maintained in this file.
+High-level time recording and estimating is also maintained in this file, and this is
+also used to record the user stories in detail.
 
 Project Requirement items are listed in the project plan on GitHub 
 xbasic-promo. [Project Planner](https://github.com/users/RobWar-code/projects/4)
 
-Tasks in relation to user stories and other aspects of project work are recorded in
+Tasks in relation to general project work are recorded in
 [Work Log](/doc/work-log.txt)
 
 ## Platforms Used

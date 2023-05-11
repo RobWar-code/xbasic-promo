@@ -13,17 +13,17 @@
     {% if type == 'issue' and num_issues > 0 or type == "answer" and num_answers > 0 %}
     <div class="col-xs-4 col-sm-2 col-md-2">
         {% if item_num == 0 %}
-        <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field%}">
+        <a href="{% url 'step_issue' issue_num=0 answer_num=0 search_field=search_field%}" aria-label="Previous">
             <button class="btn-edit-submit" aria-label="Previous">Prev</button>
         </a>
         {% else %} 
             {% with item_num=item_num|add:-1 %} 
                 {% if type == 'issue' %}
-                <a href="{% url 'step_issue' issue_num=item_num answer_num=0 search_field=search_field %}">
+                <a href="{% url 'step_issue' issue_num=item_num answer_num=0 search_field=search_field %}" aria-label="Previous">
                     <button class="btn-edit-submit" aria-label="Previous">Prev</button>
                 </a>
                 {% else %}
-                <a href="{% url 'step_issue' issue_num=0 answer_num=item_num search_field=search_field %}">
+                <a href="{% url 'step_issue' issue_num=0 answer_num=item_num search_field=search_field %}" aria-label="Previous">
                     <button class="btn-edit-submit" aria-label="Previous">Prev</button>
                 </a>
                 {% endif %}
@@ -39,22 +39,22 @@
         <div class="col-1"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'add_issue' %}">
+            <a href="{% url 'add_issue' %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% else %}
-            <a href="{% url 'add_answer' issue_id=issue.id %}">
+            <a href="{% url 'add_answer' issue_id=issue.id %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% endif %}
         </div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}">
+            <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}" aria-label="Edit">
                 <button class="btn-edit-submit" aria-label="Edit">Edit</button>
             </a>
             {% else %}
-            <a href="{% url 'edit_answer' issue_id=issue.id answer_id=answer.id %}">
+            <a href="{% url 'edit_answer' issue_id=issue.id answer_id=answer.id %}" aria-label="Edit">
                 <button class="btn-edit-submit" aria-label="Edit">Edit</button>
             </a>
             {% endif %}
@@ -71,11 +71,11 @@
         <div class="col-3"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'add_issue' %}">
+            <a href="{% url 'add_issue' %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% else %}
-            <a href="{% url 'add_answer' issue_id=issue.id %}">
+            <a href="{% url 'add_answer' issue_id=issue.id %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% endif %}
@@ -88,11 +88,11 @@
         <div class="col-3"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'add_issue' %}">
+            <a href="{% url 'add_issue' %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% else %}
-            <a href="{% url 'add_answer' issue_id=issue.id %}">
+            <a href="{% url 'add_answer' issue_id=issue.id %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% endif %}
@@ -102,22 +102,22 @@
         <div class="col-2"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'add_issue' %}">
+            <a href="{% url 'add_issue' %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% else %}
-            <a href="{% url 'add_answer' issue_id=issue.id %}">
+            <a href="{% url 'add_answer' issue_id=issue.id %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% endif %}
         </div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}">
+            <a href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}" aria-label="Edit">
                 <button class="btn-edit-submit" aria-label="Edit">Edit</button>
             </a>
             {% else %}
-            <a href="{% url 'edit_answer' issue_id=issue.id answer_id=answer.id %}">
+            <a href="{% url 'edit_answer' issue_id=issue.id answer_id=answer.id %}" aria-label="Edit">
                 <button class="btn-edit-submit" aria-label="Edit">Edit</button>
             </a>
             {% endif %}
@@ -127,11 +127,11 @@
         <div class="col-3"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
-            <a href="{% url 'add_issue' %}">
+            <a href="{% url 'add_issue' %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% else %}
-            <a href="{% url 'add_answer' issue_id=issue.id %}">
+            <a href="{% url 'add_answer' issue_id=issue.id %}" aria-label="New">
                 <button class="btn-edit-submit" aria-label="New">New</button>
             </a>
             {% endif %}
@@ -147,11 +147,11 @@
     <div class="col-xs-4 col-sm-2 col-md-2">
         {% with item_num=item_num|add:1 %}
             {% if type == 'issue' %}
-            <a href="{% url 'step_issue' issue_num=item_num answer_num=0 search_field=search_field %}">
+            <a href="{% url 'step_issue' issue_num=item_num answer_num=0 search_field=search_field %}" aria-label="Next">
                 <button class="btn-edit-submit" aria-label="Next">Next</button>
             </a>
             {% else %}
-            <a href="{% url 'step_issue' issue_num=issue_num answer_num=item_num search_field=search_field %}">
+            <a href="{% url 'step_issue' issue_num=issue_num answer_num=item_num search_field=search_field %}" aria-label="Next">
                 <button class="btn-edit-submit" aria-label="Next">Next</button>
             </a>
             {% endif %}

@@ -6,15 +6,15 @@ Work Due
     
     Documentation:
 
-    Document the set-up procedures for the project in the README
+    * Document the set-up procedures for the project in the README
 
     Add a description of the data models to README
 
     Provide a multi-media image of the site main page
     
-    Provide a features section for the README
+    * Provide a features section for the README
     
-    Perform the deployment of the project to heroku
+    * Perform the deployment of the project to heroku
 
     Perform the google performance tests
 
