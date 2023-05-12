@@ -2,10 +2,12 @@
 
 ## Introduction
 
-This site provides the source and documentation for a website that
+This site provides the source and documentation for the XBasic-Promo website that
 provides an introduction to the programming language and Program 
 Development Environment (PDE) XBasic and an issue/problem reporting
 reporting page for additional user support.
+
+![Media Views - Main Page](./doc/readme-shots/responsiveness-crop.png)
 
 ## Target Audience
 

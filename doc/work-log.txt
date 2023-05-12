@@ -16,7 +16,7 @@ Work Due
     
     * Perform the deployment of the project to heroku
 
-    Perform the google performance tests
+    * Perform the google performance tests
 
     Do the browser tests
 
