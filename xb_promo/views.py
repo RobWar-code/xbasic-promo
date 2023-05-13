@@ -36,6 +36,12 @@ class Feature(View):
 # Issues
 class IssueDisplay(View):
     def get(self, request, *args, **kwargs):
+        scroll_to_answer = "0"
+        if 'scroll_to_answer' in kwargs:
+            scroll_to_answer = kwargs['scroll_to_answer']
+        else:
+            scroll_to_answer = "0"
+
         search_field = "X"
         # Initial Entry to Page
         if 'search_field' in kwargs:
@@ -91,6 +97,7 @@ class IssueDisplay(View):
                 'issue': issue,
                 'answer_num': answer_num,
                 'answer': answer,
+                'scroll_to_answer': scroll_to_answer,
                 'timestamp': int(time.time())
             }
         )
@@ -145,7 +152,8 @@ class IssueEdit(View):
 
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
-                            answer_num=answer_num, search_field=search_field)
+                            answer_num=answer_num, search_field=search_field,
+                            scroll_to_answer=0)
 
         # Check for duplicate title
         message_text = issue_form.errors.get('title', None)
@@ -195,7 +203,8 @@ class IssueAdd(View):
             issue_num = 0
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
-                            answer_num=answer_num, search_field=search_field)
+                            answer_num=answer_num, search_field=search_field,
+                            scroll_to_answer=1)
 
         return render(request, 'edit_issue.html',
                       {'form': issue_form, 'edit': 0})
@@ -264,7 +273,8 @@ class AnswerAdd(View):
             issue_num = 0
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
-                            answer_num=answer_num, search_field=search_field)
+                            answer_num=answer_num, search_field=search_field,
+                            scroll_to_answer=1)
 
         message_text = answer_form.errors.get('title', None)
         messages.warning(request, message_text)
@@ -330,7 +340,8 @@ class AnswerEdit(View):
         messages.success(request, message_text)
 
         return redirect("step_issue", issue_num=issue_num,
-                        answer_num=answer_num, search_field=search_field)
+                        answer_num=answer_num, search_field=search_field,
+                        scroll_to_answer=1)
 
 
 @csrf_exempt
@@ -345,7 +356,8 @@ def delete_answer(request, issue_id, answer_id):
         search_field = issue.title
         redirect_url = reverse('step_issue',
                                kwargs={'issue_num': 0, 'answer_num': 0,
-                                       'search_field': search_field})
+                                       'search_field': search_field,
+                                       scroll_answer: 0})
         return JsonResponse({
             'success': True,
             'redirect_url': f'{redirect_url}'

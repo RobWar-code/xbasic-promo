@@ -619,6 +619,9 @@ Contents
 			** When the new answer is submitted, the user is returned to the issues page with
 			the issue and answer displayed
 
+			** When the user is returned to the issues page, the screen is scrolled to the answer
+			section
+			
 			** A message appears when the form is successfully submitted
 
 	Data Tests
@@ -639,7 +642,7 @@ Contents
 			** Clicking the edit button enables editing of the current answer
 
 			** When the submit button is clicked the user is returned to the issues page with appropriate issue 
-			and answer displayed
+			and the answer displayed
 
 			** When the record is added a message appears on the relevant issues page
 

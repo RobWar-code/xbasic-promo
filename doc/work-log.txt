@@ -6,11 +6,18 @@ Work Due
     
     Documentation:
 
+ 
+    Do the browser tests
+
+    Write-up notes on django/ajax interaction
+
+Work Done (completed by date)
+    13/05/2023
     * Document the set-up procedures for the project in the README
 
-    Add a description of the data models to README
+    * Add a description of the data models to README
 
-    Provide a multi-media image of the site main page
+    * Provide a multi-media image of the site main page
     
     * Provide a features section for the README
     
@@ -18,18 +25,6 @@ Work Due
 
     * Perform the google performance tests
 
-    Do the browser tests
-
-    
-    General:
-
-        Review the README.md layout example on the CI Course
-
-        write the procedures to README.md file.
-
-    Write-up notes on django/ajax interaction
-
-Work Done (completed by date)
     09/05/2023
     * Perform the PEP-C8 python tests
 

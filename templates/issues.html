@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
+    <div class="container" id="issuesContainer">
         <div class="row">
             <div class="col-12 text-center page-heading">
                 <h2>XBasic Issues, Problems and Answers</h2>
@@ -43,12 +43,18 @@
         <!-- Answer Section -->
         <div class="row">
             <div class="col-12 text-center">
-                <h3 class="issue-header">Answers</h3>
+                <h3 class="issue-header" id="answerTitle">Answers</h3>
             </div>
         </div>
         {% include 'issue_control.html' with type="answer" record=answer num_items=num_answers item_num=answer_num %}
 
         {% include 'answer_panel.html' with answer=answer %}
         
+        <script>
+            {% if scroll_to_answer == 1 %}
+            var scroll_to_answer = true;
+            {% endif %}
+        </script>
     </div>
+
 {% endblock content %}
