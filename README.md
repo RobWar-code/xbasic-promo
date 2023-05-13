@@ -121,7 +121,10 @@ Feature Section
 ### Issues And Answers
 
 Issues are raised by users about problems etc. with XBasic usage. This table
-provides for a description of issue with a screenshot if required.
+provides for a description of the issue with a screenshot if required. A keywords
+field is provided to make word searches more accurate. A priority field is also
+provided, to allow the administrator to bring items further up the list, above
+the date order.
 
 Issue
 
@@ -137,6 +140,24 @@ Issue
 | content           | TextField        |                                                         |
 | screenshot_img    | Cloudinary Image | default is 'placeholder', can be blank                  |
 | search_vector     | SearchVector     | For keyword searches on title, description and keywords |
+
+
+Answers are raised in response to issues in a one to many relationship, they may or may not be 
+accompanied by a screenshot.
+
+Answer
+
+| Field             | Type              | Other Aspects                                      |
+| ----------------- | ----------------- | -------------------------------------------------- |
+| title             | Char(80)          | Unique                                             |
+| author            | One to many       | Auto set for logged-in user                        |
+| date_submitted    | Date/Time         | Auto set when record created                       |
+| date_modified     | Date/Time         | Auto set when record edited                        |
+| priority          | Integer           | For ordering on display, default is 3, 1 is higher |
+| related_issue     | One to many       |                                                    |
+| content           | TextField         |                                                    |
+| screenshot_img    | Cloudinary Field  | Default is 'placeholder', can be blank             |
+
 
 ## Platforms Used
 

@@ -6,10 +6,18 @@ Contents
 	Gathering Requirements and Solutions
 	Course Tool Requirements
 	Users and Requirements
-		User Stories and Requirements
-			Header
-			Administration Editor
+	User Stories and Requirements
+		Header
+		Footer
+		User authentication, Registration, General
+		Administration Editor
+		GUI Design
+		Built-in Functions - Functions Page
+		Debugging Features - Debugging Page	
+		Issue Pages
+		Answers, Add/Edit/Delete Answers			
 		Summary of Features to Meet Requirements
+		Pages / Menu
 	Budgetary Constraints
 	Feasibility and Initial Design Layouts
 	Desirable Features
@@ -181,12 +189,13 @@ Contents
 ### User authentication, Registration, General
 	** Epic: As a new user, I can register on the site, in order to be known to the XBasic community and access facilities
 
+### Registration
+	** Epic: As a new user I can register myself in order to be known to the XBasic community
 
 		Acceptance Criteria:
 		** There should be pages for Login, Sign-up and Logout
 		** A message should be displayed after logout/login and register
 		** The user should be returned to the home page after each action
-
 
 	** As a user I can clearly see whether or not I am logged-in in order to obtain access to facilities
 
@@ -198,6 +207,20 @@ Contents
 	** As a new user, I can register a username, in order to have my texts attributed
 		Acceptance Criteria:
 		** Registration details include a username
+
+	** As a new user I can register my email address in order to receive XBasic mailings
+
+		Acceptance Criteria
+
+			** Registration allows for valid email address
+
+	** As a new user I can securely identify myself by the use of a password in order to login 
+
+		Acceptance Criteria
+
+			** Registration allows for password
+
+			** Password is entered twice to allow for checking
 
 #### Data Tests
 	** Registration
@@ -679,76 +702,19 @@ Contents
                 Options: None
                 Message to indicate how to add
 
-#### Data Models
-
-	Issues 
-
-	Field                   Type                  Other Aspects 
-	title                   Char(80)              unique 
-	slug					SlugField(80)
-	author                  ForeignKey(User)
-	date_submitted          DateTime()            auto
-	priority                Integer               default 3
-	description             Char(240)       
-	keywords                Char(240)
-	content                 TextField
-	screenshot_img          CloudinaryImage
-
-	ordering: priority, date_submitted
-
-	Issue Answers
-
-	Field                   Type                  Other Aspects
-	title                   Char(80)              unique
-	author                  ForeignKey(User) 
-	date_submitted          DateTime              auto
-	date_modified           DateTime			  auto
-	priority                Integer               default 3
-	related_issue           ForeignKey(Issue)
-	content                 TextField 
-	screenshot_img          CloudinaryImage
-
-	ordering: related_issue, priority, date_modified
-
 #### Related References
 Forms reference: https://docs.djangoproject.com/en/dev/topics/forms/
 Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/search/
 
 
-### ** Epic: As a new user I can register myself in order to be known to the XBasic community
-
-	* As a new user I can register my email address in order to receive XBasic mailings
-
-		Acceptance Criteria
-
-			Registration allows for valid email address
-
-			Email address is confirmed as valid by use of a link from an email
-
-	* As a new user I can register a unique username in order to have texts attributed
-
-		Acceptance Criteria
-
-			Username is checked for conformity to standard alphanumeric
-
-			Username is checked as unique
-
-	* As a new user I can securely identify myself by the use of a password in order to login 
-
-		Acceptance Criteria
-
-			Registration allows for password
-
-			Password is entered twice to allow for checking
-
 ### Other Considerations
 	Mobile Phone User:
-		As a mobile phone user I can read the material supported by screenshots in order to compensate for
+		** As a mobile phone user I can read the material supported by screenshots in order to compensate for
 		small screenshots
 
 		Acceptance Criteria
 		
-			The texts are sufficiently detailed to explain the screenshots
+			** The texts are sufficiently detailed to explain the screenshots
 
 
 ### Summary of Features to meet Requirements
@@ -927,7 +893,7 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 
 	Systems Testing						10					    14
 	Media Tests							 3						1
-	README details						 4
+	README details						 4						3
 
 	We need the problems and answers sections to meet the CI requirements. So
 	this and the associated user registration should be worked on first.
