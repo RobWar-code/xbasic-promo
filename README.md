@@ -79,6 +79,65 @@ xbasic-promo. [Project Planner](https://github.com/users/RobWar-code/projects/4)
 Tasks in relation to general project work are recorded in
 [Work Log](/doc/work-log.txt)
 
+## Data Models
+
+### Features Pages
+
+Feature Page
+
+This allows for the page title and page introductory section which may contain a background image, 
+if required.
+
+| Field			| Type             | Other Aspects                         |
+| ------------- | ---------------- | ------------------------------------- |
+| page_name		| Char(32)         | unique                                |
+| page_title	| Char(80)		   |                                       |
+| slug          | SlugField(40)	   | from page title                       |
+| page_intro    | TextField        | Maybe null                            |
+| excerpt       | Char(80)         | Maybe null, excerpt from page intro   |
+| intro_image	| CloudinaryImage  |                                       |
+
+
+
+### Feature Sections
+
+This data is for the feature sections, allowing the administrator to modify
+page content for reasons such as information updates or to cover some topic
+in more detail.
+
+Feature Sections are linked to Feature Pages in a one to many relationship.
+
+Feature Section
+
+| Field             | Type             | Other Aspects              |
+| ----------------- | ---------------- | -------------------------- |
+| title             | Char(80)         | unique                     |
+| section_number	| Integer		   | unique - for ordering      |
+| feature_page	    | ForeignKey       | from feature_page          |
+| article			| TextField        |                            |
+| excerpt			| Char(80) 		   | Text excerpt from article  |
+| feature_image     | CloudinaryImage  |  can be null               |
+
+### Issues And Answers
+
+Issues are raised by users about problems etc. with XBasic usage. This table
+provides for a description of issue with a screenshot if required.
+
+Issue
+
+| Field             | Type             | Other Aspects                                           |
+| ----------------- | ---------------- | --------------------------------------------------------|
+| title             | Char(80)         | unique                                                  |
+| slug              | Slug(80)         | unique, auto-update                                     |
+| author            | One To Many      | Auto insert for the logged-in user                      |
+| date_submitted    | Date/Time        | Auto insert at record creation                          |
+| priority          | Integer          | default is 3 can be set to lower for display ordering   |
+| description       | Char(240)        |                                                         |
+| keywords          | Char(240)        | For searching                                           |
+| content           | TextField        |                                                         |
+| screenshot_img    | Cloudinary Image | default is 'placeholder', can be blank                  |
+| search_vector     | SearchVector     | For keyword searches on title, description and keywords |
+
 ## Platforms Used
 
 The code and documentation is maintained on GitHub with updates
