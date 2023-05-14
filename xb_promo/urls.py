@@ -6,7 +6,7 @@ urlpatterns = [
      path('<slug:slug>', views.Feature.as_view(), name='feature_page'),
      path('issues/', views.IssueDisplay.as_view(), name='issue_display'),
      path('issues/<int:issue_num>/<int:answer_num>/<str:search_field>/\
-<int:scroll_to_answer>',
+<int:scroll_to_answer>/<int:scroll_delay>',
           views.IssueDisplay.as_view(), name='step_issue'),
      path('edit_issue/<int:edit>/<int:issue_num>/\
 <str:search_field>/<int:issue_id>/',

@@ -39,8 +39,10 @@ class IssueDisplay(View):
         scroll_to_answer = "0"
         if 'scroll_to_answer' in kwargs:
             scroll_to_answer = kwargs['scroll_to_answer']
+            scroll_delay = kwargs['scroll_delay']
         else:
             scroll_to_answer = "0"
+            scroll_delay = "0"
 
         search_field = "X"
         # Initial Entry to Page
@@ -98,6 +100,7 @@ class IssueDisplay(View):
                 'answer_num': answer_num,
                 'answer': answer,
                 'scroll_to_answer': scroll_to_answer,
+                'scroll_delay': scroll_delay,
                 'timestamp': int(time.time())
             }
         )
@@ -153,7 +156,7 @@ class IssueEdit(View):
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field,
-                            scroll_to_answer=0)
+                            scroll_to_answer=0, scroll_delay=0)
 
         # Check for duplicate title
         message_text = issue_form.errors.get('title', None)
@@ -204,7 +207,7 @@ class IssueAdd(View):
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field,
-                            scroll_to_answer=1)
+                            scroll_to_answer=1, scroll_delay=2500)
 
         return render(request, 'edit_issue.html',
                       {'form': issue_form, 'edit': 0})
@@ -341,7 +344,7 @@ class AnswerEdit(View):
 
         return redirect("step_issue", issue_num=issue_num,
                         answer_num=answer_num, search_field=search_field,
-                        scroll_to_answer=1)
+                        scroll_to_answer=1, scroll_delay=2500)
 
 
 @csrf_exempt
@@ -357,7 +360,8 @@ def delete_answer(request, issue_id, answer_id):
         redirect_url = reverse('step_issue',
                                kwargs={'issue_num': 0, 'answer_num': 0,
                                        'search_field': search_field,
-                                       scroll_answer: 0})
+                                       scroll_answer: 0,
+                                       scroll_delay: 0})
         return JsonResponse({
             'success': True,
             'redirect_url': f'{redirect_url}'
