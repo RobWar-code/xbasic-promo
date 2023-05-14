@@ -365,10 +365,6 @@ and click the user icon on the top right.
 To get the logs:
 		heroku logs --app=my_heroku_app_name --tail
 	
-
-
-
-
 ## Systems Tests
 
 Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEMS_TESTS.md)
@@ -588,3 +584,8 @@ def __str__(self):
 
 ![Admin Editor - Delete Section Confirmation](./doc/screenshots/admin-editor-debug-section-delete.webp)
 --------------------
+
+## Browser Tests
+
+See: [Browser Tests](./BROWSER_TESTS.md)
+
