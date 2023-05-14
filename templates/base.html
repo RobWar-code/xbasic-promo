@@ -203,10 +203,12 @@
         });
 
         $(window).on("load", function() {
-            if (scroll_to_answer) {
-                e = document.getElementById('answerTitle');
-                e.scrollIntoView();
-            }
+            setTimeout( function () {
+                if (scroll_to_answer) {
+                    e = document.getElementById('answerTitle');
+                    e.scrollIntoView();
+                }
+            }, 2500);
         })   
 
     </script>
