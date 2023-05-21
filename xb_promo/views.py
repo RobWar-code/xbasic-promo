@@ -207,7 +207,7 @@ class IssueAdd(View):
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field,
-                            scroll_to_answer=1, scroll_delay=2500)
+                            scroll_to_answer=0, scroll_delay=0)
 
         return render(request, 'edit_issue.html',
                       {'form': issue_form, 'edit': 0})

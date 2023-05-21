@@ -367,11 +367,11 @@ To get the logs:
 	
 ## Systems Tests
 
-Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEMS_TESTS.md)
+Systems Tests are in the file [SYSTEM_TESTS.md](./SYSTEM_TESTS.md)
 
 ## Media Tests
 
-Media Tests are in the file [MEDIA_TESTS.md](./SYSTEMS_TESTS.md)
+Media Tests are in the file [MEDIA_TESTS.md](./MEDIA_TESTS.md)
 
 ## Lighthouse Tests
 
@@ -395,6 +395,7 @@ The Best Practices score is down because the form cloudinary addresses for the c
 instead of https: This is an issue with the Cloudinary python library.
 
 ![Issues Page - Lighthouse](./doc/media-shots/lighthouse-issues-page.png)
+
 ## Code Quality Tests
 
 ### Python Quality
@@ -411,6 +412,10 @@ xb-promo/forms.py
 xb-promo/models.py
 
 ![models.py](./doc/code-test-shots/models-py-test.png)
+
+xbasic-promo/settings.py
+
+![settings.py](./doc/code-test-shots/settings-py-test.png)
 
 xb-promo/views.py
 
