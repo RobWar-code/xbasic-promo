@@ -131,7 +131,7 @@ class IssueEdit(View):
 
     def post(self, request, *args, **kwargs):
         issue_num = kwargs['issue_num']
-        search_field = kwargs['search_field']
+        search_field = 'X'
         issue_id = kwargs['issue_id']
         issue = get_object_or_404(Issue, pk=issue_id)
         # Update record
@@ -149,6 +149,13 @@ class IssueEdit(View):
                 instance.screenshot_img = uploaded_file['url']
 
             instance.save()
+
+            # Use the main list instead of the search list for the display
+            issue_set = Issue.objects.all()
+            for count, issue_item in enumerate(issue_set):
+                if issue_item.id == issue_id:
+                    issue_num = count
+                    break
 
             message_text = "Issue Updated Successfully!"
             messages.success(request, message_text)
@@ -328,8 +335,8 @@ class AnswerEdit(View):
             return redirect('edit_answer', issue_id=issue_id,
                             answer_id=answer_id)
 
-        # Redirect to the step_issue issue display
-        search_field = issue.title
+        # Redirect to display issue
+        search_field = 'X'
         # Get the set of answers that applies to this issue
         answer_set = Answer.objects.filter(related_issue=issue)
         # Loop through the set and identify what position the
@@ -337,7 +344,14 @@ class AnswerEdit(View):
         for answer_num, answer in enumerate(answer_set):
             if answer.id == answer_id:
                 break
+
+        # Redetermine the issue number in the list
         issue_num = 0
+        issue_set = Issue.objects.all()
+        for count, issue_item in enumerate(issue_set):
+            if issue_item.id == issue_id:
+                issue_num = count
+                break
 
         message_text = "Answer Updated Successfully!"
         messages.success(request, message_text)

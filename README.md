@@ -478,6 +478,7 @@ issues
 ## Errors / Bug Reports
 
 ### Due:
+
 Problem: Admin Pages - Summernote editor fails to work once 
 used elsewhere in site - needs investigation
 
@@ -588,7 +589,21 @@ def __str__(self):
     return self.title
 
 ![Admin Editor - Delete Section Confirmation](./doc/screenshots/admin-editor-debug-section-delete.webp)
---------------------
+
+----------------------------
+
+Problem: Edit Answer - Sometimes comes brings-up the wrong record.
+
+Status: Done
+
+Priority: High
+
+Solution: This may well be due to the fact that the list of records produced
+depends on a search, rather than using the issue ID. Therefore the fix is
+to re-obtain the issue number within the default list of all issues use that
+as the issue number (within the ordered list).
+
+---------------------
 
 ## Browser Tests
 
