@@ -81,6 +81,10 @@ Tasks in relation to general project work are recorded in
 
 ## Data Models
 
+ERD
+
+![Entity Relationship Diagram](./doc/data-model-crop.png)
+
 ### Features Pages
 
 Feature Page
