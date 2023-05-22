@@ -191,19 +191,19 @@ On gitpod we
 
 Install django and cloudinary
 
-* pip3 install 'django<4' gunicorn
-* pip3 install dj_database_url==0.5.0 psycopg2
-* pip3 install dj3-cloudinary-storage
+* `pip3 install 'django<4' gunicorn`
+* `pip3 install dj_database_url==0.5.0 psycopg2`
+* `pip3 install dj3-cloudinary-storage`
 
 Create the requirements.txt file
-* pip3 freeze --local > requirements.txt
+* `pip3 freeze --local > requirements.txt`
 
 
 Start Project
-* django-admin startproject xbasic-promo .
+* `django-admin startproject xbasic-promo` 
 
 To create an app for the project
-* python3 manage.py startapp xb-promo
+* `python3 manage.py startapp xb-promo`
 
 Add the app to settings.py in the project folder as:
 
@@ -212,10 +212,10 @@ Add the app to settings.py in the project folder as:
             'blog'
 
 Migrate the changes to the database
-* python3 manage.py migrate
+* `python3 manage.py migrate`
 
 Check that the install worked
-* python3 manage.py runserver
+* `python3 manage.py runserver`
 
 ### Setting-up the Heroku App and the ElephantSQL Database
 
@@ -257,7 +257,7 @@ Check that the install worked
 		}
 
 * Finally establish these settings using
-		python3 manage.py migrate
+* `python3 manage.py migrate`
 
 You can check that the link to the ElephantSQL database is established by using
 the BROWSER option on the site for the relevant database. admin tables will have
