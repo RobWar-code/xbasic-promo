@@ -21,11 +21,18 @@ class IssueForm(forms.ModelForm):
         'content': SummernoteWidget(),
     }
     title = forms.CharField(widget=forms.
-                            TextInput(attrs={'style': 'width: 40%'}))
-    description = forms.CharField(widget=forms.
-                                  TextInput(attrs={'style': 'width: 80%'}))
-    keywords = forms.CharField(widget=forms.
-                               TextInput(attrs={'style': 'width: 81%'}))
+                            TextInput(attrs={'style': 'width: 40%',
+                                             'aria-label': 'title'}))
+    description = forms.CharField(
+        widget=forms.TextInput(attrs={'style': 'width: 80%',
+                                      'aria-label': 'description'})
+    )
+    keywords = forms.CharField(
+        widget=forms.TextInput(attrs={'style': 'width: 81%',
+                                      'aria-label': 'keywords'})
+    )
+    content = forms.CharField(widget=forms.
+                              Textarea(attrs={'aria-label': 'content'}))
 
 
 class AnswerForm(forms.ModelForm):
