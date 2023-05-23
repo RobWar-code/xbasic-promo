@@ -134,6 +134,11 @@
     width: 100%;
 }
 
+/* ------------------------------Edit Issues/Answers */
+.image_field {
+    color:#000050;
+}
+
 /* ------------------------------Template Footer */
 .footer-bar {
     height: 90px;
