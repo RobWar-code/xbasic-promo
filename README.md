@@ -400,6 +400,9 @@ instead of https: This is an issue with the Cloudinary python library.
 
 ![Issues Page - Lighthouse](./doc/media-shots/lighthouse-issues-page.png)
 
+Edit Issue Page
+
+
 ## Code Quality Tests
 
 ### Python Quality

@@ -47,9 +47,7 @@ class AnswerForm(forms.ModelForm):
 
     widgets = {
         'content': SummernoteWidget(),
-        'screenshot_img': forms.ClearableFileInput(
-            attrs={'class': 'image_field'}
-        )
     }
+
     title = forms.CharField(widget=forms.
                             TextInput(attrs={'style': 'width: 40%'}))

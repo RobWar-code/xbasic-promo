@@ -9,9 +9,9 @@
         </div>
     </div>
     {% if edit == 1 %}
-    <form method="post" enctype="multipart/form-data" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
+    <form class="edit_form" method="post" enctype="multipart/form-data" action="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue_id %}">
     {% else %}
-    <form method="post" enctype="multipart/form-data" action="{% url 'add_issue' %}">
+    <form class="edit_form" method="post" enctype="multipart/form-data" action="{% url 'add_issue' %}">
     {% endif %}
         {% csrf_token %}
         {{ form.as_p }}
