@@ -580,7 +580,7 @@ Contents
 
 	** Delete Issue
 
-	As a Owner/Administrator or the Author, I can delete an issue, in order to remove unnecessary or offensive issues
+	** As a Owner/Administrator or the Author, I can delete an issue, in order to remove unnecessary or offensive issues
 
 		Acceptance Criteria
 
@@ -654,7 +654,7 @@ Contents
 
 	** Delete Answer
 
-	As an Administrator or the Author I can delete answers in order to maintain standards
+	** As an Administrator or the Author I can delete answers in order to maintain standards
 
 		Acceptance Criteria:
 
