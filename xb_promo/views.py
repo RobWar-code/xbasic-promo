@@ -151,11 +151,7 @@ class IssueEdit(View):
             instance.save()
 
             # Use the main list instead of the search list for the display
-            issue_set = Issue.objects.all()
-            for count, issue_item in enumerate(issue_set):
-                if issue_item.id == issue_id:
-                    issue_num = count
-                    break
+            issue_num = get_set_issue_num(issue_id)
 
             message_text = "Issue Updated Successfully!"
             messages.success(request, message_text)
@@ -284,7 +280,7 @@ class AnswerAdd(View):
             answer_num = 0
             return redirect('step_issue', issue_num=issue_num,
                             answer_num=answer_num, search_field=search_field,
-                            scroll_to_answer=1)
+                            scroll_to_answer=1, scroll_delay=2500)
 
         message_text = answer_form.errors.get('title', None)
         messages.warning(request, message_text)
@@ -346,12 +342,7 @@ class AnswerEdit(View):
                 break
 
         # Redetermine the issue number in the list
-        issue_num = 0
-        issue_set = Issue.objects.all()
-        for count, issue_item in enumerate(issue_set):
-            if issue_item.id == issue_id:
-                issue_num = count
-                break
+        issue_num = get_set_issue_num(issue_id)
 
         message_text = "Answer Updated Successfully!"
         messages.success(request, message_text)
@@ -369,13 +360,14 @@ def delete_answer(request, issue_id, answer_id):
         message_text = "Delete Answer Successful!"
         messages.success(request, message_text)
         # Get the issue to redisplay
-        issue = Issue.objects.get(id=issue_id)
-        search_field = issue.title
+        issue_num = get_set_issue_num(issue_id)
+
+        search_field = 'X'
         redirect_url = reverse('step_issue',
-                               kwargs={'issue_num': 0, 'answer_num': 0,
+                               kwargs={'issue_num': issue_num, 'answer_num': 0,
                                        'search_field': search_field,
-                                       scroll_answer: 0,
-                                       scroll_delay: 0})
+                                       'scroll_to_answer': 1,
+                                       'scroll_delay': 2500})
         return JsonResponse({
             'success': True,
             'redirect_url': f'{redirect_url}'
@@ -385,3 +377,15 @@ def delete_answer(request, issue_id, answer_id):
         messages.error(request, message_text)
         return JsonResponse({'success': False,
                              'error': 'Answer record does not exist'})
+
+
+def get_set_issue_num(issue_id):
+    # Get the issue number of the given id in the main set
+    issue_num = 0
+    issue_set = Issue.objects.all()
+    for count, issue_item in enumerate(issue_set):
+        if issue_item.id == issue_id:
+            issue_num = count
+            break
+
+    return issue_num

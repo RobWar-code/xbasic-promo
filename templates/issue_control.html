@@ -99,7 +99,7 @@
         </div>
         <div class="col-5"></div>
         {% elif type == "issue" and issue.author.username == user.username or type == "answer" and answer.author.username == user.username %}
-        <div class="col-2"></div>
+        <div class="col-sm-1"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
             {% if type == "issue" %}
             <a href="{% url 'add_issue' %}" id="newIssueUser" aria-label="New Issue User">
@@ -122,7 +122,14 @@
             </a>
             {% endif %}
         </div>
-        <div class="col-2"></div>
+        <div class="col-xs-4 col-sm-2 col-md-2">
+            {% if type == "issue" %}
+                <button class="btn-edit-submit" id="deleteIssueButton" aria-label="Delete Issue">Delete</button>
+            {% else %}
+                <button class="btn-edit-submit" id="deleteAnswerButton" aria-label="Delete Answer">Delete</button>
+            {% endif %}
+        </div>
+        <div class="col-sm-1"></div>
         {% else %}
         <div class="col-3"></div>
         <div class="col-xs-4 col-sm-2 col-md-2">
