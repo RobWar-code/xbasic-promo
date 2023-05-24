@@ -97,6 +97,7 @@
 }
 .section-img {
     width: 48%;
+    height: auto;
 }
 /* ------------------------------Issues Main Page */
 .issue-header {
@@ -173,6 +174,7 @@
 @media(max-width: 992px) {
     .section-img {
         width: 60%;
+        height: auto;
     }
 }
 
@@ -180,5 +182,6 @@
     .section-img {
         float: none;
         width: 100%;
+        height: auto;
     }
 }
