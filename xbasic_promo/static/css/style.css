@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Domine:wght@500&family=Kanit&family=Lato:ital,wght@1,300&family=Montserrat&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------General Section */
+.bg-color-menu {
+    background-color: darkblue;
+}
+
+/* ------------------------------General Parts */
+.section-head-col {
+    background-color: #00a0ff;
+}
+
+.section-heading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.xb-image {
+    width: 100%;
+}
+
+.article-col {
+    padding-top: 5px;
+    background: #a0a0ff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ------------------------------Header Section */
+.logo-link {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+}
+
+.site-heading-bar {
+    height: 100px;
+    background: blue;
+    font-family: "Kanit", sans-serif;
+    color: azure;
+}
+
+/* ------------------------------Menu */
+.menu-bar {
+    height: 100px;
+    align-items: center;
+}
+.menu-item a {
+    font-size: 20px;
+    color: azure !important;
+}
+.menu-item a:hover {
+    background-color: darkgrey;
+}
+.navbar-toggler {
+    background-color: azure !important;
+}
+.menu-block {
+    float: right;
+}
+.navbar-nav {
+    float: none !important;
+    position: relative;
+    z-index: 9000;
+    background-color: #000050;
+    padding-left: 10px;
+}
+/* ------------------------------Site Intro */
+.transparent-text-block {
+    margin-top: 20px;
+    background-color: rgba(50, 50, 150, 0.8);
+    color: azure;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ------------------------------XB Feature Pages */
+.feature-page-heading {
+    text-align: center;
+}
+
+.article-text {
+    font-size: 18px;
+}
+.section-img-right {
+    float: right;
+    margin-left: 2%;
+}
+.section-img-left {
+    float: left;
+    margin-right: 2%;
+}
+.section-img {
+    width: 48%;
+    height: auto;
+}
+/* ------------------------------Issues Main Page */
+.issue-header {
+    font-weight: bold;
+}
+.issue-search {
+    width: 90%;
+    font-size: 18px;
+}
+.search-icon {
+    font-size: 24px;
+}
+.btn-edit-submit {
+    display: inline-block;
+    width: 100%;
+    background: #00c000;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: outset;
+}
+
+/* ------------------------------Issue Control */
+.delete-modal {
+    margin-top: 250px;
+}
+/* ------------------------------Issue Panel */
+.issue_panel {
+    max-height: 500px;
+    border: solid black 1px;
+    overflow-y: scroll;
+}
+.issue_panel p {
+    margin-bottom: 0;
+}
+
+.screenshot-img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------Edit Issues/Answers */
+.edit_form a {
+    color: #000040;
+}
+
+/* ------------------------------Template Footer */
+.footer-bar {
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    font-weight: bold;
+}
+
+.footer-link-block {
+    display: inline-block;
+    width: 85px;
+}
+
+.footer-bar a {
+    color: azure;
+}
+
+.footer-bar i {
+    font-size: 32px;
+    color: azure;
+}
+
+/* ------------------------------Media */
+@media(min-width: 992px) {
+    .navbar-toggler {
+        background-color: darkblue !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .section-img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .section-img {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
