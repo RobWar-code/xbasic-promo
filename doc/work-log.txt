@@ -4,15 +4,14 @@ Contents
 
 Work Due
     
-    Documentation:
-
- 
-    Do the browser tests
+    Get the settings for collectstatic working
 
     Write-up notes on django/ajax interaction
 
 Work Done (completed by date)
     13/05/2023
+    * Do the browser tests
+
     * Document the set-up procedures for the project in the README
 
     * Add a description of the data models to README

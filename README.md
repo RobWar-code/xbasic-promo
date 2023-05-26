@@ -402,6 +402,21 @@ instead of https: This is an issue with the Cloudinary python library.
 
 Edit Issue Page
 
+Accessibility is knocked down by the use of the Summernote text editor, which
+has aria mismatched elements
+
+Best practices is knocked down by the use of the cloudinary image storage system
+
+![Edit Issue Page - Lighthouse](./doc/media-shots/lighthouse-edit-issue.png)
+
+Edit Answer Page
+
+Accessibility is knocked down by the use of the Summernote text editor, which
+has aria mismatched elements
+
+Best practices is knocked down by the use of the cloudinary image storage system
+
+![Edit Answer Page - Lighthouse](./doc/media-shots/lighthouse-edit-answer.png)
 
 ## Code Quality Tests
 
@@ -485,6 +500,7 @@ issues
 ## Errors / Bug Reports
 
 ### Due:
+
 
 Problem: Admin Pages - Summernote editor fails to work once 
 used elsewhere in site - needs investigation
@@ -611,6 +627,18 @@ to re-obtain the issue number within the default list of all issues use that
 as the issue number (within the ordered list).
 
 ---------------------
+
+Problem: Edit Issue - When search conducted and any but the first issue is
+listed, edit issue goes to the wrong page
+
+Status: Fixed
+
+Priority: High
+
+Due to faulty re-use of the search field. Switched to using issue id instead, more
+reliable.
+
+--------------------------------
 
 ## Browser Tests
 

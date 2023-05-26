@@ -50,7 +50,7 @@
         </div>
         <div class="col-xs-4 col-sm-2 col-md-2 text-center">
             {% if type == "issue" %}
-            <a class="btn-edit-submit" href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}" id="editIssueSuperUser" aria-label="Edit Issue Super-User Link">
+            <a class="btn-edit-submit" href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue.id %}" id="editIssueSuperUser" aria-label="Edit Issue Super-User Link">
                 Edit
             </a>
             {% else %}
@@ -113,7 +113,7 @@
         </div>
         <div class="col-xs-4 col-sm-2 col-md-2 text-center">
             {% if type == "issue" %}
-            <a class="btn-edit-submit" href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=0 %}" id="editIssueUser" aria-label="Edit Issue User">
+            <a class="btn-edit-submit" href="{% url 'edit_issue' edit=1 issue_num=issue_num search_field=search_field issue_id=issue.id %}" id="editIssueUser" aria-label="Edit Issue User">
                 Edit
             </a>
             {% else %}

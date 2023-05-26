@@ -108,31 +108,21 @@ class IssueDisplay(View):
 
 class IssueEdit(View):
     def get(self, request, *args, **kwargs):
-        # Keyword arguments are: issue_num, search_field
-        search_field = kwargs['search_field']
-        if search_field == "X":  # Empty search field
-            queryset = Issue.objects.all()
-        else:
-            query = SearchQuery(search_field)
-            queryset = Issue.objects.annotate(
-                rank=SearchRank('search_vector', query)).order_by('-rank')
-
-        issue_num = kwargs['issue_num']
-        issue = queryset[issue_num]
-        issue_id = issue.id
+        # Keyword arguments are: issue_num, search_field, issue_id
+        issue_id = kwargs['issue_id']
         issue = get_object_or_404(Issue, pk=issue_id)
         form = IssueForm(instance=issue)
         return render(request, 'edit_issue.html',
                       {'form': form,
                        'edit': 1,
-                       'issue_num': issue_num,
-                       'search_field': search_field,
+                       'issue_num': 0,
+                       'search_field': 'X',
                        'issue_id': issue_id})
 
     def post(self, request, *args, **kwargs):
-        issue_num = kwargs['issue_num']
-        search_field = 'X'
         issue_id = kwargs['issue_id']
+        issue_num = get_set_issue_num(issue_id)
+        search_field = 'X'
         issue = get_object_or_404(Issue, pk=issue_id)
         # Update record
         issue_form = IssueForm(request.POST, instance=issue)
