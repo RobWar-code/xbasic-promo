@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
 /* ------------------------------General Section */
 .bg-color-menu {
     background-color: darkblue;
