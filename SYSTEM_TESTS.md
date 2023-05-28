@@ -523,7 +523,7 @@ When no user is logged-in an options message is displayed
 
 ![Issue Page - No Login](./doc/screenshots/issue-page-no-login.webp)
 
-When a user's issue is displayed, the new and edit options are available
+When a user's issue is displayed, the new, edit and delete options are available
 
 ![Issue Page - User's issue](./doc/screenshots/issue-page-user-issue.webp)
 
@@ -695,7 +695,7 @@ Options: New
 
 If the user is the author:
 
-Options: New, Edit
+Options: New, Edit, Delete
 
 ![General User - answer author](./doc/screenshots/answer-opts-gen-user-author-answer.webp)
 
