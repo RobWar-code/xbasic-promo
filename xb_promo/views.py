@@ -66,27 +66,33 @@ class IssueDisplay(View):
         else:
             issue_num = kwargs['issue_num']
         num_issues = len(queryset)
-        if issue_num < 0:
-            issue_num = 0
-        elif issue_num >= num_issues:
-            issue_num = num_issues - 1
-        issue = queryset[issue_num]
-        answer_set = issue.issue_answer.all().order_by('priority',
-                                                       '-date_submitted')
-        num_answers = len(answer_set)
-        if 'answer_num' not in kwargs:
+        if num_issues == 0:
+            issue = None
             answer_num = 0
-        else:
-            answer_num = kwargs['answer_num']
-        if num_answers == 0:
-            answer_num = 0
+            num_answers = 0
             answer = None
         else:
-            if answer_num < 0:
+            if issue_num < 0:
+                issue_num = 0
+            elif issue_num >= num_issues:
+                issue_num = num_issues - 1
+            issue = queryset[issue_num]
+            answer_set = issue.issue_answer.all().order_by('priority',
+                                                       '-date_submitted')
+            num_answers = len(answer_set)
+            if 'answer_num' not in kwargs:
                 answer_num = 0
-            elif answer_num >= num_answers:
-                answer_num = num_answers - 1
-            answer = answer_set[answer_num]
+            else:
+                answer_num = kwargs['answer_num']
+            if num_answers == 0:
+                answer_num = 0
+                answer = None
+            else:
+                if answer_num < 0:
+                    answer_num = 0
+                elif answer_num >= num_answers:
+                    answer_num = num_answers - 1
+                answer = answer_set[answer_num]
 
         return render(
             request,

@@ -74,10 +74,6 @@
             <a class="btn-edit-submit" href="{% url 'add_issue' %}" id="newIssueSuperUserNoEntries" aria-label="New Issue Super-User NoEntries">
                 New
             </a>
-            {% else %}
-            <a class="btn-edit-submit" href="{% url 'add_answer' issue_id=issue.id %}" id="newAnswerSuperUserNoEntries" aria-label="New Answer Super-User NoEntries">
-                New
-            </a>
             {% endif %}
         </div>
         <div class="col-3"></div>
@@ -92,9 +88,11 @@
                 New
             </a>
             {% else %}
-            <a class="btn-edit-submit" href="{% url 'add_answer' issue_id=issue.id %}" id="newAnswerUser" aria-label="New Answer User">
-                New
-            </a>
+                {% if num_issues > 0 %}
+                    <a class="btn-edit-submit" href="{% url 'add_answer' issue_id=issue.id %}" id="newAnswerUser" aria-label="New Answer User">
+                        New
+                    </a>
+                {% endif %}
             {% endif %}
         </div>
         <div class="col-5"></div>
@@ -170,11 +168,18 @@
 
   
 <script>
-    var deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}";
-    var issueId = "{{ issue.id }}";
+    {% if type == 'issue' %}
+        if ("{{ num_items }}" > 0) {
+            var issueId = "{{ issue.id }}";
+            {% if issue %}
+                var deleteIssueUrl = "{% url 'delete_issue' issue_id=issue.id %}";
+            {% endif %}
+        }
+    {% endif %}
+
     {% if answer %}
         var deleteAnswerUrl = "{% url 'delete_answer' issue_id=issue.id answer_id=answer.id %}";
     {% endif %}
-    var deleteItemUrl = ""; // Global for alternative value
+        var deleteItemUrl = ""; // Global for alternative value
     var answerId = "{{ answer.id }}";
 </script>
