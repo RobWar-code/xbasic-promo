@@ -180,6 +180,6 @@
     {% if answer %}
         var deleteAnswerUrl = "{% url 'delete_answer' issue_id=issue.id answer_id=answer.id %}";
     {% endif %}
-        var deleteItemUrl = ""; // Global for alternative value
+    var deleteItemUrl = ""; // Global for alternative value
     var answerId = "{{ answer.id }}";
 </script>
