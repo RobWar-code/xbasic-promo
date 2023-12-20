@@ -1,5 +1,7 @@
 import time
+import os
 from django.shortcuts import render, redirect, get_object_or_404
+from django.core.serializers import serialize
 from django.urls import reverse
 from django.views import generic, View
 from django.views.decorators.csrf import csrf_exempt
@@ -10,8 +12,30 @@ from django.contrib.postgres.search import SearchVector, SearchQuery,\
 from django.contrib import messages
 from django.db.models import F
 import cloudinary.uploader
-from .models import FeaturePage, Issue, Answer
+from .models import FeaturePage, FeatureSection, Issue, Answer
 from .forms import IssueForm, AnswerForm
+
+
+# Dump Features and Sections
+class DumpDatabase(View):
+    def get(self, request, *args, **kwargs):
+        current_script_path = os.path.dirname(os.path.abspath(__file__))
+        model_set = [
+            ["FeaturePage_data.json", FeaturePage],
+            ["FeatureSection_data.json", FeatureSection],
+            ["Issue_data.json", Issue],
+            ["Answer_data.json", Answer]
+        ]
+        for model_set_item in model_set:
+            file_path = os.path.join(current_script_path, '../database_backups/' + model_set_item[0])
+            data = serialize('json', model_set_item[1].objects.all())
+            with open(file_path, 'w') as file:
+                file.write(data)
+
+        return render (
+                request,
+            'dump_database.html'
+        )
 
 
 # Features
@@ -385,3 +409,4 @@ def get_set_issue_num(issue_id):
             break
 
     return issue_num
+

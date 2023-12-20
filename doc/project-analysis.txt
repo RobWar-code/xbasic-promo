@@ -18,6 +18,7 @@ Contents
 		Answers, Add/Edit/Delete Answers			
 		Summary of Features to Meet Requirements
 		Pages / Menu
+	Upgrade to Database Version
 	Budgetary Constraints
 	Feasibility and Initial Design Layouts
 	Desirable Features
@@ -747,6 +748,26 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 	Problems/Issues - issues.html
 	Sign-In/Sign-Up or Logout
 	Home
+
+## Upgrade to Database Version
+
+19 Dec 2023
+
+Create a Python Script to Dump Data: Write a Python utility that connects to your existing database 
+and dumps the required data into a local file. This could be in a format like CSV, JSON, or a custom 
+format that suits your data structure.
+
+Create a Python Script to Populate New Database: Write another Python utility that reads the data 
+from the dumped file and populates the new ElephantSQL database with the correct version of PostgreSQL.
+
+Update Database URL in Heroku: Change the DATABASE_URL in your Heroku app's configuration to point to
+the new ElephantSQL database.
+
+Run Migrations: Execute Django's migrations on the new database to create the necessary tables and schema.
+
+Run Data Populating Utility: Use your Python script to populate the new database with data from the local file.
+
+
 
 ## Budgetary Constraints
 

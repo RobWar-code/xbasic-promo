@@ -19,5 +19,6 @@ urlpatterns = [
      path('edit_answer/<int:issue_id>/<int:answer_id>/',
           views.AnswerEdit.as_view(), name="edit_answer"),
      path('delete_answer/<int:issue_id>/<int:answer_id>/',
-          views.delete_answer, name='delete_answer')
+          views.delete_answer, name='delete_answer'),
+     path('dump_database/', views.DumpDatabase.as_view(), name='dump_database')
 ]
