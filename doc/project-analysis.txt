@@ -753,20 +753,24 @@ Search reference: https://docs.djangoproject.com/en/4.1/ref/contrib/postgres/sea
 
 19 Dec 2023
 
-Create a Python Script to Dump Data: Write a Python utility that connects to your existing database 
-and dumps the required data into a local file. This could be in a format like CSV, JSON, or a custom 
+### Create a Python Script to Dump Data: 
+Write a Python utility that connects to your existing database and dumps the required data 
+into a local file. This could be in a format like CSV, JSON, or a custom 
 format that suits your data structure.
 
-Create a Python Script to Populate New Database: Write another Python utility that reads the data 
-from the dumped file and populates the new ElephantSQL database with the correct version of PostgreSQL.
+This has been added as a feature available to the super user, output is json file
 
-Update Database URL in Heroku: Change the DATABASE_URL in your Heroku app's configuration to point to
-the new ElephantSQL database.
+### Create a Python Script to Populate New Database: 
+Write another Python utility that reads the data from the dumped file 
+and populates the new ElephantSQL database with the correct version of PostgreSQL.
+
+This stage was replaced by the use of
 
 Run Migrations: Execute Django's migrations on the new database to create the necessary tables and schema.
 
-Run Data Populating Utility: Use your Python script to populate the new database with data from the local file.
+python3 manage.py loaddata model.json
 
+Using the output of the serialize utility used above.
 
 
 ## Budgetary Constraints
